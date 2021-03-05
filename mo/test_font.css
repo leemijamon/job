@@ -1,0 +1,3273 @@
+
+@font-face {
+  font-family: 'Nanum Gothic';
+  font-style: normal;
+  font-weight: 400;
+  src: url('http://login.benecafe.co.kr/static/pc/fonts/NanumGothic-Regular.eot');
+    src: local('?'), url('./fonts/NanumGothic-Regular.woff') format('woff'), url('./fonts/NanumGothic-Regular.ttf') format('truetype')
+}
+@font-face {
+  font-family: 'Nanum Gothic';
+  font-style: normal;
+  font-weight: bold;
+  src: url('http://login.benecafe.co.kr/static/pc/fonts/NanumGothic-Bold.eot');
+    src: local('?'), url('./fonts/NanumGothic-Bold.woff') format('woff'), url('./fonts/NanumGothic-Bold.ttf') format('truetype')
+}
+
+/* 나눔스퀘어 -font-family: 'NanumSquare', sans-serif;- 300,400,700,800 */
+@import url("https://cdn.jsdelivr.net/gh/moonspam/NanumSquare@1.0/nanumsquare.css");
+
+/* 나눔바른고딕   -font-family: 'NanumBarunGothic', sans-serif;- 200,300,400,700   */
+@import url("https://cdn.jsdelivr.net/gh/moonspam/NanumBarunGothic@1.0/nanumbarungothicsubset.css");
+
+/* 본고딕    font-family:'Noto Sans KR', sans-serif; - 100 300 400 500 700 900*/
+@import url("https://fonts.googleapis.com/earlyaccess/notosanskr.css");
+
+
+
+
+@font-face {
+	font-family: 'NotoKrL';
+	font-style: normal;
+	font-weight: 100;
+	src: local('Noto Sans Light'), local('NotoSans-Light'), url(http://login.benecafe.co.kr/static/both/fonts/NotoSans-subset-master/NotoSans-Light.eot);
+	src: url(http://login.benecafe.co.kr/static/both/fonts/NotoSans-subset-master/NotoSans-Light.eot?#iefix) format('embedded-opentype'),
+	url(http://login.benecafe.co.kr/static/both/fonts/NotoSans-subset-master/NotoSans-Light.woff2) format('woff2'),
+	url(http://login.benecafe.co.kr/static/both/fonts/NotoSans-subset-master/NotoSans-Light.woff) format('woff');
+}
+
+@font-face {
+	font-family: 'NotoKrR';
+	font-style: normal;
+	font-weight: 300;
+	src: local('Noto Sans Regular'), local('NotoSans-Regular'), url(http://login.benecafe.co.kr/static/both/fonts/NotoSans-subset-master/NotoSans-Regular.eot);
+	src: url(http://login.benecafe.co.kr/static/both/fonts/NotoSans-subset-master/NotoSans-Regular.eot?#iefix) format('embedded-opentype')/* ,
+	url(http://login.benecafe.co.kr/static/both/fonts/NotoSans-subset-master/NotoSans-Regular.woff2) format('woff2'),
+	url(http://login.benecafe.co.kr/static/both/fonts/NotoSans-subset-master/NotoSans-Regular.woff) format('woff') */;
+}
+
+@font-face {
+	font-family: 'NotoKrM';
+	font-style: normal;
+	font-weight: 500;
+	src: local('Noto Sans Medium'), local('NotoSans-Medium'), url(http://login.benecafe.co.kr/static/both/fonts/NotoSans-subset-master/NotoSans-Medium.eot);
+	src: url(http://login.benecafe.co.kr/static/both/fonts/NotoSans-subset-master/NotoSans-Medium.eot?#iefix) format('embedded-opentype'),
+	url(http://login.benecafe.co.kr/static/both/fonts/NotoSans-subset-master/NotoSans-Medium.woff2) format('woff2'),
+	url(http://login.benecafe.co.kr/static/both/fonts/NotoSans-subset-master/NotoSans-Medium.woff) format('woff');
+}
+
+@font-face {
+	font-family: 'NotoKrB';
+	font-style: normal;
+	font-weight: 700;
+	src: local('Noto Sans Bold'), local('NotoSans-Bold'), url(http://login.benecafe.co.kr/static/both/fonts/NotoSans-subset-master/NotoSans-Bold.eot);
+	src: url(http://login.benecafe.co.kr/static/both/fonts/NotoSans-subset-master/NotoSans-Bold.eot?#iefix) format('embedded-opentype')/* ,
+	url(http://login.benecafe.co.kr/static/both/fonts/NotoSans-subset-master/NotoSans-Bold.woff2) format('woff2') *//* ,
+	url(http://login.benecafe.co.kr/static/both/fonts/NotoSans-subset-master/NotoSans-Bold.woff) format('woff') */;
+}
+
+
+@font-face {
+  font-family: 'Titillium Web';
+  font-style: normal;
+  font-weight: 400;
+  src: url('http://login.benecafe.co.kr/static/both/fonts/titillium-web-v8-latin/titillium-web-v8-latin-regular.eot'); /* IE9 Compat Modes */
+  src: local('Titillium Web Regular'), local('TitilliumWeb-Regular'),
+       url('http://login.benecafe.co.kr/static/both/fonts/titillium-web-v8-latin/titillium-web-v8-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+      /*  url('http://login.benecafe.co.kr/static/both/fonts/titillium-web-v8-latin/titillium-web-v8-latin-regular.woff2') format('woff2'), */ /* Super Modern Browsers */
+     /*   url('http://login.benecafe.co.kr/static/both/fonts/titillium-web-v8-latin/titillium-web-v8-latin-regular.woff') format('woff'), */ /* Modern Browsers */
+      /*  url('http://login.benecafe.co.kr/static/both/fonts/titillium-web-v8-latin/titillium-web-v8-latin-regular.ttf') format('truetype'), */ /* Safari, Android, iOS */
+       url('http://login.benecafe.co.kr/static/both/fonts/titillium-web-v8-latin/titillium-web-v8-latin-regular.svg#TitilliumWeb') format('svg'); /* Legacy iOS */
+}
+/* PC,MOBILE - titillium-web-700 - latin */
+@font-face {
+  font-family: 'Titillium Web';
+  font-style: normal;
+  font-weight: 700;
+  src: url('http://login.benecafe.co.kr/static/both/fonts/titillium-web-v8-latin/titillium-web-v8-latin-700.eot'); /* IE9 Compat Modes */
+  src: local('Titillium Web Bold'), local('TitilliumWeb-Bold'),
+       url('http://login.benecafe.co.kr/static/both/fonts/titillium-web-v8-latin/titillium-web-v8-latin-700.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+      /*  url('http://login.benecafe.co.kr/static/both/fonts/titillium-web-v8-latin/titillium-web-v8-latin-700.woff2') format('woff2'), */ /* Super Modern Browsers */
+     /*   url('http://login.benecafe.co.kr/static/both/fonts/titillium-web-v8-latin/titillium-web-v8-latin-700.woff') format('woff'), */ /* Modern Browsers */
+       /* url('http://login.benecafe.co.kr/static/both/fonts/titillium-web-v8-latin/titillium-web-v8-latin-700.ttf') format('truetype'),  *//* Safari, Android, iOS */
+       url('http://login.benecafe.co.kr/static/both/fonts/titillium-web-v8-latin/titillium-web-v8-latin-700.svg#TitilliumWeb') format('svg'); /* Legacy iOS */
+}
+/* PC,MOBILE - titillium-web-900 - latin */
+@font-face {
+  font-family: 'Titillium Web';
+  font-style: normal;
+  font-weight: 900;
+  src: url('http://login.benecafe.co.kr/static/both/fonts/titillium-web-v8-latin/titillium-web-v8-latin-900.eot'); /* IE9 Compat Modes */
+  src: local('Titillium Web Black'), local('TitilliumWeb-Black'),
+       url('http://login.benecafe.co.kr/static/both/fonts/titillium-web-v8-latin/titillium-web-v8-latin-900.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('http://login.benecafe.co.kr/static/both/fonts/titillium-web-v8-latin/titillium-web-v8-latin-900.woff2') format('woff2'), /* Super Modern Browsers */
+       url('http://login.benecafe.co.kr/static/both/fonts/titillium-web-v8-latin/titillium-web-v8-latin-900.woff') format('woff'), /* Modern Browsers */
+       url('http://login.benecafe.co.kr/static/both/fonts/titillium-web-v8-latin/titillium-web-v8-latin-900.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('http://login.benecafe.co.kr/static/both/fonts/titillium-web-v8-latin/titillium-web-v8-latin-900.svg#TitilliumWeb') format('svg'); /* Legacy iOS */
+}
+
+ body { font-family: 'NotoKrR', sans-serif; }
+strong { font-family: 'NotoKrB', sans-serif; }
+th { font-family: 'NotoKrM', sans-serif; }
+
+
+
+
+
+
+
+/* reset */
+html,body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,textarea,p,blockquote,th,td,input,select,textarea,button {margin:0;padding:0; font-size: 12px; color: #333; letter-spacing: -0.25px}
+fieldset,img {border:0 none}
+dl,ul,ol,menu,li {list-style:none}
+.nDot {list-style: none;} /* li 추가 속성으로 단독 선언 */
+blockquote, q {quotes:none}
+blockquote:before, blockquote:after,q:before, q:after {content:''}
+button {border:0 none;background-color:transparent;cursor:pointer}
+table {border-collapse:collapse;border-spacing:0; width: 100%}
+body {-webkit-text-size-adjust:none} /* 뷰표트 변환시 폰트크기 자동확대 방지 */
+input[type='text'],input[type='password'],input[type='submit'],input[type='search'] {-webkit-appearance:none; border-radius:0; border-width: 1px; border-style: solid; border-color: #e3e3e3}
+input:checked[type='checkbox'] {background-color:#666; -webkit-appearance:checkbox}
+input[type='checkbox'] { visibility: hidden; width: 2rem;}
+button,input[type='button'],input[type='submit'],input[type='reset'],input[type='file'] {-webkit-appearance:button; border-radius:0}
+input[type='search']::-webkit-search-cancel-button {-webkit-appearance:none}
+body {background:#fff;}
+
+/* 20180319 #20056 이전 버전
+body,th,td,input,select,textarea,button {line-height:1rem;font-family:'Nanum Gothic';color:#333; font-size: 1.084rem}
+*/
+/* 20180319 #20056 이후 버전*/
+body,th,td,input,select,textarea,button {font-family: 'NotoKrR', 'Noto Sans KR', 'Nanum Gothic';color:#333;font-size: 1.084rem;} 
+img{vertical-align:middle}
+input,select,textarea,button {font-size:1rem;vertical-align:middle}
+a {color:#333;text-decoration:none; display: inline-block}
+a:active, a:hover {text-decoration:none;outline:none !important}
+address,caption,cite,code,dfn,em,var {font-style:normal;font-weight:normal}
+strong{font-weight: 700}
+
+.inpu_byte{border: solid 1px #e3e3e3; padding-right: 56px; background: #fff}
+.inpu_byte input{border: none}
+
+/* 아이폰 대응 */
+select{
+    height: 40px;
+    -webkit-border-radius:0; -moz-border-radius:0; -o-border-radius:0; border-radius:0;
+    -webkit-appearance: none;
+    background-color: #fff;
+    background-image: url("../images/cm/icon/ico_barrow.png");
+    background-position : right center;
+    background-repeat: no-repeat;
+    background-size: 22px;
+    padding-right: 1.5em;
+    line-height: 100%;
+    font-size: 12px;
+}
+input[type="text"], input[type="tel"], input[type="password"], input[type="search"], textarea{
+    -webkit-appearance: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    border-radius: 0;
+}
+/*모바일 이미지맵 적용 20190321*/
+img[usemap]{border:none;height:auto;max-width:100%;width:auto;}
+/* /reset */
+
+/* layout */
+/* .modal{ margin: auto; left: 10px; right: 10px; background: #fff}
+.modal h4{color: #fff; text-align: left; font-size: 16px; font-weight: 700; display: inline-block}
+.modal-header .close{ width: 28px; height: 28px; background: url(http://login.benecafe.co.kr/static/mobile/images/common/btnDelete.png) no-repeat center; background-size: 100%; text-indent: -10000px}
+.modal-body{line-height: 1.4rem} */
+
+/* layout 공통 */
+.header{ width: 100%; z-index: 20; background: #fff;}
+/* .footer{ margin-top: 23px; background: #fff; padding: 0 0 74px} */
+.footer{background: #fff; position:relative; margin-top:23px; padding:10px;}
+/* .goods_detail .footer{ margin-top: 110px}
+/* .goods_detail .container{margin-bottom: 150px}
+/* .goods_detail{margin-bottom:86px} */
+.goods_detail{height:101% !important;margin-bottom:0;padding-bottom:80px;overflow:scroll;-webkit-overflow-scrolling:touch;}
+.goods_detail .container{margin-bottom:0px}
+.bott_marg_none .footer{ margin-top: 0}
+.bott_marg_none #tabs-2{ padding-bottom: 72px}
+.bott_marg_none #tabs-3{ padding-bottom: 72px}
+.bott_marg_none #tabs-4{ padding-bottom: 72px}
+.bott_marg_none #tabs-5{ padding-bottom: 72px}
+.foot_logo{padding: 13px 10px 10px}
+.foot_logo img{ width: 70.667px}
+.foot_styl{ width: 20px; height: 20px; background: url(http://login.benecafe.co.kr/static/mobile/images/common/icoDownarrow.png) no-repeat center; background-size: 20px; position: absolute; right: 7px; vertical-align: middle }
+.foot_styl_open{ width: 20px; height: 20px; background: url(http://login.benecafe.co.kr/static/mobile/images/common/icoUparrow.png) no-repeat center; background-size: 20px; position: absolute; right: 7px; vertical-align: middle }
+.acco_defa h3{font-size: 1px; height: 1px; color: #fff; outline: none}
+.acco_defa_styl{ width: 20px; height: 20px; background: url(http://login.benecafe.co.kr/static/mobile/images/common/icoDownarrow.png) no-repeat center; background-size: 20px; position: absolute; right: 0; vertical-align: middle; top: -20px }
+.acco_defa_styl_open{ width: 20px; height: 20px; background: url(http://login.benecafe.co.kr/static/mobile/images/common/icoUparrow.png) no-repeat center; background-size: 20px; position: absolute; right: 0; vertical-align: middle; top: -20px }
+.foot_link a{ color: #666; font-weight: 700; border-left: solid 1px #ccc; margin-left: 10px; padding-left: 10px}
+.foot_link.logi a{ font-weight: 400}
+.foot_link a:first-child{padding-left: 0; margin-left: 0; border-left: none}
+.foot_mark{background: url(http://image.benecafe.co.kr/cdnetbs/front/image/etbs/footer_mark_mo.png) no-repeat right 10px bottom 3px; background-size: 78.334px} /*20190329*/
+
+.ico_popu_area0{ background: url(http://login.benecafe.co.kr/static/mobile/images/common/ico_popu0.png) no-repeat center; background-size: 10px; height: 12px}
+.ico_popu_area1{ background: url(http://login.benecafe.co.kr/static/mobile/images/common/ico_popu1.png) no-repeat center; background-size: 10px; height: 12px}
+.ico_popu_area2{ background: url(http://login.benecafe.co.kr/static/mobile/images/common/ico_popu2.png) no-repeat center; background-size: 10px; height: 12px}
+.ico_popu_area3{ background: url(http://login.benecafe.co.kr/static/mobile/images/common/ico_popu3.png) no-repeat center; background-size: 10px; height: 12px}
+.ico_popu_area4{ background: url(http://login.benecafe.co.kr/static/mobile/images/common/ico_popu4.png) no-repeat center; background-size: 10px; height: 12px}
+/* /layout 공통 */
+
+/* layout 메인 */
+/*.menu_hori{ position: relative;} 20190110 삭제*/
+.left_cove{ width: 20px; height: 40px; position: absolute; top: 0; left: 0; background: linear-gradient( to right, rgba(255,255,255,1), rgba(255,255,255,0) );}
+.righ_cove{ width: 20px; height: 40px; position: absolute; top: 0; right: 0; background: linear-gradient( to left, rgba(255,255,255,1), rgba(255,255,255,0) );}
+.mainVisualImg{position: relative; text-align: center}
+.mainVisualImg a{ display: block}
+.sliderTit{ height: 20px; line-height: 20px; padding-right: 12px; padding-left: 12px; top: 14px; color: #fff; background: rgba(0,0,0,.4); border-radius: 4px; font-size: 1.084rem; position: absolute; left: 50%; transform: translateX(-50%); white-space: nowrap }
+
+.mdRecom{padding-top: 13px; background: #f1f1f1; padding-left: 10px; padding-right: 10px; padding-bottom: 23px}
+.mdRecomTit{text-align: center; font-size: 20px; font-weight: 700; height: 42px; line-height: 42px; z-index: 10; background: #f1f1f1}
+.mdRecomTit_trip{text-align: center; font-size: 20px; font-weight: 700; height: 42px; line-height: 42px; z-index: 10; background: #f1f1f1}
+.mdRecomDesc{font-size: 1.084rem; color: #666; margin-top: 2px; padding-bottom: 16px; text-align: center; line-height: 1.5rem;}
+.mdRecom .scroll_wrapper{display:table;overflow:hidden;}			/* 네모레이드 큐브 3면 스크롤 hidden 제어  2019.03.11 */
+.mdRecom .scroll_wrapper .cube_thumb_wrap{display:table-cell;vertical-align:middle;}
+/* 검색 결과 버튼 css 추가 - 2019.03.14*/
+.mdRecom .btn_wrapper{margin-top:20px;text-align:center;}
+.mdRecom .btn_wrapper:after{content:"";display:block;clear:both;}
+.mdRecom .btn_wrapper span{display: inline-block;}
+.mdRecom .btn_wrapper button{float:left;display:block;width:100px;height:28px;color:#fff;text-align:center;}
+.mdRecom .btn_wrapper .list_more_btn{background:#333;}
+.mdRecom .btn_wrapper .list_reset_btn{margin-left:10px;background:#f14829;}
+/*ddd*/
+.mdRecomLi{position: relative; margin-top: 4px;}
+.mdRecomLi:first-child{ margin-top: 0}
+/* 200226 벼룩시장 거래완료 css 추가 : start */
+.mdRecomLi .soldout{width: 100%;height: 100%;background: black;top: 0;position: absolute;opacity:0.5;z-index:9;margin-left:-20px;}
+.mdRecomLi .soldout p{color: white;text-align: center;margin: 10%;font-size: 24px;font-weight:bold;}
+/* 200226 벼룩시장 거래완료 css 추가 : end */
+
+/*네모레이드 수정_ 아이폰 대응*/
+.mdRecomLiImg{height:auto;} /*!important 삭제 20190220 */
+.mdRecomLiImg a{display: block;height:auto !important/*height:197px;overflow:hidden*/}
+.mdRecomLiImg img{ max-width: 100%; height: auto !important;/* min-height:197px; height:auto !important; display: block*/}
+/*네모 right 추가 css 20190220*/
+.cube_inner_listWrap{height:100%;background:#fff;}
+.cube_inner_listWrap .cube_inner_tit{position:fixed;padding:15px 0;width:100%;font-size:14px;font-weight:bold;text-align:center;z-index:1;background:#fff;border-bottom:1px solid #f1f1f1;} /*20190423*/
+.cube_inner_listWrap .newList{padding-top:46px;background:#f1f1f1;} /*20190423*/
+.cube_inner_listWrap .newList .mdRecomLi:first-child{margin-top:2px;}
+.cube_inner_listWrap .newList .mdRecomLi:nth-child(2n+2){border-left:1px solid #f1f1f1;}
+.cube_inner_listWrap .newList .mdRecomLi:nth-child(2n+1){border-right:1px solid #f1f1f1;}
+.cube_inner_listWrap .mdRecomLi{margin-top:2px;}  
+.cube_inner_listWrap .mdRecomLiTxt{text-align:left;}  
+.cube_inner_listWrap .btnS_zzim{height:22px;}
+.cube_inner_listWrap .newList .mdRecomLiTit + .mdRecomLiP{margin-top:6px;}
+.cube_inner_listWrap .mdRecomLi_empty{background:#fff;}
+.cube_inner_listWrap .mdRecomLi_empty .mdRecomLiTxt{text-align:center;}
+.large_cube > div .cube_inner_listWrap{line-height:normal;}
+/*케이티 시연용*/
+.mdRecomLiImgKt{height:auto !important}
+.mdRecomLiImgKt a{display: block;height:auto !important/*height:197px;overflow:hidden*/}
+.mdRecomLiImgKt img{width: 100%; /* min-height:197px;*//* height:auto !important; */ display: block}
+
+.mdRecomLiTag{ position: absolute; top: -1px;} 
+.mdRecomLiTxt{padding: 13px 10px 23px; background: #fff; margin-top: 1px}
+.mdRecomLiTxt2{padding: 13px 10px 15px; background: #fff; margin-top: 1px}
+.mdRecomLiTit{font-size: 13px;    line-height: 16px;}
+.mdRecomLiMp{color: #ccc; text-decoration: line-through; margin-top: 7px}
+.mdRecomLiP{font-size: 1.334rem; margin-top: 6px}
+.mdRecomSns{ position: absolute; right: 10px; bottom: 17px; height: 22px}
+.mark_labe{background: #fff; padding: 13px 10px 13px}
+
+.localTrip{padding-top: 13px; border-top:2px solid #333; background: #f1f1f1; padding-left: 10px; padding-right: 10px; padding-bottom: 23px}
+.lifeStyle{padding-top: 13px; border-top:2px solid #333; background: #f1f1f1; padding-left: 10px; padding-right: 10px; padding-bottom: 23px}
+
+/*  라이프 스타일  타이틀 변경 관련 - 모바일 common.css */
+.lifeStyle .mdRecomTit span{background: url(http://image.benecafe.co.kr/cdnetbs/inwork/images/mobile/lifeStyle_title.png) no-repeat center;    display: block;    overflow: hidden;    text-indent: -300px;    margin: 0 auto;    width: 160px;    background-size: 160px;}
+
+.mainGoodsDesc{color: #666; font-size: 1.084rem; margin-top: 3px; padding-right: 40px; line-height: 1.5rem; }
+.main_noti{padding-top: 13px; border-top:2px solid #333; background: #f1f1f1; padding-bottom: 23px}
+
+/*180516 css edit : start*/
+/*수정낸용 : 하단 액션바 마이페이지 추가*/
+.actionBar{ width: 100%; height: 48px;position: fixed; border-top: 1px solid #ccc; background: #fff; bottom: 0; z-index: 10; transition: bottom 0.2s ease-in-out;}
+.bottomMenuArea li{ float: left; width: 16.6666%; text-align: center }
+.bottomMenuArea a{ display: block; text-align: center; background-repeat: no-repeat; background-position: 50% 6px; background-size: 22px; font-size: 10px; padding-top:32px}
+.btnMy{background-image: url(http://image.benecafe.co.kr/cdnetbs/front/image/etbs/actionBar6.png);}
+/*180516 css edit : end*/
+
+.nav-up {
+    bottom: -90px;
+}
+
+.popS1{width: 100%;height: 100%; top: 0; left: 0;  background: #fff;  overflow: auto; padding-bottom: 50px}
+/* #depth2Pop .popS1{ width: auto; max-height: 464px; margin-left: 40px; margin-right: 40px; position: relative} */
+.popS1Header{position:relative; width: 100%; top: 0; left: 0; background: #333; color: #fff; text-align: left; text-indent: 0; padding: 16px 10px; /*position: absolute; z-index: 10;*/ display: block; box-sizing: border-box;} /* sunjoo : 180427 relative 추가 */ /* 2018.10.16 box-sizing: border-box;*/
+.popS1HeaderTit{color: #fff; font-size: 16px; line-height: 12px}
+.popS1Header .btnClose{position: absolute; top: 10px; right: 7px;}
+.popS1Header:after{display: block; clear: both; content: ''}
+.mypageModiBtn{margin-top: 22px}
+.mypageWrapTit{font-size: 1.334rem}
+
+.popS1Wrap{ text-align: left;/* margin-top: 44px */}
+#mypagePop .popS1Wrap{ padding: 23px 10px; /* margin-top: 90px  */}
+#depth2Pop .popS1Wrap{max-height: 430px; overflow: auto}
+#depth4Pop .popS1Wrap{max-height: 430px; overflow: auto}
+.popS1Wrap:after{display: block; clear: both; content: '';}
+.popS1Wrap .tiN{text-indent: 0}
+.popS1Wrap .tiN2{text-indent: -10000px}
+.popS1WrapTit{font-size: 1.334rem; color: #000}
+.popS3Wrap{ text-align: center; margin-top: 42px; padding: 23px; line-height: 1.4rem }
+
+.popS3{ position: absolute; left: 40px; right: 40px; width: auto; top: 50%; transform: translateY(-50%); background: #fff }
+#pop_scrab .popS3{ left: 10px; right: 10px }
+#pop_share .popS3{ left: 10px; right: 10px; padding-top: 17px; padding-bottom: 17px }
+#pop_cart .popS3{ left: 10px; right: 10px }
+/* #depth4Pop .popS3{max-height:430px;overflow:auto} */
+.appl_comp .popS3{ left: 10px; right: 10px }
+.popS4{ position: absolute; left: 10px; right: 10px; width: auto; top: 50%; transform: translateY(-50%); background: #fff }
+
+.myCon .col-xs-4{border-left: 1px solid #ccc; padding-top: 9px; padding-bottom: 9px}
+.myCon .col-xs-4:first-child{border-left: none}
+
+.emailNtell{margin-top: 10px}
+.emailNtell p{color: #ccc; font-size: 1.084rem}
+.emailNtell p:last-child{margin-top: 4px}
+
+.myConNum{margin-top: 9px; display: inline-block}
+
+.mypageWrapBtn{margin: auto; text-align: center}
+.mypageWrapBtn .col-xs-4:nth-child(1){ border-right: 3px solid #fff}
+.mypageWrapBtn .col-xs-4:nth-child(2){
+    border-left: 3px solid #fff;
+    border-right: 3px solid #fff;
+}
+.mypageWrapBtn .col-xs-4:nth-child(3){ border-left: 3px solid #fff}
+.menu_hori .darken {
+    line-height: 12px;
+}
+.popS2{ width: 295px; position: absolute; right: 10px; bottom: 58px; background: #fff; border: 2px solid #f14829}
+.moreArea li{ float: left; width: 25%; height: 40px; margin-top: 23px; border-left: 1px solid #ccc; text-align: center}
+.moreArea li:nth-child(5n){ border-left: none}
+.moreArea li:first-child{ border-left: none}
+.moreArea a{ text-align: center; background-repeat: no-repeat; background-position: 50% 0; background-size: 22px; padding-top:28px; font-size: 1rem }
+.moreArea:after{display: block; clear: both; content: ''}
+.btnPoint{background-image: url(http://login.benecafe.co.kr/static/mobile/images/common/icoPoint.png);}
+.btnCostApply{background-image: url(http://login.benecafe.co.kr/static/mobile/images/common/icoPay.png);}
+.btnCart{background-image: url(http://login.benecafe.co.kr/static/mobile/images/common/icoCart_200508.png);}
+.btnPartner{background-image: url(http://login.benecafe.co.kr/static/mobile/images/common/icoIco.png);}
+.btnScrabList{background-image: url(http://login.benecafe.co.kr/static/mobile/images/common/icoHeart3.png);}
+.btnRecentGood{background-image: url(http://login.benecafe.co.kr/static/mobile/images/common/icoClock2.png);}
+.btnDiagReservation{background-image: url(http://login.benecafe.co.kr/static/mobile/images/common/icoNote.png);}
+.btnQna{background-image: url(http://login.benecafe.co.kr/static/mobile/images/common/icoQna.png);}
+.setArea{ height: 42px; margin: 23px 10px 0; border-top: 1px solid #e3e3e3; text-align: right}
+.btnSet{line-height: 42px; background: url(http://login.benecafe.co.kr/static/mobile/images/common/icoSet.png) no-repeat left; background-size: 16px; padding-left: 21px}
+#popMoreMenu{display: none}
+.chec_info_tit strong span{margin:0}
+
+.main_bg{background: #f1f1f1;}
+/* iPhone < 5 */
+@media screen and (device-aspect-ratio: 2/3) {
+    .main_bg{background: #f1f1f1;width:1px; min-width:100%; height:1px; min-height:100%;}
+}
+/* iPhone 5 */
+@media screen and (device-aspect-ratio: 40/71) {
+    .main_bg{background: #f1f1f1;width:1px; min-width:100%; height:1px; min-height:100%;}
+}
+/* iPhone 6 */
+@media screen and (device-aspect-ratio: 375/667) {
+    .main_bg{background: #f1f1f1;width:1px; min-width:100%; height:1px; min-height:100%;}
+}
+/* iPhone 6 Plus */
+@media screen and (device-aspect-ratio: 16/9) {
+    .main_bg{background: #f1f1f1;width:1px; min-width:100%; height:1px; min-height:100%;}
+}
+/* iPad */
+@media screen and (device-aspect-ratio: 3/4) {
+    .main_bg{background: #f1f1f1;width:1px; min-width:100%; height:1px; min-height:100%;}
+}
+
+.sub_bg{background: #f1f1f1}
+.main_bann{ padding: 24px 20px 24px 94px; border: solid 1px #ccc; background-color: #fff; background-repeat: no-repeat; background-position: 17px 50%; background-size: 65px}
+.main_bann_styl1{ background-image: url(http://login.benecafe.co.kr/static/mobile/images/common/ico_fest.png)}
+.main_bann_styl2{ background-image: url(http://login.benecafe.co.kr/static/mobile/images/common/ico_airp.png)}
+.main_bann_styl3{ background-image: url(http://login.benecafe.co.kr/static/mobile/images/common/ico_gift.png)}
+/* S : 2018.08.06 to be*/
+.cs_cent{ padding: 24px 10px; margin: 0 10px; background: #fff; border: solid 1px #ccc; }
+.cs_cent_call_btn{width:100%;height:54px;background: #f8f8fa;border: 1px solid #cdcdcd;text-align: center;}
+.cs_cent_call_btn_info{display: inline-block;margin: 0 auto;}
+.cs_cent_call_btn_number{display:inline-block;float:left;margin-top: 10px;font-size:2.234rem;}
+.cs_cent_call_btn_icon{display: inline-block;float:left;margin-top: 6px;width: 40px;height: 40px;background: url(http://login.benecafe.co.kr/static/mobile/images/common/ico_phone.png) no-repeat center center;background-size: 26px;}
+
+.mdRecomTitBox {position:relative;width:100%;background-color:#f1f1f1;z-index:18;}
+.mdRecomTitBox.fix {position:fixed;top:87px;left:0px;z-index:18;}
+.container{padding-bottom:10px}
+.container.fix {position:relative;top:96px;}
+/* /layout 메인 */
+
+/* layout 장바구니 */
+/* [s] gnb background 추가 */
+.location{padding: 11px 10px;border-bottom: solid 1px #e3e3e3;background:#fff url(http://image.benecafe.co.kr/cdnetbs/front/image/etbs/mo_header_bg.jpg) no-repeat center 0;background-size:contain; }
+.location.fc{background-image:url(http://image.benecafe.co.kr/cdnetbs/front/image/etbs/mo_fc_header_bg.jpg)}
+.location.hy{background-image:url(http://image.benecafe.co.kr/cdnetbs/front/image/etbs/mo_hy_header_bg.jpg)}
+/* [s] gnb background 추가 */
+.location:after{display: block; clear: both; content: ""}
+.list_cart_ctl{padding: 16px 10px 10px 21px; line-height: 22px;}
+.list_cart_unit{margin-top: 10px}
+.list_cart_unit:first-child{margin-top: 0}
+.list_cart_unit_tit{line-height: 22px; position: relative}
+.list_cart_unit_sns{ position: absolute; right: -3px; top: 0}
+.list_cart_unit_Zzim{vertical-align: top; margin-right: 6px}
+.list_cart_unit_inner{border: 1px solid #e3e3e3; padding: 10px 10px 16px; margin: auto 10px}
+.list_cart_unit_inner:after{display: block; clear: both; content: ''}
+.list_cart_unit_con{margin-top: 7px}
+.list_cart_unit_con:after{ display: block; clear: both; content: ''}
+.list_cart_unit_con_option{margin-top: 8px }
+.list_cart_unit_con .col-xs-1{width: auto}
+.list_cart_unit_con2 .col-xs-1{width: auto}
+.list_cart_unit_price{margin-top: 14px; border-top: 1px solid #e3e3e3; padding-top: 6px}
+.list_cart_unit_Tprice{ margin-top: 20px }
+.list_cart_unit_h2{ line-height: 1.4rem; font-size: 1.084rem }
+.b_row_check{vertical-align: top; position: absolute; top: 0;}
+.list_cart_unit_img img{width: 58px; height: 58px;}
+.list_cart_unit_btn{margin-top: 16px; clear: both}
+.list_cart_packsend{text-align: center; color: #000;}
+.cart_total{margin: 0 10px; padding: 12px 10px; border-top: 1px solid #666; margin-top: 23px;}
+.cart_total .row{line-height: 1.7rem; font-size: 1.084rem}
+.cart_total2{margin: 0 10px; padding: 12px 10px; border-top: 1px solid #666; margin-top: 23px;}
+.cart_total2 .row{line-height: 2rem; font-size: 1.084rem}
+.cart_total_sum{ border-top: 1px solid #ccc; margin: 0 10px 22px; padding: 16px 10px; background: #f1f1f1; }
+.cart_total_sum:after{ clear: both; display: block; content: ''}
+.cart_total_txt{font-size: 1.084rem}
+/*20190313 추가 (2-line)*/
+.cart_total_sum .order_amount_wrap .col-xs-6:first-child{margin-top:7px;}
+.book_purchase_guide{margin:0 10px 20px;padding:12px;background:#f1f1f1;border:1px solid #ccc;font-size:12px;} 
+.book_purchase_guide dl{font-size:11px;}
+/* .pop_scrab{height: 240px;} */
+.box_option{padding: 23px 21px 17px; background: #f1f1f1; display: none; border-top: solid 1px #333}
+.box_option:after{display: block; clear: both; content: ''}
+.inpQaun{ width: 46px; height: 27px; vertical-align: bottom; text-align: center}
+.btn_option_change{ border: 1px solid #cdcdcd; color: #666; text-align: center; font-weight: 700; background: #fff url(http://login.benecafe.co.kr/static/mobile/images/common/icoDownarrow.png) no-repeat 52px 3px; background-size:20px;  width: 76px; height: 28px; line-height: 26px; font-size: 12px; display: inline-block; padding-right: 14px }
+.btn_option_changeOn{ border: 1px solid #333; border-bottom: none; color: #666; text-align: center; font-weight: 700; background: #f1f1f1 url(http://login.benecafe.co.kr/static/mobile/images/common/icoUparrow.png) no-repeat 52px 3px; background-size: 20px; width: 76px; height: 34px; line-height: 25px; font-size: 12px; display: inline-block; padding-right: 14px}
+.chec_righ_marg{margin-left: 4px}
+/* /layout 장바구니 */
+
+/* layout 주문서 작성 및 결제 20190708*/
+/*추가*/
+.page_order.list_toggle_wrap{margin-bottom:0;} /*20190808 추가*/ 
+.order_box.box_s1{margin: 10px 10px 0;position:relative;border:1px solid #ccc;background:#fff;}
+.order_box .title{position:relative;padding:12px 27px 12px 10px;font-size:15px;}
+.order_box .text_hide{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}
+.order_box .title:after{content:'';display:block;position:absolute;top:7px;right:6px;width:22px;height:22px;background:url(http://image.benecafe.co.kr/cdnetbs/front/image/gnb/category_upDown_btn.png) no-repeat;background-size:30px auto;background-position:-4px -33px;}
+.order_box .title.on:after{background-position:-4px -5px;} 
+.order_box .title.on .summary{display:none;}
+.order_box .title .summary{font-weight:normal;font-size:13px;}
+.order_box .title.title_type02{padding:12px 52px 12px 10px;}
+.order_box .title.title_type02:after{display:none;}
+.order_box.buyer_wrap .title .summary{margin-top:1px;}
+.order_box .title .summary .buyer_name{display:inline-block;width:75px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}
+.order_box .list_toggle_content{display:none;}
+.order_box .info_box{border-top:1px solid #ccc;}
+.order_box .content_inner{padding-top:10px;border-bottom:1px solid #ccc;}
+.order_box .content_inner:first-child{padding-top:0px;}
+.order_box .content_inner:last-child{border-bottom:none;}
+.order_box .content_inner .fullName,.order_box .content_inner .option{margin-bottom:10px;line-height:1rem;}
+.order_box .content_inner .fullName{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-size:13px;}
+.order_box .content_inner:last-child .option{margin-bottom:0;}
+.order_box .txt_bold{font-size:15px;}
+.order_box .buyer_box{position:relative;padding:0 52px 10px 10px;}
+.order_box .buyer_box_inputWrap{display:block;float:left;width:50%;}
+.order_box .buyer_box_inputWrap:nth-child(2){padding-left:6px;}
+.order_box .buyer_box input{padding:0 7px;width:100%;height:28px;font-size:13px;line-height:1rem;border:1px solid #e4e4e4;}
+.order_box .buyer_box button{position:absolute;top:0;right:10px;width:34px;height:28px;background:#999;font-weight:bold;color:#fff;}
+.order_box .txt_add{margin-top:5px;padding-left:63px;line-height:1.5rem;}
+.order_box .common_btn{display:inline-block;position:absolute;right:10px;top:12px;padding:0 6px;height:24px;background:#999999;color:#ffffff;font-size:12px;line-height:24px;} 
+.order_box.shippingMessage_wrap .select-list label,#direct_input input{height:26px;color:#666666;font-size:13px;font-weight:normal;line-height:26px;}
+.order_box.shippingMessage_wrap .txt_guide{top:-4px;}
+.order_box .direct_input_wrap{position:relative;padding:0 52px 10px 10px;}
+.order_box .direct_input_wrap button{position:absolute;top:0;right:10px;width:34px;height:28px;background:#999;font-weight:bold;color:#fff;}
+.order_box.pointBox_wrap .common_btn{top:6px;}
+.order_box .pointBox_inner{padding-top:8px;border-top:1px solid #ccc;}
+.order_box .pointBox_inner .box_t2_3{padding:6px 0px 0px 16px;}
+.order_box .pointBox_inner .bo_top{border-top:1px solid #ccc;}
+.order_box .pointBox_inner .point_list{display:table;}
+.order_box .pointBox_inner .point_list li{position:relative;display:table;padding:0px 80px 8px 0;width:100%;height:45px;}
+.order_box .pointBox_inner .li_inner{display:table-cell;width:100%;vertical-align:middle;font-size:13px;line-height:normal;}
+.order_box .pointBox_inner .li_innerTable{display:table;width:100%;vertical-align:middle;font-size:13px;line-height:normal;margin-top: 5px;}
+.order_box .pointBox_inner .allCheck{padding:4px;font-size:12px;} /*20190809 수정*/
+.order_box .pointBox_inner .point_input{position:absolute;top:0px;right:0;width:80px;}
+.order_box .pointBox_inner .point_input2{top:0px;right:0;width:130px;margin-left: 20px;}
+.order_box.cashReceiptBox_wrap .box_t2_3 {padding:6px 0px 0px 16px;}
+.order_box .cashReceiptBox_inner .phoneNum_box{position:relative;padding:0 42px 0px 0px;min-height:28px;}
+.order_box .cashReceiptBox_inner .phoneNum_box button{position:absolute;top:0;right:0px;width:34px;height:28px;background:#999;font-weight:bold;color:#fff;}
+.order_box .cashReceiptBox_inner .phoneNum_box input[type="number"]{padding:0 7px;width:100%;height:28px;font-size:13px;line-height:1rem;border:1px solid #e4e4e4;}
+.order_box .cashReceiptBox_inner .dp_table{display:table;}
+.order_box .cashReceiptBox_inner .dp_table b{display:table-cell;height:28px;font-size:13px;vertical-align:middle;}
+.order_box.payment_box input[name="creditCard"] + label{content:'';display:block;width:130px;height:33px;line-height:31px;font-weight:bold;color:#1f48d4;border:1px solid #1f48d4;text-align:center;font-size:13px;background:#ffffff;}
+.order_box.payment_box input[name="creditCard"]:checked + label{background:#1f48d4;color:#ffffff;}
+.order_box.payment_box input[name="creditCard"]{display:none;}
+.order_box.payment_box input[type=checkbox]+ label:before{display:none;}
+.order_box.payment_box input[type=checkbox]:checked + label:before{display:none;}
+.order_box{margin:10px 10px 0;position:relative;line-height:1rem;}
+/*직영스포츠 추가 20200128*/
+.order_box .sports_info_box{position:relative;padding:0 10px 10px 10px; }
+.order_box .sports_info_box_inputWrap{display:block;float:left;width:50%;}
+.order_box .sports_info_box_inputWrap:nth-child(2){padding-left:6px;} 
+.order_box .sports_info_box input{padding:0 7px;width:100%;height:28px;font-size:13px;line-height:1rem;border:1px solid #e4e4e4;}
+.order_box .sports_info_box button{position:absolute;top:0;right:10px;width:34px;height:28px;background:#999;font-weight:bold;color:#fff;}
+.order_box .gen_radio_box{padding: 10px 0 0 0;} 
+/*개인통관고유부호 추가 20191001*/
+.pcc_wrap .list_toggle_content{display:block;}
+.pcc_wrap .input_pcc{height:28px;}
+.pcc_wrap.order_box .title:after{transform:rotate(180deg);-webkit-transform:rotate(180deg);
+    -moz-transform:rotate(180deg);}
+.pcc_wrap .input_pcc_wrap{position:relative;padding:0 52px 10px 10px;}
+.pcc_wrap.order_box .common_btn{height:28px;top:0;line-height:28px;font-weight:bold;}
+
+/* 개편 이전 버전 */
+.order_box_wrap div:first-child{ margin: 0 10px 0}
+.order_box_list{margin-top: 10px}
+.certi_pw{margin: auto 10px}
+.certi_pw:after{ display: block; clear: both; content: ""}
+.certi_pw_con{margin-top: 11px}
+.certi_pw_con div:first-child{border-right: solid 3px #fff}
+.certi_pw_con div:nth-child(2){border-right: solid 3px #fff; border-left: solid 3px #fff}
+.certi_pw_con div:last-child{border-left: solid 3px #fff}
+.certi_pw_input input{width: 100%}
+.payAgree_c{margin-top: 18px}
+.check_align{margin-top: 11px; line-height: 1.8rem}
+.box_white{ margin: 0 10px 0;}
+.box_white:after{display: block; clear: both; content: ""}
+.txt_guide{position: absolute; line-height: 35px; top: 0; right: 7px}
+.txt_guide2{position: absolute; bottom: 10px; right: 7px}
+.radio_lm{margin-left: 16px}
+.input-a{vertical-align: top}
+.coupon_unit{ border-top: solid 1px #e3e3e3; padding-top: 6px; margin-top: 8px}
+.point_unit{ margin-top: 5px}
+.coup_num{ width: 22px; position: absolute; top: 10px; left: 10px}
+.coup_num2{ width: 22px; position: absolute; top: 10px;}
+.coup_con{ margin-left: 25px}
+.point_con{ margin-left: 30px}
+.point_tb th{width: 40%}
+.point_tb2 th{width: 46%}
+.coup_cont{ margin-top: 18px}
+.coup_pop_list{margin-top: 12px; border-bottom: solid 1px #e3e3e3}
+.coup_pop_list li{ padding: 6px 10px; border-top: solid 1px #e3e3e3; min-height: 46px}
+.coup_pop_list .radio {position:absolute; top:50%; right:7%; transform: translateY(-50%); }
+.coup_pop_list .coup_cont {position:absolute; top:50%; right:0; margin:0; transform: translateY(-50%); }
+.pop_deta_opti dl{margin-top: 18px}
+.pop_deta_opti dl dd label{margin-left: 20px}
+.pop_deta_opti dl dd label:first-child{margin-left: 0}
+/* /layout 주문서 작성 및 결제 20190708*/
+
+/*주문서 작성 - 쿠폰 등록 추가 201810.16*/
+/*.order_box .coupon_btn_wrap{margin-top: 10px;} 20190708 삭제*/
+.order_box .coupon_btn_wrap:after{position:relative;display: block;content: "";height: 0;clear: both;}
+.order_box .coupon_btn_wrap a{float: left;}
+.order_box .coupon_btn_wrap .auto_register_coupon_btn{padding: 0 10px;margin-right:5px;height: 28px;line-height: 26px;font-size: 12px;border: 1px solid #999;background: #999;color: #fff;font-weight: 700;text-align: center;}
+
+/* layout 상품 상세 */
+.goods_detail .actionBar{display: none}
+.swiper-slide img{ /*width: 100% !important;*/ max-width: 100%;}
+.hot_deal_coun>*{vertical-align: middle}
+.swiper-pagination{ padding: 3px 0; width: 48px; border-radius: 3px; background: rgba(0,0,0,.5); color: #fff; left: 50%; margin-left: -24px; font-size: 1.084rem; bottom: 18px; font-weight: 400}
+.swiper-pagination-current, .swiper-pagination-total{font-weight: 700}
+.deta_img img{max-width:100%  !important}
+#tabs-1 img{max-width:100% !important; height:auto !important;}
+#tabs-2 img{max-width:100% !important}
+#tabs-3 img{max-width:100% !important}
+.opti_tit{ padding-right: 15px}
+.opti_box{ margin: 10px 21px 0; position: relative}
+.opti_bt{ padding-bottom: 21px}
+.opti_door{width: 78px; height: 24px; position: absolute; top: -24px; left: 50%; margin-left: -39px; background: url(http://login.benecafe.co.kr/static/mobile/images/common/btn_opti_door.png) no-repeat 0 0; background-size: 100%; text-indent: -10000px}
+.dire_buy{ width: 100%; border-top: solid 1px #333; padding-top: 10px; background: #f1f1f1;position: absolute !important; bottom: 0px !important; z-index:500}
+.deli_loha{ position: absolute; right: 0}
+.regi_sele label{ display: inline-block; width: 103px; margin-bottom: 8px;}
+.coun_sele td.active{ border: solid 2px #f14829 !important; background: #fff; z-index: 10 }
+.scro{ max-height: 265px; overflow: auto}
+.ico_new_join{background: url(http://login.benecafe.co.kr/static/mobile/images/common/ico_phon_new.png) left no-repeat; background-size: 12px; padding-left: 17px}
+.ico_num_move{background: url(http://login.benecafe.co.kr/static/mobile/images/common/ico_phon_move.png) left no-repeat; background-size: 12px; padding-left: 17px}
+.ico_bene_chan{background: url(http://login.benecafe.co.kr/static/mobile/images/common/ico_phon_bene.png) left no-repeat; background-size: 12px; padding-left: 17px}
+.goods_detail .tabs .ui-widget-content p{line-height: 1.4rem; margin-top: 0.6rem}
+.goods_detail .tabs .ui-widget-content p img{width:100% !important}
+.goods_detail .tabs .ui-widget-content ul{margin-top: 0.6rem}
+.goods_detail .tabs .ui-widget-content li{ list-style: url(http://login.benecafe.co.kr/static/mobile/images/common/bul_dot.png); background-size: 3px;}
+/*20190313 상품상세 > 적립금 css */
+span.btn_pointPop_violet{display:inline-block;color:#7f45aa;border:1px solid #ccc;background-color:#fff;} /*20190531 추가*/
+span.btn_pointPop_blue{display:inline-block;color:#5593d8;border:1px solid #ccc;background-color:#fff;}
+#prodPrcDiv .accumulate_amount{position:relative;}
+#prodPrcDiv .accumulate_amount:after{display:block;position:absolute;top:2px;left:130px;content:"";width:14px;height:14px;background:url(http://image.benecafe.co.kr/cdnetbs/front/image/questionMark_ico_18px.png) no-repeat;background-size:14px auto;} /*20190509 left값 수정*/
+.pop_amountAccumulate .popS3Wrap{margin-top:0;}
+.pop_amountAccumulate .list_s1{text-align:left;}
+/*20190311 상품상세 - 도서 */
+.goods_detail_books .list_toggle{border-bottom: 1px solid #ccc;}
+.goods_detail_books .list_toggle:first-child{border-top:1px solid #999;}
+.goods_detail_books .list_toggle .title{position:relative;padding:10px 0;font-size:1.067rem;}
+.goods_detail_books .list_toggle .title:after{position:absolute;top:9px;right:0;content:"";display:block;width:22px;height:22px;background: url(http://login.benecafe.co.kr/static/mobile/images/common/icoDownarrow.png) no-repeat center;background-size:32px;}
+.goods_detail_books .list_toggle .title.on:after{background: url(http://login.benecafe.co.kr/static/mobile/images/common/icoUparrow.png) no-repeat center;background-size: 32px;}
+.goods_detail_books .list_toggle .list_toggle_content{padding:10px 0;}
+@media screen and (min-width:359px){.list_toggle_wrap{margin-bottom:37px;}}
+
+/* 180424 css edit : start */
+/* 쿠폰다운로드 UI 추가 */
+.order_box_list strong{color:#fb1400}
+.dire_buy .dire_buy_btn .col-xs-6 a{height:52px;}
+.dire_buy .dire_buy_btn .col-xs-6{padding-left:1%}
+.dire_buy .dire_buy_btn div.col-xs-6:first-child{padding-right:1%}
+.dire_buy .dire_buy_btn .special-offer{border:1px solid #2da833;background:#2da833;line-height:18px;}
+.dire_buy .dire_buy_btn .special-offer em{display:block;color:#fbee88;font-weight:bold}
+/* 180424 css edit : end */
+
+/* .goods_detail .icon_area {position:absolute;top:10px;left:-1px;z-index:21;} 170609 수정 전 */
+.goods_detail .icon_area {} /* 170609 수정 */
+.goods_detail .icon_area:after{display:block;content:"";clear:both}
+.goods_detail .icon_area div{float:left;margin-right:3px}
+/* /layout 상품 상세 */
+
+/* layout 2depth category */
+.dept_tit{height: 42px; line-height: 40px; padding-left: 10px; font-size: 1.084rem; background: #fff}
+.cate_chec div{ width: 120px; margin-bottom: 10px }
+.sele_con_div div{margin-left: 15px}
+.sele_con_div div:first-child{margin-left: 0}
+.sele_con{line-height: 14px; float: left; color: #666}
+.bene_con{ border-top: solid 1px #e3e3e3; margin-top: 17px; padding-top: 12px}
+.sort_cond{ width: 95px; float: right; display: block}
+/* 추가 20200409 */
+.cate_srch .cate_chec .check{width: 48%;margin-bottom: 10px;display: inline-table;white-space: nowrap;table-layout: fixed;}
+.cate_srch .cate_chec .check a{display: table-cell;word-break: break-word;overflow: hidden;height: 20px;text-overflow: ellipsis;-webkit-line-clamp: 1;width:89%;}
+/* /layout 2depth category */
+
+/* layout 종합건강검진 */
+.main_tab{z-index: 11}
+.chec_info{ background: #f1f1f1}
+.chec_info_tit{ font-size: 1.084rem; background: #fff; border-top: solid 1px #ccc; border-bottom: solid 1px #ccc; height: 35px; line-height: 33px}
+.chec_info_tit span{margin-right: 10px}
+.chec_list_btn li{ width: 33.333%; float: left; margin-top: 4px}
+.chec_list_btn li:nth-child(1),.chec_list_btn li:nth-child(2),.chec_list_btn li:nth-child(3){margin-top: 0}
+.chec_list_btn li:nth-child(3n+1){ border-right: solid 4px #f1f1f1;}
+.chec_list_btn li:nth-child(3n+2){ border-right: 2px solid #f1f1f1; border-left: 2px solid #f1f1f1}
+.chec_list_btn li:nth-child(3n+3){border-left: 4px solid #f1f1f1}
+.chec_list_btn li a{ width: 100%; height: 35px; text-align: center; line-height: 33px; background: #f8f8fa; border: solid 1px #ccc; color: #666; font-size: 1.084rem;}
+.chec_reco_ban li{margin-top: 10px}
+.chec_reco_ban img{ width: 100%}
+.rece_chec_cond tbody td:nth-child(2){ width: 40%}
+.chec_org_find_list li{margin-top: 10px}
+.chec_org_find_list li:first-child{margin-top: 0}
+.chec_good_find_list{ border-top: solid 1px #e3e3e3; margin-top: 10px; padding-top: 10px }
+.regi_sele_pop_chec div{margin-bottom: 10px}
+.repl_tabl tbody tr th{width: 40%}
+.chec_add_chec{width: 47%; margin-bottom: 10px}
+.chec_rese_info_tabl th{width: 40%}
+.pric_mm{width: 84px}
+.all_dele{ position: absolute; top: 3px; right: 3px}
+.con_area span:first-child{margin-left: 0}
+.mypg_dl_dt dd{margin-left: 56px}
+.sele_regi_blan_msg{margin-bottom: 10px}
+.calendar-default .inner .ui-datepicker-calendar tbody td.ui-state-disabled span{display: block; height: 100%; padding:5px 3px;background:#fff4f4; height:49px;}
+.con_area>div{ border-top: solid 1px #fff; padding-top: 10px}
+.con_area>div:after{display: block; clear: both; content: ''}
+.con_area>div:first-child{ border-top: none; padding-top: 0}
+/* /layout 종합건강검진 */
+
+/* 병헌 : layout 나의 복지 */
+/* .mypg_main_slider .mypg_main_slider_img{text-align: center; display: inline-block; width: 100%} */
+.mypg_main_slider_img img{width: 133px; display: inline-block}
+.sliderTit_mypg_main{ line-height: 140%; bottom: 14px; text-align: left; margin:10px auto; display: inline-block}
+.sliderTit_mypg_main li{color: #666}
+.mypg_main_slider1 .slick-prev{ margin-top: -30px; left: 30px}
+.mypg_main_slider1 .slick-next{ margin-top: -30px; right: 30px}
+.mypg_main_slider4 .slick-prev{ margin-top: -20px; left: -6px}
+.mypg_main_slider4 .slick-next{ margin-top: -20px; right: -6px}
+.mypg_main_slider1 .mainVisualImg, .mypg_main_slider4 .mainVisualImg{width: 100%}
+.mypg_tabl_th th{width: 46%}
+.mypg_main_slider4 .mainVisualImg a{ display: inline-block}
+.mypg_rece_img{width: 135px; margin: auto; text-align: left}
+.mypg_rece_img img{border: solid 1px #e3e3e3; width: 133px}
+.mypg_deta_th th{width: 40%}
+.mypg_pop_deta_list li{margin-top: 10px}
+.mypg_pop_deta_list li:first-child{margin-top: 0}
+.mypg_pop_deta_list2 li{margin-top: 10px}
+.mypg_pop_deta_list2 li:first-child{margin-top: 0}
+.mypg_defa_info_tab dl{margin-top: 23px}
+.mypg_orde_deli{background: url(http://login.benecafe.co.kr/static/mobile/images/mypage/line_orde_deli.png)top no-repeat; background-size: 240px; padding-top: 10px; width: 280px; margin:18px auto 12px}
+.mypg_deli_stat_inqu{border-top: solid 1px #e3e3e3; padding-top: 10px}
+.mypg_main_sub_desc{display: table; margin: auto}
+.mypg_main_sub_desc_left{display: table}
+.mypg_1vs1_list p{color: #666}
+.even_slid .blue h3{font-size: 1.084rem; text-align: left; margin: 0; padding: 0; line-height: normal}
+.even_slid .mainVisualImg{ text-align: left}
+/* .even_slid .slick-prev, .slick-next{margin-top: -60px} */
+/* 200228 벼룩시장 게시물 목록창 변경 css 추가 및 수정 : start */
+.even_midd {
+    background: #f1f1f1;
+	padding:0;
+}
+.even_midd li{
+	display:inline-block;
+	width:100%;
+	background:white;
+	padding: 10px 20px 10px;
+	height:auto;
+}
+.even_midd .prd_info .prd_thumb{
+	float: left;
+    width: 84px;
+    height: 94px;
+}
+.even_midd .prd_info .row{
+	float: left;
+	padding: 0 0 0 20px;;
+   	width: calc(100% - 84px);
+    box-sizing: border-box;
+}
+.even_midd .prd_info .row .label_area{
+	width:100%;
+	margin-bottom:1%;
+	z-index:1;
+}
+.even_midd .prd_info .row h3 strong{font-size:15px;color:#333;}
+.even_midd .info_detail{
+    left: 116px;
+	bottom: 10px;
+	position: absolute;
+    font-weight: bold;
+    padding: 13px 10px 0px 10px;
+    background:transparent;
+}
+.even_midd .prd_link{
+    display: block;
+}
+.even_midd .prd_thumb img{
+    width:100%;
+    height:100%;
+}
+.even_midd .info_detail .mainGoodsDesc    {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    word-wrap: break-word;
+    line-height: 16px;
+    height: 16px;
+    width: 100%;
+}
+.even_midd .prd_info .row h3{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    word-wrap: break-word;
+    line-height: 16px;
+    height: 32px;
+    width: 100%;
+}
+/* 200228 벼룩시장 게시물 목록창 변경 css 추가 및 수정 : end */
+.line2{padding: 10px; border-top: solid 1px #e3e3e3; border-bottom: solid 1px #e3e3e3}
+.save_tb tbody th{width: 40%}
+.save_tb2 tbody th{width: 34%}
+.img_defa img{width: 100%}
+.faq_unit{line-height: 140%; font-weight: 700}
+.faq_unit dt, .faq_unit dd{display: block; clear: both; content: '';}
+.faq_unit dd{margin-top: 6px}
+.faq_q{ float: left; width: 20px; color: #f14829; font-size: 1.084rem}
+.faq_qcon{ margin-left: 20px; font-size: 1.084rem}
+.faq_a{ float: left; width: 20px; color: #3a8d3b; font-size: 1.084rem}
+.faq_acon{ padding-left: 20px; font-weight: 400}
+
+.addr_road_tit{ float: left; width: 50px; font-size: 1.084rem}
+.addr_road_con{ font-weight: 400; font-size: 1.084rem; line-height: 120%}
+.cost_appl_mana_slid .slick-prev, .cost_appl_mana_slid .slick-next{margin-top: -30px}
+.arro_cost_bott{width: 13px; height: 7px; background: url(http://login.benecafe.co.kr/static/mobile/images/mypage/bg_cost_guid_arro.png) no-repeat; background-size: 100%; position: absolute; bottom: -7px; left: 50%; margin-left: -6.5px}
+.list_chec>div{ margin-right: 20px; margin-bottom: 10px}
+.mypg_deli_stat_inqu_unit{margin-top: 15px}
+.mypg_deli_stat_inqu_unit:first-child{margin-top: 8px}
+.part_good_img{ background: #fff}
+
+#features .mainVisualImg img{width:100% !important;height:auto !important}
+#features .slick-next:before{background:url(http://image.benecafe.co.kr/cdnetbs/front/image/gnb/banner_nextArrow_btn.png) no-repeat center right;background-size:8px;} /*20190509 추가*/
+#features .slick-prev:before{background:url(http://image.benecafe.co.kr/cdnetbs/front/image/gnb/banner_prevArrow_btn.png) no-repeat center left;background-size:8px;} /*20190509 추가*/
+
+/* /병헌 : layout 나의 복지 */
+/* 병헌 : layout 여행상담 */
+.main_bann2{padding: 10px 20px 10px 58px; border: solid 1px #ccc; background-color: #fff; background-repeat: no-repeat; background-position: 17px 50%; background-size: 32.333px}
+.main_bann2_2{padding: 20px 20px 20px 58px; border: solid 1px #ccc; background-color: #fff; background-repeat: no-repeat; background-position: 17px 50%; background-size: 32.333px}
+.main_bann3{ padding: 15px 20px 15px 58px; border: solid 1px #ccc; background-color: #fff; background-repeat: no-repeat; background-position: 17px 50%; background-size: 32.333px}
+/*.main_bann2_styl1{ background-image: url(http://login.benecafe.co.kr/static/mobile/images/common/ico_dedi_mall.png)}
+.main_bann2_styl2{ background-image: url(http://login.benecafe.co.kr/static/mobile/images/common/ico_jeju_rent_car.png)}
+.main_bann2_styl3{ background-image: url(http://login.benecafe.co.kr/static/mobile/images/common/ico_air_rese.png)}
+.main_bann2_styl4{ background-image: url(http://login.benecafe.co.kr/static/mobile/images/common/ico_hote_rese.png)}
+.main_bann2_styl5{ background-image: url(http://login.benecafe.co.kr/static/mobile/images/common/ico_cs_rese.png)}
+.main_bann2_styl6{ background-image: url(http://login.benecafe.co.kr/static/mobile/images/common/ico_heal.png)}
+.main_bann2_styl7{ background-image: url(http://login.benecafe.co.kr/static/mobile/images/common/ico_tick.png)}*/
+.trip_tit_img{text-align: center}
+.trip_tit_img img{ width:  240px}
+.trip_part li{ margin-top: 10px}
+.trip_part li:first-child{ margin-top: 0}
+.trip_part_tell{font-size: 1.167rem; font-weight: 700;}
+/*.trip_part_tell img{ width: 50px; margin-right: 10px}*/
+.trip_part_tell2{ padding-left: 20px; line-height: 27px}
+.trip_part_list{/*padding-top:13px;*/border-top:2px solid #333;/*padding-left:10px;padding-right:10px;padding-bottom:23px*/}
+/*.trip_part_list>div{margin-top: 6px;}
+.trip_part_list>div>div{height: 31px} */
+
+/* 170627 아이콘 및 내용 수정 */
+.main_bann2_styl1{ background-image: url(/static/mobile/images/ico_tripCS01.jpg)}
+.main_bann2_styl2{ background-image: url(/static/mobile/images/ico_tripCS02.jpg)}
+.main_bann2_styl3{ background-image: url(/static/mobile/images/ico_tripCS03.jpg)}
+.main_bann2_styl4{ background-image: url(/static/mobile/images/ico_tripCS04.jpg)}
+.main_bann2_styl5{ background-image: url(/static/mobile/images/ico_tripCS05.jpg)}
+.main_bann2_styl6{ background-image: url(/static/mobile/images/ico_tripCS06.jpg)}
+.main_bann2_styl7{ background-image: url(/static/mobile/images/ico_tripCS07.jpg)}
+.main_bann2_styl8{ background-image: url(/static/mobile/images/ico_tripCS08.jpg)}
+.trip_part_list{border-top:2px solid #333}
+.trip_part_list h3{text-align:center;font-size:20px;line-height:60px;font-weight:700;height:60px}
+.trip_part_list .tripList{background:#f1f1f1;padding:5px 10px 30px}
+.trip_part_list .tripList h4{margin:0 0 5px 0;font-size:18px;line-height:22px;color:#676767}
+.trip_part_list .tripList .box_t5{margin-top:6px;background:#fff}
+.trip_part_list .tripList .box_t5 div{height:31px}
+.trip_part_tell img{ width: auto;height:28px; padding:5px 0 0 0}
+.trip_part_list .tripList .trips{margin:15px 0 0 0}
+/* /병헌 : layout 여행상담 */
+
+/* 병헌 : layout 로그인 */
+.logi_copy{ width: 100%; margin-top: 39px; text-align: center; font-size: 1.334rem; font-weight: 700; color: #666}
+.logi_wrap{width: 100%; margin:33px auto 0; padding: 0 20px}
+.logi_wrap input[type=text],.logi_wrap input[type=password]{height: 49px}
+.logi_bott{ position: fixed; bottom: 15px; width: 100%; padding: 0 5px}
+.logi_bg{background: url(http://login.benecafe.co.kr/static/mobile/images/login/bg.jpg) top no-repeat; background-size: 100%;height:100%; }
+.logi_bg_echo{background: url(http://login.benecafe.co.kr/static/mobile/images/login/bg_echo.jpg) top no-repeat; background-size: 100%;height:100%; }
+.logi_bg .container{min-height:100%;position:relative;padding-bottom:74px;}
+.logi_cust input[type=text],.logi_cust input[type=password]{height: 49px}
+.logi_bott_cust{ width: 100%; padding: 0 5px 15px; margin-top: 23px}
+/* /병헌 : layout 로그인 */
+
+/*login 전시 구좌 추가 20190621*/
+.login_customize_bg{display:none;}
+.login_customize .logi_copy{display:none;}
+.login_customize .logi_wrap{margin:10px auto 0;}
+.login_customize .login_customize_bg{display:block;width:100%;}
+
+/* 병헌 : layout 고객센터 */
+.list_styl1 li.file_ok.noti_impo, .list_styl1 li.noti_impo{ background-color: #f8f8fa}
+.noti_impo h3{ color: #f14829}
+.file_ico{position: absolute; top: 50%; transform: translateY(-50%)}
+.file_ico img{ width: 22px }
+.file_con{margin-left: 32px}
+.no_file{margin-left: 0}
+/* /병헌 : layout 고객센터 */
+
+/* 병헌 : 축제정보 */
+.fest_slid_hand .slick-prev, .fest_slid_hand .slick-next{margin-top: -57px}
+/* /병헌 : 축제정보 */
+
+/* 병헌 : 벼룩시장 */
+.ico_img img{ width: 22px}
+.mark_slid_hand .slick-prev, .mark_slid_hand .slick-next{margin-top: -3px}
+.mark_slid_hand .slick-prev{left: 0}
+.mark_slid_hand .slick-next{ right: 0}
+.mark_slid_hand .mainVisualImg{ margin-left: 30px; margin-right: 30px}
+.mark_good_divi_list>div{ width: 90px}
+.mark_deta_th th{ width: 30%}
+
+.market-help .desc {color:#333;}
+.market-help #tab_1 {margin-top:12px;font-size:1rem;line-height:1.4rem;padding:0 13px;color:#666;}
+.market-help #tab_2 {margin-top:12px;font-size:1rem;line-height:1.4rem;padding:0 13px;color:#666;}
+.market-help #tab_3 {margin-top:12px;font-size:1rem;line-height:1.4rem;padding:0 13px;color:#666;}
+.market-help #tab_3 .caution-list {margin-left:15px;}
+.market-help #tab_3 .caution-list li {list-style-type:disc;margin-bottom:7px;font-size:1rem;line-height:1.4rem;color:#666;}
+.market-help #tab_3 .caution-list li span {position:relative;left:-3px;}
+/* /병헌 : 벼룩시장 */
+
+/* 병헌 : 복지쇼핑몰 */
+.welf_tit{text-align: center; font-size: 20px; font-weight: 700; height: 42px; line-height: 42px; z-index: 10; background: #f1f1f1}
+/* /병헌 : 복지쇼핑몰 */
+
+/* 병헌 : layout : 부모창 팝업 스타일 */
+.pop_list_reco{ }
+/* /병헌 : layout : 부모창 팝업 스타일 */
+
+/* 병헌 : 기타 */
+/* 병헌 : 기타 : 개인정보공유 안내 2018.10.22 수정 */
+.information_wrap{margin:0 0 40px;text-align:center;line-height: 1.5;}
+.information_wrap p{font-size: 13px;}
+.information_wrap .title {color:#333;text-align:center;}
+.information_wrap .title h3 {margin:10px 0;font-size:18px;}
+.information_wrap .stxt {font-family:"돋움",dotum;font-size:12px;color:#666;letter-spacing:0;}
+.information_wrap .pointColor_red{color:#f14829;}
+.information_wrap .pointColor_black{color:#333;}
+.information_wrap .small_txt{font-size: 11px;}
+.information {position:relative;width:100%;padding:15px;background:#fefefe;border:1px solid #e3e3e3;box-sizing:border-box;font-size:14px;color:#666;font-weight: bold;}
+.information .tbS2 th{color: #333;font-weight: bold;letter-spacing:-1px;font-size: 13px}
+.information .tbS2 td{text-align: left;letter-spacing:-1px;font-size: 13px;}
+.information .btnbox {margin:20px 0;}
+/* /병헌 : 기타 : 개인정보공유 안내 2018.10.22 수정*/
+
+/* 병헌 : 에러 페이지 */
+.erro_con{ position: absolute; left: 50%; top: 25%; transform: translate(-50%, -50%); background: url(http://login.benecafe.co.kr/static/mobile/images/common/ico_erro.png) top no-repeat; background-size: 73px; padding-top: 60px; width: 280px}
+/* /병헌 : 에러 페이지 */
+
+.etc_gray_wrap{ min-height: 400px}
+/* /병헌 : 기타 */
+
+/* common */
+html,body{font-size: 12px; font-family: 'NotoKrR', 'Noto Sans KR', 'Nanum Gothic';margin: 0;padding: 0;}
+input[type=text],input[type=password]{ height: 35px; line-height: 33px; padding:0 7px; display: inline-block; font-size: 1.084rem}
+input[type=text].h28,
+input[type=password].h28 {height:28px; line-height:26px;} /* sunjoo */
+input[type=text]:disabled{background: #f3f8fb; color: #999999}
+select{ height: 35px; line-height: 33px; padding:0 7px; display: inline-block; font-size: 1.084rem; background: #fff}
+select:disabled{background: #f3f8fb}
+a{display: inline-block; cursor: pointer}
+
+.disabled{background: #f3f8fb; color: #999999}
+
+.dN{display: none}
+.dB{display: block}
+.diB{display: inline-block}
+
+.pointer{cursor: pointer;}
+.check{position: relative; display: inline-block}
+.check label{font-size: 1.084rem; margin-bottom: 0; font-weight: 700; /* padding-left: 2px */}
+.check_2{position: relative;}
+.check_2 label{font-size: 1.084rem; margin-bottom: 0; line-height: 1.4rem; font-weight: 700}
+.check_2 input[type=checkbox]+ label:before {
+    content: "";
+    display: inline-block;
+    width: 22px;
+    height: 22px;
+    position: absolute;
+    top: -3px;
+    left: 0;
+    background: url(http://login.benecafe.co.kr/static/mobile/images/common/checkboxOff.png);
+    background-size: 22px;
+}
+.check_2 input.row2[type=checkbox]+ label:before{top: 6px}
+.check2{position: relative; display: inline-block}
+.check2 label{ margin-bottom: 0; font-weight: 700;}
+.check2 label p{ font-weight: 400; line-height: 120%; font-size: 1.084rem}
+input[type=checkbox]:checked + label:before {
+    content: "";
+    background: url(http://login.benecafe.co.kr/static/mobile/images/common/checkboxOn.png);
+    background-size: 22px;
+}
+input[type=checkbox]:disabled + label:before {
+    content: "";
+    background: url(http://login.benecafe.co.kr/static/mobile/images/common/checkbox_dis.png);
+    background-size: 22px;
+}
+input[type=checkbox]+ label:before {
+    content: "";
+    display: inline-block;
+    width: 22px;
+    height: 22px;
+    position: absolute;
+    left: 0;
+    background: url(http://login.benecafe.co.kr/static/mobile/images/common/checkboxOff.png);
+    background-size: 22px;
+    top: 0
+}
+input[type=checkbox]+ label.cust:before { top: 0}
+input[type=file]{border: solid 1px #cdcdcd; background: #f1f1f1}
+
+a.unde_bar_link{ border-bottom: 1px solid; padding-bottom: 0; font-weight: 700; color: #666}
+a.link_blue{color: #1e65a8; border-bottom: 1px solid; padding-bottom: -1px}
+.link_oran{color: #f14829; border-bottom: 1px solid #f14829; padding-bottom: -1px}
+
+.check2row{ display: inline-block; float: left; margin-left: 28px; width: 82%}
+.check2row2{ display: inline-block; float: left; padding-left: 28px; width: 82%}
+.check_fr{position: absolute; right: 0}
+
+/* .disabled{background: #f3f8fb !important } */
+/* .disabled_select{background: #f3f8fb url(http://login.benecafe.co.kr/static/mobile/images/common/icoDownarrow.png) no-repeat 0 3px !important; background-size: 20px !important } */
+.disabled_select{background: #f3f8fb; background-size: 20px !important; color: #999 }
+
+.select-title { height: 35px; line-height: 33px; padding:0 7px; color: #333; text-align: left; vertical-align: middle; border: 1px solid #e3e3e3; background: #fff url('../images/common/icoDownarrow.png') no-repeat 100% 50%; background-size: 20px; display: inline-block; -box-sizing: border-box;}
+.select-title.disabled{background-color: #f3f8fb; color: #999}
+.select-title strong{font-weight: 700}
+.select-option-none {display:none;}
+.ori_select option{display: none}
+select.ori_select option{display: none}
+.sele_font_size{font-size: 1.084rem}
+
+.select-option02 {position:fixed;top:0;left:0;width:100%;height:100%;background:#fff;box-sizing:border-box;z-index:100}
+.select-option02.active {z-index:110;}
+.select-option02.back:after {content:"";display:block;position:absolute;top:0;left:0;right:0;bottom:0;background:#000;opacity:.5;z-index:99;filter: alpha(opacity=50); }
+.select-option02 h3 {position:absolute;top:0;left:0;right:0;height:45px;padding:0 0 0 10px;background:#333;color:#fff;font-size:16px;font-weight:bold;line-height:43px;letter-spacing:-1px;}
+.select-option02 .btnbox {padding-top:30px;}
+.select-option02 .btn-close {display:block;position:absolute;top:11px;right:10px;width:20px;height:20px;background:url('../images/common/btnClose.png') no-repeat; background-size: 22px; font-size:0;}
+.select-option02 .list {position:absolute;top:49px;left:0;bottom:0;right:0;overflow:auto;overflow-x:hidden;}
+.select-option02 .list ul li {position:relative; border-top:1px solid #e3e3e3; padding: 14px 11px; font-size:1.084rem;}
+.select-option02 .list ul li:first-child {border-top:none;}
+.select-option02 .list ul li span {display:block; line-height:120%;text-overflow:ellipsis;white-space:nowrap;word-wrap:normal;overflow:hidden;cursor:pointer;}
+.select-option02 .list ul li span:hover {background:#fff9f8;}
+
+/* sunjoo : 180426 추가 */
+.select-list, .select-list-whkim {position:relative; border:1px solid #e3e3e3; box-sizing:border-box; padding:0 21px 0 7px; background:#fff url('../images/common/icoDownarrow.png') no-repeat 100% 50%; background-size:20px;}
+.select-list label, .select-list-whkim label {color:#333; height:26px; line-height:26px; display:block; font-weight:bold; white-space:nowrap; overflow:hidden; text-overflow:ellipsis;}
+.select-list select, .select-list-whkim select {position:absolute; left:0; top:0; width:100%; height:100%; opacity:0;}
+.select-list.h35 label, .select-list-whkim.h35 label {height:33px; line-height:33px;}
+/* // sunjoo : 180426 추가 */
+
+.radio {display:inline-block; /* vertical-align:-4px; */ vertical-align:-7px; /* margin-right:5px; */ width:22px; height:22px; background:url("../images/common/ico_radio_off.png") no-repeat; background-size: 22px }
+.radio.focus {background:url("../images/common/ico_radio_off.png") no-repeat; background-size: 22px }
+.radio.checked { background:url("../images/common/ico_radio_on.png") no-repeat; background-size: 22px }
+.radio.disabled {background:url("../images/common/ico_radio_off.png") no-repeat; background-size: 22px; opacity: 0.3!important; filter:alpha(opacity=30); }
+.radio.checked.disabled {background:url("../images/common/ico_radio_on.png") no-repeat; background-size: 22px; opacity: 0.3!important; filter:alpha(opacity=30); }
+.radio_txt{vertical-align: top; height: 22px; line-height: 22px}
+
+.radi_list label{ margin-right: 15px; margin-bottom: 10px; display: inline-block}
+.radi_list_bloc label{  margin-bottom: 10px; display: block}
+
+/* .ui-datepicker-trigger{ width: 38px; height: 35px; background: #999; margin-left: 6px}
+.ui-datepicker-trigger img{ width: 22px} */
+
+.layer-popup {display:none;position:fixed;top:50%;left:50%;width:400px;height:400px;margin-top:-200px;margin-left:-200px;background:#fff;border:1px solid #333;box-sizing:border-box;z-index:100;}
+.layer-popup.active {z-index:110;}
+
+/* 레이어팝업 (캘린더 선택팝업(기본)) */
+.calendar-default .inner .ui-datepicker-calendar {}
+.calendar-default .inner .ui-datepicker-calendar thead th {width:70px; height:26px; border:1px solid #ccc; text-align: center; background: #fff}
+.calendar-default .inner .ui-datepicker-calendar thead th:first-child{color: #f14829}
+.calendar-default .inner .ui-datepicker-calendar tbody td {position:relative;width:70px;height:50px;border:1px solid #ccc;z-index:1; background: #fff}
+.calendar-default .inner .ui-datepicker-calendar tbody td a {position:absolute;top:0;right:0;bottom:0;left:0; height:49px;padding:5px 3px; color: #666}
+.calendar-default .inner .ui-datepicker-calendar tbody td a.ui-state-default {background:#f3f8fb; font-weight: 700}
+.calendar-default .inner .ui-datepicker-calendar tbody td a.ui-state-default em{display:block;height:auto !important;font-size:0.95rem;line-height:1.1rem;background:none !important}
+.calendar-default .inner .ui-datepicker-calendar tbody td a.ui-state-default.ui-state-active {background:#fff; border:1px solid #333; z-index:10;}
+.calendar-default .inner .ui-datepicker-calendar tbody td.ui-state-disabled a.ui-state-default{background:#fff4f4}
+.pop_chec_hope_day .calendar-default .inner .ui-datepicker-calendar tbody td a.ui-state-default.ui-state-active:after { content: '검진 희망일'; display:block;position:absolute;bottom:2px;left:4px;font-size:1rem;line-height:110% }
+
+.calendar-default .inner .ui-datepicker-calendar tbody td.date-saturday a {color:#1e65a8;}
+.calendar-default .inner .ui-datepicker-calendar tbody td.date-sunday a {color:#f14829;}
+.calendar-default .inner .ui-datepicker-calendar tbody td.date-holiday a {background:#fff9f8;}
+.calendar-default .inner .ui-datepicker-header {
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 120px;
+    margin: 0 auto;
+    padding-top: 16px;
+    text-align: center;
+    font-size: 34px;
+    font-weight: bold;
+    letter-spacing: -1px
+}
+.calendar-default .inner .ui-datepicker-header .ui-datepicker-prev {
+    display: block;
+    position: absolute;
+    left: 0;
+    width: 22px;
+    height: 22px;
+    margin-top: -5px;
+    background: url(http://login.benecafe.co.kr/static/mobile/images/common/btn_arrow_left.png) no-repeat center;
+    background-size: 22px;
+    font-size: 0;
+}
+.calendar-default .inner .ui-datepicker-header .ui-datepicker-next {
+    display: block;
+    position: absolute;
+    right: 0;
+    width: 22px;
+    height: 22px;
+    margin-top: -5px;
+    background: url(http://login.benecafe.co.kr/static/mobile/images/common/btn_arrow_right.png) no-repeat center;
+    background-size: 22px;
+    font-size: 0;
+}
+.ui-datepicker-title{font-size: 16px; font-weight: 700; line-height: 80%;}
+.cal_tit_bd{width: 100%; border-bottom: solid 1px #e3e3e3; padding-bottom: 16px; margin-bottom: 16px; background: #fbfbfb}
+.cal_tb_wrap{padding: 0 11px}
+.pop_star_day_coup .rese_styl{display: none}
+.pop_end_day_coup .rese_styl{display: none}
+.calendar_pop .rese_styl{display: none}
+
+/* S : 20191030추가*/
+.leisure_calendar .calendar-default .inner .ui-datepicker-header{position:relative;top:0;left:0;right:0;width:120px;margin:0 auto;text-align:center;font-size:34px;font-weight:bold;letter-spacing:-1px} /*20191016 수정*/
+.leisure_calendar .calendar-default .inner .ui-datepicker-header .ui-datepicker-prev{display:block;position:absolute;left:0;width:22px;height:22px;background:url(http://login.benecafe.co.kr/static/mobile/images/common/btn_arrow_left.png) no-repeat center;background-size:22px;font-size:0;} /*20191016 수정*/
+.leisure_calendar .calendar-default .inner .ui-datepicker-header .ui-datepicker-next{display:block;position:absolute;right:0;width:22px;height:22px;background:url(http://login.benecafe.co.kr/static/mobile/images/common/btn_arrow_right.png) no-repeat center;background-size:22px;font-size:0;} /*20191016 수정*/
+.leisure_calendar .cal_tit_bd{width:100%;border-bottom:solid 1px #e3e3e3;padding-bottom:16px;margin:16px 0;} /*20191016 수정*/
+.leisure_calendar .infotxta{margin-bottom:10px;padding-left:16px;background-position:0 3px;} 
+.leisure_calendar .tbS6 tr:active{background:#ffffff;}
+.leisure_calendar .date_picker th{width:25%;} 
+.leisure_calendar .date_picker td{width:75%;border-left:0;}
+.leisure_calendar .date_picker .input-a{width:45%;}
+.leisure_calendar .date_picker .select-list{width:52%;height:35px;}
+.leisure_calendar .date_picker .select-list label{line-height:33px;font-weight:normal;}
+.leisure_calendar .stepBox_03{border-bottom:solid 2px #ccc;}
+.leisure_calendar .roomInformation li{padding-left:10px;height:42px;border-bottom:1px solid #e4e4e4;}
+.leisure_calendar .roomInformation label{height:100%;line-height:42px;font-size:14px;font-weight:bold;}
+.leisure_calendar .roomInformation .radio{vertical-align:-5px;}
+/* E : 20191030추가*/
+
+.pop_star_day_coup .rese_styl{display: none}
+
+textarea{ padding: 10px; border: solid 1px #e3e3e3; line-height: 1.5rem}
+textarea.bord_none{border: none}
+textarea:disabled{ background: #f3f8fb; color: #999999}
+.textarea_byte{ border: solid 1px #e3e3e3; padding-bottom: 26px; background: #fff}
+.textarea_byte textarea{ border: none}
+.resize_none{resize: none}
+
+/* 레이어팝업 (캘린더 선택팝업(생일)) */
+.calendar_pop.calendar-select .ui-datepicker-header a {margin-top:5px !important; }
+
+/* 레이어팝업 (주소찾기) */
+#find-address .popS1Header {position:relative;}
+
+/* common grid */
+.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12, .col-xs-1_5, .col-xs-10_5, .col-xs-2_5, .col-xs-9_5, .col-xs-2-5, .col-xs-4-5, .col-xs-20 {
+  position: relative;
+  min-height: 1px;
+    /*
+  padding-right: 15px;
+  padding-left: 15px;
+    */
+}
+/* sunjoo : 180426 추가 및 수정 */
+.col-xs-1, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9, .col-xs-10, .col-xs-11, .col-xs-12, .col-xs-1_5, .col-xs-10_5, .col-xs-2_5, .col-xs-9_5, .col-xs-2-5, .col-xs-4-5, .col-xs-20, .col-xs-13, .col-xs-14, .col-xs-15, .col-xs-16, .col-xs-17 {
+  float: left;
+}
+.col-xs-17 {
+  width:37%;
+}
+.col-xs-16 {
+  width:63%;
+}
+.col-xs-15 {
+  width:5%;
+}
+.col-xs-14 {
+  width:32%;
+}
+.col-xs-13 {
+  width:31%;
+}
+/* // sunjoo : 180426 추가 및 수정 */
+.col-xs-103 {
+  width: 103px;
+}
+.col-xs-12 {
+  width: 100%;
+}
+.col-xs-11 {
+  width: 91.66666667%;
+}
+.col-xs-10_5 {
+  width: 89%;
+}
+.col-xs-10 {
+  width: 83.33333333%;
+}
+.col-xs-9 {
+  width: 75%;
+}
+.col-xs-8 {
+  width: 66.66666667%;
+}
+.col-xs-7 {
+  width: 58.33333333%;
+}
+.col-xs-6 {
+  width: 50%;
+}
+.col-xs-5 {
+  width: 41.66666667%;
+}
+.col-xs-4-5 {
+  width: 36.47058824%;
+}
+.col-xs-4 {
+  width: 33.33333333%;
+}
+.col-xs-3 {
+  width: 25%;
+}
+.col-xs-2_5 {
+  width: 68px;
+}
+.col-xs-2-5 {
+  width: 27.05882352%;
+}
+.col-xs-20 {
+  width: 20%;
+}
+.col-xs-2 {
+  width: 16.66666667%;
+}
+.col-xs-1_5 {
+  width: 30px;
+}
+.col-xs-1 {
+  width: 8.33333333%;
+}
+.col-xs-pull-12 {
+  right: 100%;
+}
+.col-xs-pull-11 {
+  right: 91.66666667%;
+}
+.col-xs-pull-10 {
+  right: 83.33333333%;
+}
+.col-xs-pull-9 {
+  right: 75%;
+}
+.col-xs-pull-8 {
+  right: 66.66666667%;
+}
+.col-xs-pull-7 {
+  right: 58.33333333%;
+}
+.col-xs-pull-6 {
+  right: 50%;
+}
+.col-xs-pull-5 {
+  right: 41.66666667%;
+}
+.col-xs-pull-4 {
+  right: 33.33333333%;
+}
+.col-xs-pull-3 {
+  right: 25%;
+}
+.col-xs-pull-2 {
+  right: 16.66666667%;
+}
+.col-xs-pull-1 {
+  right: 8.33333333%;
+}
+.col-xs-pull-0 {
+  right: auto;
+}
+.col-xs-push-12 {
+  left: 100%;
+}
+.col-xs-push-11 {
+  left: 91.66666667%;
+}
+.col-xs-push-10 {
+  left: 83.33333333%;
+}
+.col-xs-push-9 {
+  left: 75%;
+}
+.col-xs-push-8 {
+  left: 66.66666667%;
+}
+.col-xs-push-7 {
+  left: 58.33333333%;
+}
+.col-xs-push-6 {
+  left: 50%;
+}
+.col-xs-push-5 {
+  left: 41.66666667%;
+}
+.col-xs-push-4 {
+  left: 33.33333333%;
+}
+.col-xs-push-3 {
+  left: 25%;
+}
+.col-xs-push-2 {
+  left: 16.66666667%;
+}
+.col-xs-push-1 {
+  left: 8.33333333%;
+}
+.col-xs-push-0 {
+  left: auto;
+}
+.col-xs-offset-69 {
+  margin-left: 69px;
+}
+.col-xs-offset-12 {
+  margin-left: 100%;
+}
+.col-xs-offset-11 {
+  margin-left: 91.66666667%;
+}
+.col-xs-offset-10 {
+  margin-left: 83.33333333%;
+}
+.col-xs-offset-9 {
+  margin-left: 75%;
+}
+.col-xs-offset-8 {
+  margin-left: 66.66666667%;
+}
+.col-xs-offset-7 {
+  margin-left: 58.33333333%;
+}
+.col-xs-offset-6 {
+  margin-left: 50%;
+}
+.col-xs-offset-5 {
+  margin-left: 41.66666667%;
+}
+.col-xs-offset-4 {
+  margin-left: 33.33333333%;
+}
+.col-xs-offset-3 {
+  margin-left: 25%;
+}
+.col-xs-offset-2 {
+  margin-left: 16.66666667%;
+}
+.col-xs-offset-1 {
+  margin-left: 8.33333333%;
+}
+.col-xs-offset-0 {
+  margin-left: 0;
+}
+/* /common grid */
+
+/* common 상단 네비게이션 */
+/* S : 20190110 추가 및 수정*/
+.menu_hori_wrap{position:relative;padding-right:45px;border-bottom: 2px solid #333;}
+.menu_hori_wrap.menu_hori_depthMenu{border-bottom: 1px solid #e3e3e3; background-color:#fff;}
+.menu_hori {position:relative;height:42px;line-height:40px;/* border-bottom: 2px solid #f14829 */}
+/* E : 20190110 추가 및 수정*/
+
+/* S : 20191206 추가 및 수정*/
+.menu_hori_wrap .popS1Header{padding:10px 10px;background:white;}
+.menu_hori_wrap .depth_ico{position: relative;    display: block;    width: 30px;    height: 30px;    background: #e5e5e5;    border-radius: 50%;	text-align:center;	float:left;} 
+.menu_hori_wrap .depth_ico img{margin-top: 6px;width: 20px;}
+.menu_hori_wrap .popS1HeaderTit{line-height:25px;margin-left:37px;color:#333;}
+.menu_hori_wrap .popS1Header .btnClose{top:17px;background:url('http://image.benecafe.co.kr/cdnetbs/front/image/etbs/ico_close1.png') no-repeat center;width:13px; height:13px;background-size:13px 13px;right:10px;}
+
+#depth1Pop .popS1Wrap .list1 li a{margin-left:4px;padding-left:24px !important;}
+/* E : 20191206 추가 및 수정*/
+
+.menu_hori ul {
+    list-style: none;
+    padding: 0;
+    overflow: hidden;
+    margin: auto;
+    height: 100%;
+}
+.menu_hori ul li {
+    float: left;
+    height: 100%;
+    margin: 0;
+    /* width: 110px; */
+    padding: 0 12px;
+    overflow: hidden;
+    color: #000;
+    text-align: center;
+    font-size: 1.167rem;
+    cursor: pointer;
+    background: url(http://login.benecafe.co.kr/static/mobile/images/common/bgleftLine.png) no-repeat left;
+    background-size: 1px;
+}
+.menu_hori ul li:first-child { background: none;}
+.menu_hori ul li.active {
+    color: #fff;
+    background: #f14829;
+    font-weight: 700;
+}
+.menu_hori ul li.active a{ color: #fff}
+/* /common 상단 네비게이션 */
+
+/* common 상단 네비게이션2 */
+.menu_hori2 {
+    width:100%;
+    overflow: hidden;
+    background: #f1f1f1
+}
+.menu_hori2.bg_pink {
+    background: #f5eded
+}
+.menu_hori2 ul {
+    list-style: none;
+    padding: 0;
+    margin: auto;
+    height: 100%
+}
+.menu_hori2 ul.menu_hori2_2row{ height:51px; line-height: 140%}
+.menu_hori2 ul li {
+    float: left;
+    height: 100%;
+    margin: 0;
+    padding: 10px 11px 12px;
+    color: #666;
+    text-align: center;
+    font-size: 1.167rem;
+    cursor: pointer;
+    background:#f1f1f1 url(http://login.benecafe.co.kr/static/mobile/images/common/bgleftLine.png) no-repeat left;
+    background-size: 1px;
+    border-bottom: 2px solid #ccc
+}
+.menu_hori2 ul.menu_hori2_2row li{padding-top: 8px}
+.menu_hori2 ul.menu_hori2_2row li.row1{padding-top: 16px}
+.menu_hori2 ul li a{color: #666}
+.menu_hori2 ul li:first-child { background:#f1f1f1 }
+.menu_hori2 ul li.active{border-bottom: 2px solid #333}
+.menu_hori2 ul li.active a{ color: #333; font-weight: 700; }
+.menu_hori2.bg_pink ul li{background: #f5eded }
+
+.menu_hori2 li{ display: table; vertical-align: middle}
+.menu_hori2 .menu_hori2_2row li{padding: 8px}
+.menu_hori2 .menu_hori2_2row li a{ display: table-cell; vertical-align: middle; color: #333; font-weight: 700}
+
+/* /common 상단 네비게이션2 */
+
+/* common 상단 네비게이션3
+.menu_hori3 {
+    overflow: hidden;
+    background: #f1f1f1
+}
+.menu_hori3 ul {
+    list-style: none;
+    padding: 0;
+    margin: auto;
+    height: 100%
+}
+.menu_hori3 ul li {
+    float: left;
+    height: 100%;
+    margin: 0;
+    padding: 10px 11px 12px;
+    color: #666;
+    text-align: center;
+    font-size: 1.167rem;
+    cursor: pointer;
+    background:#f1f1f1 url(http://login.benecafe.co.kr/static/mobile/images/common/bgleftLine.png) no-repeat left;
+    background-size: 1px;
+    border-bottom: 2px solid #ccc
+}
+.menu_hori3 ul li a{color: #666}
+.menu_hori3 ul li:first-child { background:#f1f1f1 }
+.menu_hori3 ul li.active{border-bottom: 2px solid #333}
+.menu_hori3 ul li.active a{ color: #333; font-weight: 700; }
+ /common 상단 네비게이션3 */
+
+/* common 수량 */
+.select-quantity {display:inline-block;}
+.select-quantity .input-a {position:relative;float:left;width:56px;margin:0 -1px;text-align:center;font-size:12px;z-index:1; font-weight: 700}
+.select-quantity .down {display:block;position:relative;float:left;width:34px;height:28px;border:1px solid #ccc;z-index:10;font-size:0;background:#fff;cursor:pointer;}
+.select-quantity .down:after {content:"";display:block;position:absolute;top:50%;left:50%;width:20px;height:20px;margin-top:-9px;margin-left:-9px;background:url(/static/pc/images/icon.png) no-repeat -129px -16px;}
+.select-quantity .up {display:block;position:relative;float:left;width:34px;height:28px;border:1px solid #ccc;z-index:10;font-size:0;background:#fff;cursor:pointer;}
+.select-quantity .up:after {content:"";display:block;position:absolute;top:50%;left:50%;width:20px;height:20px;margin-top:-10px;margin-left:-9px;background:url(/static/pc/images/icon.png) no-repeat -149px -16px;}
+.select-quantity:after {content:"";display:block;height:0;font-size:0;line-height:0;clear:both;}
+
+.select-quantity.small .input-a {width:44px;height:28px; border-color: #ccc; color: #000; line-height: 26px}
+.select-quantity.small .down {width:28px;height:28px;}
+.select-quantity.small .up {width:28px; height:28px}
+/* /common 수량 */
+
+.testB{border: 1px solid #000}
+
+.box_point{ padding: 0 6px 1px 6px; background: #d92f0e; color: #fff;}
+.box_t1{ padding: 13px 10px;}
+.box_t2{ padding: 7px 10px 7px 25px; line-height: 1.5rem; font-size: 1.084rem}
+.box_t2_2{ padding: 7px 10px 7px 25px; line-height: 1.5rem }
+.box_t2_2_2{ padding: 7px 10px }
+.box_t2_3{ padding: 6px 10px 5px 16px; line-height: 1.5rem }
+.box_t2_4{ padding: 6px 10px 5px 10px; line-height: 1.5rem }
+.box_t2_5{ padding: 7px 10px 7px 16px; line-height: 1.5rem; font-size: 1.084rem}
+.box_t2_6{ padding: 0px 0px 0px 16px; line-height: 1.5rem }
+.box_t3{ padding: 5px 10px 10px}
+.box_t3_2{ padding: 10px}
+.box_t3_3{ padding: 10px 10px 3px}
+.box_t3_4{ padding: 10px 10px 0}
+.box_t3_5{ padding: 10px 5px;} /* sunjoo 추가 */
+.box_t4{ padding: 23px 10px}
+.box_t5{ padding: 10px 15px}
+
+.box_s1{background: #f1f1f1; border: solid 1px #e3e3e3}
+.box_s2{color: #666; background: #fff url(http://login.benecafe.co.kr/static/mobile/images/common/ico_info.png) no-repeat 10px 10px; background-size: 10px}
+.box_s2_2{color: #666; background: #fff url(http://login.benecafe.co.kr/static/mobile/images/common/ico_info.png) no-repeat 0 10px; background-size: 10px}
+.box_s2_3{color: #666; background: url(http://login.benecafe.co.kr/static/mobile/images/common/ico_info.png) no-repeat 0 10px; background-size: 10px}
+.box_s2_4{color: #666; background: url(http://login.benecafe.co.kr/static/mobile/images/common/ico_info.png) no-repeat 0 5px; background-size: 10px}
+.box_s3{background: #fff}
+.box_s4{background: #fff; border: solid 1px #e3e3e3}
+.box_s5{background: #e3e3e3 url(http://login.benecafe.co.kr/static/mobile/images/common/ico_coupon.png) no-repeat; background-position: 14px 50%; background-size: 32px; border: solid 1px #cdcdcd; padding-left: 58px}
+.box_s5_2{background: #e3e3e3 ; border: solid 1px #cdcdcd }
+.box_s5_3{background: #e3e3e3 }
+.box_s6{background: #f1f1f1}
+.box_s7{background: #fff; border: solid 1px #999}
+.box_s8{background: #fff; border: solid 1px #ccc}
+.box_s9{background: #f1f1f1; border: solid 1px #333}
+.box_s10{background: #f3f8fb; border: solid 1px #e3e3e3}
+.box_s11{border-width: 23px 10px; border-color: #fff; border-style: solid}
+
+.head_tit1{font-size:1.334rem; line-height: 22px; font-weight: 700;}
+.tit_sele{ height: 22px; border: none; padding-right: 24px}
+.good_tit_h2{padding-top: 3px;}
+.good_tit{ font-size: 1.084rem; line-height: 1.5rem; }
+.tit_t1{ font-size: 1.25rem }
+.tit_t2{ font-size: 1.084rem }
+.tit_t3{ font-size: 1.334rem; line-height: 1.8rem; color: #000 }
+
+.fs0{font-size: 0.75rem}
+.fs1{font-size: 1rem}
+.fs2{font-size: 2rem}
+.fwNormal{font-weight: 400}
+.fwBold{ font-weight: 700}
+
+.cN{color: #333;}
+.c1{color: #666;}
+.c2{color: #1e65a8;}
+.c3{ color: #000}
+.c4{ color: #f14829}
+.c5{color: #999}
+.c6{color: #3a8d3b}
+.c7{color: #2580d3}
+.cPoint4{color: #ee4929}
+.c8{color: #e3e3e3}
+
+.txt-2{font-size: 0.667rem}
+.txt-1{font-size: 0.75rem}
+.txtN{font-size: 1rem}
+.txt1{ line-height: 1.4rem; }
+.txt2{ line-height: 1.2rem; font-size: 1.167rem; }
+.txt2_2{ line-height: 1.6rem; font-size: 1.084rem; }
+.txt2_3{ line-height: 1.2rem }
+.txt2_4{ font-size: 1.084rem; }
+.txt2_5{font-size: 1.167rem}
+.txt3{ font-size: 1.334rem; }
+.txt3_2{ font-size: 1.667rem; }
+.txt4{ font-size: 1.834rem; }
+.txt5{ line-height: 1.6rem; }
+.txt6{ font-size: 1.25rem; }
+.txt7{ font-size: 2.834rem; }
+.txt8{ font-size: 1.417rem; }
+
+/* s: sunjoo start*/
+.fz16 {font-size:16px !important;}
+.fz11 {font-size:11px !important;}
+.fz13 {font-size:13px !important;}
+
+.fwb {font-weight:bold !important}
+.fwn {font-weight:normal !important}
+
+.bul1 {padding-left:10px; position:relative;}
+.bul1::after {content:""; position:absolute; left:0; top:50%; margin-top:-2px; width:4px; height:4px; background-color:#333;}
+.bul2 {padding-left:8px; position:relative;}
+.bul2::after {content:""; position:absolute; left:0; top:7px; width:2px; height:2px; background-color:#333;}
+/* e: sunjoo start*/
+
+.td_thro{ text-decoration: line-through}
+
+.lh0{line-height:0 !important}
+.lh120{line-height: 1.2rem}
+.lh140{line-height: 1.4rem}
+.lh150{line-height: 1.5rem}
+.lh160{line-height: 1.6rem}
+.lh180{line-height: 1.8rem}
+.lh200{line-height: 2rem}
+.lh300{line-height: 3rem}
+
+.flR{float: right;}
+.flL{float: left;}
+
+.taC{text-align: center;}
+.taR{text-align: right}
+.taL{text-align: left}
+.tiN{text-indent: -10000px;}
+.tiN_pop{text-indent: -10000px;}
+
+.mt0{margin-top:0px !important}
+.mt4{margin-top: 4px;}
+.mt6{margin-top: 6px;}
+.mt8{margin-top: 8px;}
+.mt10{margin-top: 10px !important;}
+.mt11{margin-top: 11px;}
+.mt13{margin-top: 13px;}
+.mt14{margin-top: 14px;}
+.mt16{margin-top: 16px;}
+.mt18{margin-top: 18px;}
+.mt20{margin-top: 20px;}
+.mt23{margin-top: 23px;}
+.mt36{margin-top: 36px;} /*20190708 px값 수정*/
+.mt40{margin-top: 40px;}
+.mt47{margin-top: 47px;}
+.mt60{margin-top: 60px;}
+.mt74{margin-top: 74px;}
+.mt_t1{margin-top: 5px;}
+.mt_t2{margin-top: 6px;}
+
+.mb8{margin-bottom: 8px}
+.mb10{margin-bottom: 10px}
+.mb13{margin-bottom: 13px}
+
+.ml6{margin-left: 6px}
+.ml10{margin-left: 10px}
+.ml15{margin-left: 15px}
+.ml20{margin-left: 20px}
+.ml27{margin-left: 27px}
+.ml_n{margin-left: 17px}
+
+.mr5{margin-right: 5px}
+.mr12{margin-right: 12px}
+.mr20{margin-right:20px !important}
+
+.marg_righ20{margin-right: 20px}
+
+.marg_bott10{ margin-bottom: 10px}
+
+.vert_midd{ display: table; vertical-align: middle}
+.vert_midd_chil{ display: table-cell; vertical-align: middle;}
+
+.list_radi{ width: 120px; display: inline-block; padding-right: 10px; margin-bottom: 10px}
+
+.pt_0{paddiing-top:0px !important}
+.pt_1{padding-top: 1px}
+.pt_n{padding-top: 2px}
+.pt_3{padding-top: 3px}
+.pt_5{padding-top: 5px}
+.pt_6{padding-top: 6px}
+.pt10{padding-top: 10px;}
+.pt13{padding-top: 13px;}
+.pt18{padding-top: 18px;}
+.pt23{padding-top: 23px;}
+.pb0{padding-bottom:0px !important}
+.pb10{padding-bottom: 10px !important}
+.pb14{padding-bottom: 14px;}
+.pb23{padding-bottom: 23px;}
+.pb60{padding-bottom:60px !important}
+.pb72{padding-bottom: 72px;}
+/* sunjoo : 180426 추가 */
+.pl5 {padding-left:5px;}
+.pl30 {padding-left:30px;}
+.pr5 {padding-right:5px;}
+.pr30 {padding-right:30px;}
+.pr100 {padding-right:100px;}
+.plr5 {padding-left:5px; padding-right:5px}
+/* // sunjoo : 180426 추가 */
+
+.w_t90{width: 90%}
+.w_t1{width: 100%}
+.w100per{width: 100% !important;} /* sunjoo 추가 */
+
+.heig0{height: 0}
+.heig35{height:35px !important;}
+.heigAuto{height:auto !important}
+.lh35 {line-height:35px;} /* sunjoo : 180426 추가 */
+.lh28 {line-height:28px;} /* sunjoo 추가 */
+
+.abso_rb{ position: absolute; right: 13px; bottom: 13px}
+
+.margin_both{ margin-right: 10px; margin-left: 10px; line-height: 1.4rem}
+.margin_both_2{ margin-right: 10px; margin-left: 10px}
+.margin_both2{ margin-right: 10px; margin-left: 10px; line-height: 1.8rem}
+.margin_both3{ margin-right: 21px; margin-left: 21px}
+.margin_both4{ margin-right: 32px; margin-left: 32px}
+
+.padd_both10{padding-left: 10px; padding-right: 10px}
+
+.floa_left{float: left}
+.floa_righ{float: right}
+
+.list_t_mg_n li{ margin-top: 10px;}
+.list_t_mg_n li:first-child{ margin-top: 0;}
+
+.list_t_mg_2 li{ padding-top: 8px; margin-top: 10px; border-top: solid 1px #e3e3e3}
+.list_t_mg_2 li:first-child{ padding-top: 0; margin-top: 0; border-top: none}
+.list_t_mg_2 li:first-child .coup_num2{ top: 2px}
+
+.list_styl_bull{ float: left}
+.list_styl_bull10{ margin-left: 10px}
+.list_styl_bull15{ margin-left: 15px}
+.list_styl_bull20{ margin-left: 20px}
+
+.vaM{vertical-align: middle}
+.vaB{vertical-align: bottom;} /* sunjoo 추가 */
+.clearfix:after{ display: block; clear: both; content: ''}
+.p_r{position: relative}
+.p_a{position: absolute}
+.d_ib{display:inline-block !important}
+/* sunjoo : 180426 추가 */
+.l0 {left:0;}
+.r0 {right:0;}
+.t0 {top:0;}
+.b0 {bottom:0;}
+.p_a_rt {position:absolute; right:0; top:0;}
+.p_a_lt {position:absolute; left:0; top:0;}
+.p_a_rb {position:absolute; right:0; bottom:0;}
+/* // sunjoo : 180426 추가 */
+
+.ico{display: inline-block; background: no-repeat center; background-size: 100%; vertical-align: middle}
+.ico2{ width: 10px; height: 10px; display: inline-block; background-repeat: no-repeat; background-position: center; background-size: 20px; vertical-align: middle}
+.ico3{display:  inline-block; width: 10px; height: 10px;}
+
+.ico_clock{width: 16px; height: 16px; background-image: url(http://login.benecafe.co.kr/static/mobile/images/common/icoClock.png);}
+.ico_delete{width:20px; height: 20px; background-image: url(http://login.benecafe.co.kr/static/mobile/images/common/icoDelete.png); }
+.ico_heart{width: 20px; height: 20px; background-image: url(http://login.benecafe.co.kr/static/mobile/images/common/icoHeart.png);}
+.ico_uarrow{ background-image: url(http://login.benecafe.co.kr/static/mobile/images/common/icoDownarrow.png);}
+.ico_darrow{ background-image: url(http://login.benecafe.co.kr/static/mobile/images/common/icoUparrow.png);}
+.ico_minus{width: 20px; height: 20px; background-image: url(http://login.benecafe.co.kr/static/mobile/images/common/icoMinus.png);}
+.ico_plus{width: 20px; height: 20px; background-image: url(http://login.benecafe.co.kr/static/mobile/images/common/icoPlus.png);}
+.icoEmail{width: 16px; height: 16px; background-image: url(http://login.benecafe.co.kr/static/mobile/images/common/icoEmail.png);}
+.icoEmail_2{width: 16px; height: 16px; background-image: url(http://login.benecafe.co.kr/static/mobile/images/common/icoEmail_666.png);}
+.icoTell{width: 16px; height: 16px; background-image: url(http://login.benecafe.co.kr/static/mobile/images/common/icoTell.png);}
+.icoTell_2{width: 16px; height: 16px; background-image: url(http://login.benecafe.co.kr/static/mobile/images/common/icoTell_666.png);}
+.icoHeart{ width: 16px; height: 16px; background-image: url(http://login.benecafe.co.kr/static/mobile/images/common/icoHeart2.png);}
+.icoGift{ width: 16px; height: 16px; background-image: url(http://login.benecafe.co.kr/static/mobile/images/common/icoGift.png);}
+.icoCoupon{ width: 16px; height: 16px; background-image: url(http://login.benecafe.co.kr/static/mobile/images/common/icoCoupon.png);}
+.ico_impossible{background: #ffb9bb}
+.ico_possible{background: #a7cce2}
+.ico_ques{ width: 12px; height: 12px; background-image: url(http://login.benecafe.co.kr/static/mobile/images/common/ico_ques.png)}
+
+.arro_left{width: 22px; height: 22px; position: absolute; right: 14px; background: url(http://login.benecafe.co.kr/static/mobile/images/common/btn_arrow_right.png) no-repeat top; background-size: 22px; top: 50%; transform: translateY(-50%)}
+
+.arro_left_smal{width: 16px; height: 16px; position: absolute; right: 6px; background: url(http://login.benecafe.co.kr/static/mobile/images/common/btn_arrow_right.png) no-repeat top; background-size: 16px; top: 50%; transform: translateY(-50%)}
+ 
+.tagBest{width: 50px; height: 40px; background: url(http://login.benecafe.co.kr/static/mobile/images/common/labelBest.png) no-repeat center; background-size: 100% 40px; color: #fff; font-weight: 700; text-align: center; line-height: 34px;}
+.tag{width: 50px; height: 40px; background: url(http://login.benecafe.co.kr/static/mobile/images/common/labelBest.png) no-repeat center; background-size: 100% 40px; color: #fff; font-weight: 700; text-align: center; line-height:110%; display: table; vertical-align: middle; word-break: break-all; padding-bottom: 6px}
+.tag span{display: table-cell; vertical-align: middle}
+.tagRecom{background: url(http://login.benecafe.co.kr/static/mobile/images/common/labelRecom.png) no-repeat center;  background-size: 100% 40px}
+.tagPartner{background: url(http://login.benecafe.co.kr/static/mobile/images/common/labelPartner.png) no-repeat center;  background-size: 100% 40px}
+
+.btn_delete{color: #999; font-weight: 700; font-size: 1.084rem;}
+.btn_delete2{width: 16px; height: 16px; display: inline-block; background: url( ../images/common/btn_dele.png) no-repeat top; background-size: 100%}
+.btnShare{width: 23px; height: 22px; background: url(http://login.benecafe.co.kr/static/mobile/images/common/btnShare.png) no-repeat center; background-size: 100%; vertical-align: top; display: inline-block}
+.btnScrab{width: 23px; height: 22px; background-repeat: no-repeat; background-size: 100%}
+/*
+.btnTop{background-position: top; background-size: 100%}
+.btnBottom{background-position: bottom; background-size: 100%}
+*/
+.btnClose{ width: 22px; height: 22px; background: url(http://login.benecafe.co.kr/static/mobile/images/common/btnClose.png) no-repeat center; background-size: 100%; text-indent: -10000px; display: inline-block }
+.btn1{ width: 100%; height: 28px; line-height: 26px; font-size: 12px; display: block}
+.btn1_2{ width: 25px; height: 28px; display: inline-block;}
+.btn1_3{ width: 76px; height: 28px; line-height: 26px; font-size: 12px; display: inline-block}
+.btn1_4{ width: 81px; height: 28px; line-height: 26px; font-size: 12px; display: inline-block}
+.btn1_5{ width: 100px; height: 28px; line-height: 26px; font-size: 12px; }
+.btn2{ width: 100px; height: 28px; line-height: 26px; font-size: 12px; display: block; margin-left: auto; margin-right: auto}
+.btn2_2{ width: 100px; height: 28px; line-height: 26px; font-size: 12px; margin: auto}
+.btn2_3{ width: 100px; height: 28px; line-height: 26px; font-size: 12px; display: inline-block}
+.btn3{height: 22px; line-height: 20px; font-size: 1.084rem; padding-right: 3px; padding-left: 3px}
+.btn3_2{height: 22px; line-height: 20px; padding-right: 6px; padding-left: 6px}
+.btn3_3{height: 22px; line-height: 20px; font-size: 1.084rem; padding-right: 7px; padding-left: 7px}
+.btn3_4{height: 17px; line-height: 15px; padding-right: 9px; padding-left: 9px; min-width: 42px; font-size: 0.75rem}
+.btn4{ width: 100%; height: 28px; line-height: 26px; }
+.btn4_2{ height: 28px; line-height: 26px; padding: 0 9px; min-width: 100px }
+.btn4_3{ width: 119px; height: 28px; line-height: 26px; }
+.btn5{ width: 22px; height: 22px; background-repeat: no-repeat; background-position: center; background-size: 100%; display: inline-block; text-indent: -10000px;}
+.btn5_2{ width: 59px; height: 84px;}
+.btn5_3{ width: 59px; height: 22px; line-height: 20px}
+.btn5_4{ width: 92px; height: 22px; line-height: 20px}
+.btn6{ width: 23px; height: 22px; display: inline-block; text-indent: -10000px;}
+.btn7{ width: 100%; height: 35px; line-height: 33px}
+.btn7_2{ width: 100%; height: 35px; line-height: 33px; padding-left: 7px}
+.btn7_3{ height: 35px; line-height: 33px; padding-left: 7px}
+.btn7_4{ height: 35px; line-height: 33px}
+.btn8{ height: 26px; line-height: 24px; padding-left:16px; padding-right: 16px }
+.btn9{ height: 50px; line-height: 118px; text-align: center; display: inline-block; margin-left: auto; margin-right: auto}
+
+.btnbtm1{ width: 100%; height: 50px; line-height: 50px; font-size: 14px; display: block; display: table; vertical-align: middle}
+.btnbtm1 span{display: table-cell; vertical-align: middle}
+.btnbtm2{ width: 118px; height: 50px; line-height: 120%; font-size: 16px; display: block; display: table; vertical-align: middle; margin: auto}
+.btnbtm2 span{display: table-cell; vertical-align: middle}
+
+.btnS1{ border: 1px solid #e3e3e3; color: #333; text-align: center; font-weight: 700; background: #fff;}
+.btnS1_2{ border: 1px solid #cdcdcd; color: #666; text-align: center; font-weight: 700; background: #fff }
+.btnS1_2_2{ border: 1px solid #cdcdcd; color: #666; text-align: center; font-weight: 700; background: #fff; line-height: 33px}
+.btnS1_3{ border: 1px solid #e3e3e3; font-weight: 700 }
+.btnS1Selec{ border: 1px solid #cdcdcd; color: #333; text-align: left; font-weight: 700; background: #fff; padding-left: 8.5px }
+.btnS1Selec2{ border: 1px solid #cdcdcd; color: #333; text-align: left; font-weight: 700; background-color: #fff; padding-left: 8.5px }
+.btnS1Selec .ico2{ float: right; padding-top: 25px; padding-right: 21px;}
+.btnS2{ border: 1px solid #f14829; background: #f14829; color: #fff; text-align: center; font-weight: 700}
+.btnS3{border: 1px solid #f14829; color: #f14829; font-weight: 700}
+.btnS4{border: 1px solid #000; color: #000; font-weight: 700; text-align: center}
+.btnS4_2{border: 1px solid #333; color: #333; font-weight: 700; text-align: center}
+.btnS4_3{border: 1px solid #3a8d3b; color: #3a8d3b; font-weight: 700; text-align: center}
+.btnS4_4{border: 1px solid #257ed3; color: #257ed3; font-weight: 700; text-align: center}
+.btn5_back{ background-image: url(http://login.benecafe.co.kr/static/mobile/images/common/btnBack.png); }
+.btn5_allmenu{position:relative;background-image: url(http://login.benecafe.co.kr/static/mobile/images/common/btnHam.png); }/* 20190429 수정*/
+.btn5_allmenu:after{content:'';display:block;position:absolute;top:-4px;right:-5px;width:12px;height:12px;background-size:12px auto;} /*20190429 추가*/
+.btn5_mypage{ background-image: url(http://login.benecafe.co.kr/static/mobile/images/common/btnMy.png); margin-left: 3%;}
+.btn5_logout{ background-image: url(http://login.benecafe.co.kr/static/mobile/images/common/btn_logout.png); }
+.btnS5{border: 1px solid #333; background: #333; color: #fff; font-weight: 700; text-align: center}
+.btnS6{border: 1px solid #000; background: #000; color: #fff; font-weight: 700; text-align: center}
+.btnS6_2{border: 1px solid #999; background: #999; color: #fff; font-weight: 700; text-align: center}
+.btnS6_3{ width: 38px; border: 1px solid #999; background: #999 url(http://login.benecafe.co.kr/static/mobile/images/common/ico_calendar.png) no-repeat center; background-size: 22px; color: #fff; font-weight: 700; text-align: center}
+.btnS6_4{ width: 36px; /* border: 1px solid #999; */ background: #999 url(http://login.benecafe.co.kr/static/mobile/images/common/ico_calendar.png) no-repeat center; background-size: 22px; color: #fff; font-weight: 700; text-align: center}
+.btnS6_5{border: 1px solid #ccc; background: #f8f8fa; color: #666; font-weight: 700; text-align: center}
+.btnS7{border: 1px solid #ccc; color: #ccc; }
+.btnS7_2{border: 1px solid #ccc; background: #fff; color: #666; font-weight: 700}
+.btnS7_3{border: 1px solid #fff; background: #fff; font-weight: 700}
+.btnS8{border: 1px solid #999; background: #f1f1f1; font-weight: 700}
+.btnS8_2{border: 1px solid #999; background: #fff; font-weight: 700}
+.btnS8_3{border: 1px solid #999999; background: #f1f1f1; font-weight: 700}
+.btnS9{ background-image: url(http://login.benecafe.co.kr/static/mobile/images/common/btnClose2.png) }
+.btnS10{border: 1px solid #ccc; background: #fff url(http://login.benecafe.co.kr/static/mobile/images/common/ico_ques.png) no-repeat 94% 50%; background-size: 12px; color: #666; padding-right: 24px }
+.btnS11{border: 1px solid #ccc; background: #fff url(http://login.benecafe.co.kr/static/mobile/images/common/ico_down.png) no-repeat 94% 50%; background-size: 12px; color: #666; padding-right: 24px }
+.btnS12{border:1px solid #ee4929; background-color:#fff; display:inline-block; vertical-align:middle; text-align:center; line-height:35px;} /* sunjoo */
+.btnS_zzim{background-image: url(http://login.benecafe.co.kr/static/mobile/images/common/btnHeart.png); background-repeat: no-repeat; background-position: 0 0; background-size: 100%; }
+.btnS_cart{background-image: url(http://login.benecafe.co.kr/static/mobile/images/common/btn_cart.png); background-repeat: no-repeat; background-position: 0 0; background-size: 100%; }
+.btnHome{background-image: url(http://login.benecafe.co.kr/static/mobile/images/common/actionBar1_200508.png);}
+.btnSearch{background-image: url(http://login.benecafe.co.kr/static/mobile/images/common/actionBar2_200508.png);}
+.btnCs{background-image: url(http://login.benecafe.co.kr/static/mobile/images/common/actionBar3_200508.png);}
+.btnOrdNdeli{background-image: url(http://login.benecafe.co.kr/static/mobile/images/common/actionBar4_200508.png);}
+.btnApplyNdeli{background-image: url(http://login.benecafe.co.kr/static/mobile/images/common/actionBar_list_200508.png);}
+.btnMyInfo{background-image: url(http://login.benecafe.co.kr/static/mobile/images/common/actionBar_my_200508.png);}
+.btnAllMenu{background-image: url(http://login.benecafe.co.kr/static/mobile/images/common/actionBar_all_200508.png);}
+.btnMore{background-image: url(http://login.benecafe.co.kr/static/mobile/images/common/icoCart_200508.png);}
+.btn_facebook{background-image: url(http://login.benecafe.co.kr/static/mobile/images/common/btn_facebook.png); background-repeat: no-repeat; background-position: top; background-size: 100%; display: inline-block; font-weight: 700; font-size: 1.084rem; padding-top: 66px}
+.btn_instagram{background-image: url(http://login.benecafe.co.kr/static/mobile/images/common/btn_instagram.png); background-repeat: no-repeat; background-position: top; background-size: 100%; display: inline-block; font-weight: 700; font-size: 1.084rem; padding-top: 66px}
+.btn_pinterest{background-image: url(http://login.benecafe.co.kr/static/mobile/images/common/btn_pinterest.png); background-repeat: no-repeat; background-position: top; background-size: 100%; display: inline-block; font-weight: 700; font-size: 1.084rem; padding-top: 66px}
+.btn_urlcopy{background-image: url(http://login.benecafe.co.kr/static/mobile/images/common/btn_share.png); background-repeat: no-repeat; background-position: top; background-size: 100%; display: inline-block; font-weight: 700; font-size: 1.084rem; padding-top: 66px}
+
+.list_cart_unit_btn .col-xs-4:nth-child(2){ margin-left: 6px; margin-right: 6px; padding-left: 0; padding-right: 0;}
+.list_cart_unit_btn .col-xs-4 { width: 31.8%;}
+.btnBtm_t1{ margin-left: 10px; margin-right: 10px}
+.btnBtm_t1:after{display: block; clear: both; content: ''}
+.btnBtm_t1 div:first-child{border-right: 4px solid #fff}
+.btnBtm_t1 div:nth-child(2){ border-left: solid 2px #fff; border-right: solid 2px #fff}
+.btnBtm_t1 div:last-child{border-left: 4px solid #fff}
+.btnBtm_t2{ margin-left: 10px; margin-right: 10px}
+.btnBtm_t2:after{display: block; clear: both; content: ''}
+.btnBtm_t2 div:first-child{border-right: 3px solid #fff}
+.btnBtm_t2 div:last-child{border-left: 3px solid #fff}
+/*
+.btnBtmArea .col-xs-6:nth-child(2){ margin-left: 4px; padding-left: 4px;}
+.btnBtmArea .col-xs-6 { width: 49%;}
+*/
+
+.popBtn{width:100%;text-align:center}
+.popBtn div{display:inline-block}
+.popBtn div:after{display:block;content:"";clear:both}
+.popBtn div a{display:block;float:left;margin:0 0 0 5px !important}
+.popBtn div a:first-child{margin:0 !important}
+
+/* s: sunjoo start */
+.tabS1 {border:1px solid #ccc; border-right:0;}
+.tabS1 > ul {overflow:hidden;}
+.tabS1 .item {width:50%; float:left; box-sizing:border-box; border-right:1px solid #ccc;}
+.tabS1 .item a {display:block; height:40px; text-align:center; color:#333; font-size:14px; font-weight:bold; background-color:#f8f8fa;}
+.tabS1 .item a span {display:inline-block; vertical-align:middle;}
+.tabS1 .item a::after {content:""; display:inline-block; vertical-align:middle; height:100%;}
+.tabS1 .item.active {}
+.tabS1 .item.active a {background-color:#f14829; color:#fff;}
+/* e: sunjoo start */
+
+.tbS1{ border-bottom: 1px solid #e3e3e3;}
+.tbS1 th{ border-top: 1px solid #e3e3e3; padding: 8px 10px; background: #f1f1f1; font-size: 1.084rem; font-weight: normal}
+.tbS1 td{ border-top: 1px solid #e3e3e3; border-left: 1px solid #e3e3e3; padding: 8px 10px; font-size: 1.084rem; font-weight: normal; text-align: right}
+.tbS1 th.taL, .tbS1 td.taL{text-align: left}
+.tbS1 th.taC, .tbS1 td.taC{text-align: center}
+.tbS1 td.left_bord_none{border-left: none}
+.tbS1 tbody td:first-child{border-left: none}
+
+.tbS2{ border-bottom: 1px solid #e3e3e3;}
+.tbS2 th{ border-top: 1px solid #e3e3e3; padding: 8px 10px 9px; background: #f8f8fb; font-size: 1.084rem; font-weight: normal; text-align: left}
+.tbS2 td{ border-top: 1px solid #e3e3e3; padding: 8px 10px 9px; font-size: 1.084rem; font-weight: normal; text-align: right; background: #fff}
+.tbS2 td.taL{text-align: left}
+.tbS2 tbody.taL td{text-align: left}
+
+.tbS2_2{ border-bottom: 1px solid #e3e3e3;}
+.tbS2_2 th{ border-top: 1px solid #e3e3e3; padding: 8px 10px 9px; background: #f1f1f1; font-size: 1.084rem; font-weight: normal; line-height: 140%}
+.tbS2_2 td{ border-top: 1px solid #e3e3e3; padding: 8px 10px 9px; font-size: 1.084rem; font-weight: normal; background: #fff; line-height: 140%}
+.tbS2_2 tbody.taR td{ text-align: right}
+.tbS2_2 tbody.ligh th{ background:#f8f8fa }
+.tbS2_2 tbody.c1 td, .tbS2_2 tbody.c1 th{ color: #666 }
+
+.tbS2_3{ border-bottom: 1px solid #e3e3e3}
+.tbS2_3 th{ border-top: 1px solid #e3e3e3; padding: 8px 10px 9px; background: #f1f1f1; font-size: 1.25rem; font-weight: normal}
+.tbS2_3 td{ border-top: 1px solid #e3e3e3; padding: 8px 10px 9px; /* font-size: 1.084rem; */ font-weight: normal; background: #fff; color: #666; line-height: 1.5rem}
+
+.tbS2_4{ border-bottom: 1px solid #e3e3e3}
+.tbS2_4 th{ border-left: solid 1px #e3e3e3; border-top: 1px solid #e3e3e3; padding: 8px 10px; background: #f1f1f1; font-size: 1.084rem; font-weight: normal; color: #666}
+.tbS2_4 th:first-child{border-left: none}
+.tbS2_4 td{ border-left: solid 1px #e3e3e3; border-top: 1px solid #e3e3e3; padding: 6px 10px 7px; font-size: 1.084rem; font-weight: normal; background: #fff; color: #666; line-height: 1.5rem}
+.tbS2_4 td:first-child{border-left: none}
+.tbS2_4 tbody tr td:first-child{border-left: none}
+
+.tbS2_5{ border-bottom: 1px solid #e3e3e3}
+.tbS2_5 th{ border-left: solid 1px #e3e3e3; padding: 8px 10px; background: #ccc; font-size: 1.084rem; font-weight: normal; color: #666}
+.tbS2_5 th:first-child{border-left: none}
+.tbS2_5 td{ border-left: solid 1px #e3e3e3; border-top: 1px solid #e3e3e3; padding: 6px 10px 7px; font-size: 1.084rem; font-weight: normal; background: #fff; color: #666; line-height: 1.5rem}
+.tbS2_5 td:first-child{border-left: none}
+.tbS2_5 tbody tr:first-child td{ border-top: none}
+
+.tbS3 th{ height: 50px; line-height: 48px; background: #333; color: #fff; font-size: 1.334rem; font-weight: normal; padding-left: 11px; padding-right: 11px}
+.tbS3 td{ height: 50px; line-height: 46px; font-size: 2rem; font-weight: 700; text-align: right; background: #666; color: #fff; padding-right: 11px; padding-left: 11px}
+
+.tbS4 tr{border-bottom: solid 1px #e3e3e3; font-size: 1.084rem; line-height: 1.4rem }
+.tbS4 tr:active{background: #f1f1f1}
+.tbS4 th{ padding: 15px 11px; text-align: left}
+.tbS4 td{ text-align: left; padding: 15px 11px; border-left: solid 1px #e3e3e3}
+
+.tbS5 th{ border-top: 2px solid #ccc; border-bottom: 2px solid #ccc; padding: 9px 10px; background: #f1f1f1; font-size: 1.084rem; text-align: center }
+.tbS5 th.taL{text-align: left}
+.tbS5 td{ border-bottom: 1px solid #e3e3e3; padding: 10px; font-size: 1.084rem; font-weight: normal; background: #fff; line-height: 1.4rem }
+.tbS5 td.tb_poin{background: #f8f8fa}
+.tbS5 td.smal_txt{font-size: 1rem; color: #666}
+
+.tbS5_2 thead th{ border-top: 2px solid #ccc; border-bottom: 2px solid #ccc; padding: 9px 10px; background: #f1f1f1; font-size: 1.084rem; border-left: solid 1px #e3e3e3}
+.tbS5_2 thead th:first-child{border-left: none}
+.tbS5_2 tbody th{  border-bottom: 1px solid #e3e3e3; font-weight: 700}
+.tbS5_2 td{ border-bottom: 1px solid #e3e3e3; padding: 9px 10px 8px; font-size: 1.084rem; font-weight: normal; background: #fff; line-height: 1.4rem; border-left: solid 1px #e3e3e3}
+.tbS5_2 td:first-child{border-left: none}
+
+.tbS6{border-top: solid 2px #ccc}
+.tbS6 tr{border-bottom: solid 1px #e3e3e3; line-height: 1.4rem; font-weight: 700}
+.tbS6 tr:active{background: #f1f1f1}
+.tbS6 th{ padding: 10px; text-align: left; font-size: 1.084rem }
+.tbS6 td{ text-align: left; padding: 10px; border-left: solid 1px #e3e3e3; font-size: 1.084rem }
+
+.tbS7 td{border: solid 1px #ccc; background: #f8f8fa; text-align: center; vertical-align: middle; height: 49px; line-height: 1.2rem; font-size: 1.084rem; font-weight: 700; width: 33.333%}
+
+.tbS8{ border: solid #f1f1f1 5px}
+.tbS8 th{ background: #f1f1f1; padding: 5px; font-size: 1.084rem; font-weight: 400}
+.tbS8 td{ background: #f1f1f1; padding: 5px}
+
+.tbS9 thead th{ background: #ccc; font-size: 1.084rem; border-left: solid 1px #e3e3e3; padding: 9px; text-align: center; font-weight: 400}
+.tbS9 thead th:first-child{ border-left: none}
+.tbS9 tbody td{border-bottom: solid 1px #e3e3e3; border-left: solid 1px #e3e3e3; color: #666; font-size: 1.084rem; padding: 9px; line-height: 140%}
+.tbS9 tbody td:first-child{ border-left: none}
+.tbS9 tbody tr:hover{ background: #fff9f8}
+
+/* sunjoo : 180426 추가 */
+.tbS10 {border-top:1px solid #e3e3e3;}
+.tbS10 table {width:100%;}
+.tbS10 tr:first-child {}
+.tbS10 tr:first-child th {}
+.tbS10 tr:first-child td {}
+.tbS10.group3 th,
+.tbS10.group3 td {border-bottom:0;}
+.tbS10.group3 tr:nth-child(3n) th,
+.tbS10.group3 tr:nth-child(3n) td {padding-bottom:8px; border-bottom:1px solid #e3e3e3;}
+.tbS10.group3 tr:nth-child(3n+1) th,
+.tbS10.group3 tr:nth-child(3n+1) td {padding-top:8px;}
+.tbS10 th {/*background-color:#f1f1f1;*/ border-bottom:1px solid #e3e3e3; padding:2px 10px; font-size:1.084rem; font-weight:normal; line-height:140%;}
+.tbS10 td {/*background-color:#fff;*/ border-bottom:1px solid #e3e3e3; padding:2px 10px; font-size:1.084rem; line-height:140%;}
+
+.tbS11 {border-top:1px solid #d7d7d7;}
+.tbS11 table {width:100%;}
+.tbS11 tbody th {text-align:left; padding:8px 0 8px 20px; border-bottom:1px solid #d7d7d7; font-weight:normal;}
+.tbS11 tbody td {text-align:right; padding:8px 20px 8px 0; border-bottom:1px solid #d7d7d7;}
+.tbS11 tbody tr.nodata td {height:50px; text-align:center; font-size:13px; padding:0;}
+
+.tbS12 {border-top:2px solid #999;}
+.tbS12 table {width:100%;}
+.tbS12 tbody th {background-color:#f8f8fa; border-bottom:1px solid #e3e3e3; text-align:left; padding:8px 10px 8px 20px; height:38px; letter-spacing:-1px; font-size:12px;}
+.tbS12 tbody td {background-color:#fff; border-bottom:1px solid #e3e3e3; padding:8px 10px; height:38px; color:#666; letter-spacing:-1px; font-size:12px;}
+/* // sunjoo : 180426 추가 */
+
+/*
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 23px;
+  height: 22px;
+}
+
+.switch input {display:none;}
+
+.switchBg {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+    background-image: url(http://login.benecafe.co.kr/static/mobile/images/common/btnHeart.png);
+  background-repeat: no-repeat; background-size: 100%;
+    background-position: top;
+  -webkit-transition: 0s;
+  transition: 0s;
+}
+
+.switchBg:before {
+  position: absolute;
+  content: "";
+  height: 100%;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  background-image: url(http://login.benecafe.co.kr/static/mobile/images/common/btnHeart.png);
+  background-repeat: no-repeat; background-size: 100%;
+    background-position: top;
+  -webkit-transition: 0s;
+  transition: 0s;
+}
+
+input:checked + .switchBg {
+    background-position: bottom;
+}
+
+input:focus + .switchBg {
+  background-position: bottom;
+}
+
+input:checked + .switchBg:before {
+  background-position: bottom;
+}
+*/
+
+.ui-tabs {
+    position: relative
+}
+.ui-tabs .ui-tabs-nav {
+    /* margin: 0; */
+    border-left: 1px solid #ccc;
+}
+.ui-tabs .ui-tabs-nav li {
+    list-style: none;
+    float: left;
+    position: relative;
+    top: 0;
+    padding: 0;
+    white-space: normal;
+    text-align: center;
+    height: 42px;
+    line-height: 40px;
+    font-size: 1.167rem;
+    border-top: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    /* border-left: 1px solid #ccc; */
+    background: #f8f8fa;
+    font-weight: 700;
+    box-sizing:border-box
+}
+/* .ui-tabs .ui-tabs-nav li:first-child { border-left: solid 1px #ccc} */
+
+.ui-tabs .tab_vert_midd li { line-height: normal; display: table; vertical-align: middle}
+.ui-tabs .tab_vert_midd li a { display: table-cell; vertical-align: middle}
+
+/* .ui-tabs .ui-tabs-nav li.tabBrdNone{border-left: none; border-right: none} */
+.ui-tabs .ui-tabs-nav .ui-tabs-anchor {
+}
+.ui-tabs .ui-tabs-nav li.ui-tabs-active {
+    /* margin-bottom: -1px;
+    padding-bottom: 1px;
+    border: 1px solid #f14829; */
+    background: #fff;
+    outline:none !important
+}
+.ui-tabs .ui-tabs-nav li.ui-tabs-active a{outline:none !important}
+.ui-tabs .ui-tabs-nav li.ui-tabs-active:active{outline:none !important}
+.ui-tabs .ui-tabs-nav li.ui-tabs-active+li{border-left: none}
+.ui-tabs .ui-tabs-nav li.ui-tabs-active .ui-tabs-anchor,
+.ui-tabs .ui-tabs-nav li.ui-state-disabled .ui-tabs-anchor,
+.ui-tabs .ui-tabs-nav li.ui-tabs-loading .ui-tabs-anchor {
+    cursor: text;
+}
+.ui-tabs-collapsible .ui-tabs-nav li.ui-tabs-active .ui-tabs-anchor {
+    cursor: pointer;
+}
+.ui-tabs .ui-tabs-panel {
+    display: block;
+    border-width: 0;
+    background: none;
+}
+.ui-state-active,
+.ui-widget-content .ui-state-active,
+.ui-widget-header .ui-state-active,
+a.ui-button:active,
+.ui-button:active,
+.ui-button.ui-state-active:hover {
+    background: #fff;
+    outline:none !important
+}
+.tabBrdNone{border-left: none; border-right: none}
+.tabUl{display: block;}
+.tabUl:after{display: block; clear: both; content: ''}
+.tabUl a{display: block; height: 100%}
+
+/* 수동 탭 */
+.tab_styl ul:after{ display: block; clear: both; content: ''}
+.tab_styl>ul>li {
+    list-style: none;
+    float: left;
+    position: relative;
+    top: 0;
+    padding: 0;
+    white-space: normal;
+    text-align: center;
+    height: 42px;
+    line-height: 40px;
+    font-size: 1.167rem;
+    border-top: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    /* border-left: 1px solid #ccc; */
+    background: #f8f8fa;
+    font-weight: 700
+}
+.tab_styl>ul>li:first-child { border-left: solid 1px #ccc}
+.tab_styl>ul>li.ui-tabs-active {
+    /* margin-bottom: -1px;
+    padding-bottom: 1px; */
+    border: 1px solid #f14829;
+    background: #fff
+}
+.tab_styl>ul>li.ui-tabs-active+li{border-left: none}
+.tab_styl>ul>li.ui-tabs-active .ui-tabs-anchor,
+.tab_styl>ul>li.ui-state-disabled .ui-tabs-anchor,
+.tab_styl>ul>li.ui-tabs-loading .ui-tabs-anchor {
+    cursor: text;
+}
+/* /수동 탭 */
+
+.darken{ width: 100%; height: 100%; top: 0; left: 0; position: fixed; background: rgba(0,0,0,.5); z-index: 100; display: none}
+.list1{border-top: 2px solid #ccc; border-bottom: 2px solid #ccc; max-height:420px; overflow-y:auto !important;-webkit-overflow-scrolling:touch;}
+
+@media screen and (min-width:320px) {
+.list1{max-height:320px;}
+}
+
+.list1:after{clear: both; display: block; content: ''}
+.list1 li{ clear: left; line-height: 42px; border-top: 1px solid #e3e3e3; width: 100%; text-align: left; padding-left: 10px; font-size: 1.084rem}
+.list1 li:first-child{border-top: none}
+.list1 li a{ font-weight: 700; width:100%;}
+.menu_hori .list1 li{text-align: left; background: none; font-size: 1.084rem; font-weight: 700}
+
+/* 20190110 삭제 
+.list2Depth h3{ font-size: 1.25rem; clear: left; line-height: 42px; border-bottom: 2px solid #ccc; background: #f1f1f1; width: 100%; text-align: left; padding-left: 10px; position: relative}
+.list2Depth h3:first-child{ border-top: 2px solid #ccc;}
+.list2Depth .list1{border-top: none;}
+.list2DepthIcon{ width: 22px; height: 22px; background: url( ../images/common/icoDownarrow.png) no-repeat center; background-size: 32px; position: absolute; right: 7px; vertical-align: middle; margin-top: 10px}
+.list2DepthIconOn{ width: 22px; height: 22px; background: url( ../images/common/icoUparrow.png) no-repeat center; background-size: 32px; position: absolute; right: 7px; vertical-align: middle; margin-top: 10px}
+*/
+.arro_off{ width: 22px; height: 22px; background: url( ../images/common/icoDownarrow.png) no-repeat center; background-size: 32px; position: absolute; right: 7px; vertical-align: middle; margin-top: 5px}
+.arro_on{ width: 22px; height: 22px; background: url( ../images/common/icoUparrow.png) no-repeat center; background-size: 32px; position: absolute; right: 7px; vertical-align: middle; margin-top: 6px}
+
+.list_t1>li{ line-height: 1.4rem; margin: 6px 0 0 10px;}
+.list_t1>li:first-child{margin-top: 0}
+.list_t1_2 li{ line-height: 1.4rem; margin: 0 10px; padding: 10px 0}
+.list_t1_2 li:first-child{margin-top: 0}
+.list_t2 li{ line-height: 1.4rem; padding: 11px 10px;}
+.list_t3>li{ margin: 0 0 0 20px; float: left}
+.list_t3>li:first-child{margin-left: 0}
+
+.list_styl1{ border-bottom: solid 1px #e3e3e3 }
+.list_styl1 li{ position: relative; padding: 10px 37px 10px 10px; background: #fff; border-top: solid 1px #e3e3e3 }
+.list_styl1 li.file_ok{ padding-left: 40px; background: url(http://login.benecafe.co.kr/static/mobile/images/common/ico_file.png) 10px 50% no-repeat; background-size: 22px}
+
+.list_num li{ list-style: decimal; margin-left: 14px}
+
+.dl dt{ clear: left; float: left}
+.dl dt, .dl dd{ margin-top: 7px}
+.dl dt:first-child{margin-top: 0}
+.dl dd:nth-child(2){margin-top: 0}
+
+.list2{ display: table}
+.list2 li{width: 33.333%; height: 49px; border: solid 1px #ccc; background: #fff; float: left; display: table-cell; text-align: center; vertical-align: middle}
+
+.list_s1 li{ list-style: url(http://login.benecafe.co.kr/static/mobile/images/common/bul_dot.png); background-size: 3px}
+.list_s1_2 li{ list-style: url(http://login.benecafe.co.kr/static/mobile/images/common/bul_dot.png) }
+.list_s1_2 li:first-child{ list-style: none }
+.list_s1_3 li{ list-style: url(http://login.benecafe.co.kr/static/mobile/images/common/bul_dot.png); background-size: 3px; margin-left: 11px; margin-top: 8px; line-height: 140%}
+.list_s1_3 li:first-child{margin-top: 0}
+.list_s1_3.c1 li{ color: #666}
+.list_s1_4 li{ list-style: url(http://login.benecafe.co.kr/static/mobile/images/common/bul_dot.png); background-size: 3px; margin-left: 11px; margin-top: 2px}
+.list_s1_4 li:first-child{margin-top: 0}
+.list_s2 li{ background: #fff; border-top: solid 1px #e3e3e3}
+.list_s2 li:first-child{ border-top: none}
+.list_s3 li{ border-bottom: solid 1px #e3e3e3}
+
+.pop_squa_list{border-top: solid 1px #ccc; border-left: solid 1px #ccc}
+.pop_squa_list:after{display: block; clear: both; content: ''}
+.pop_squa_list li{ width: 33.333%; height: 51px; text-align: center; float: left; background: #f8f8fa; border-bottom: solid 1px #ccc; border-right: solid 1px #ccc; padding-top: 18px}
+.pop_squa_list li.active{border: solid 2px #f14829; background: #fff; }
+@media (min-width:630px){
+    .pop_squa_list li{ width: 25%}
+}
+@media (min-width:1000px){
+    .pop_squa_list li{ width: 20%}
+}
+
+.close_t1{ width: 22px; height: 22px; position: absolute; top: 8px; right: 3px}
+.close_t2{ width: 16px; height: 16px; position: absolute; top: -1px; right: -1px}
+
+.close_s1{ background-image: url(http://login.benecafe.co.kr/static/mobile/images/common/btn_more.png); background-position: top; background-repeat: no-repeat; background-size: 100%}
+.close_s2{ background-image: url(http://login.benecafe.co.kr/static/mobile/images/common/btn_close.png); background-position: top; background-repeat: no-repeat; background-size: 100%}
+
+.add_con{ background: url(http://login.benecafe.co.kr/static/mobile/images/common/btn_dele.png) right no-repeat; background-size: 16px; padding-right: 18px; color: #666; margin-right: 18px; margin-bottom: 10px; height: 16px; display: inline-block; line-height: 14px}
+
+/* .label_t1{ width: 61px; height: 20px; padding:3px 6px; position: absolute; top: 10px; left: -1px } */
+.label_t1{ width: 61px; height: 20px; margin-bottom:2px; padding:3px 6px;}
+
+.label_s1{ padding: 0 6px 1px 6px; background: #999; color: #fff;}
+.label_s2{ background: url(http://login.benecafe.co.kr/static/mobile/images/common/labe_gray.png) no-repeat left; background-size: auto 100%; color: #fff; z-index: 10 }
+/* 170609 추가 */
+.icon_area .red{background: url(http://login.benecafe.co.kr/static/mobile/images/common/labe_red.png) no-repeat left; background-size: auto 100%; color: #fff; z-index: 10}
+.icon_area .blue{background: url(http://login.benecafe.co.kr/static/mobile/images/common/labe_blue.png) no-repeat left; background-size: auto 100%; color: #fff; z-index: 10}
+.icon_area .green{background: url(http://login.benecafe.co.kr/static/mobile/images/common/labe_green.png) no-repeat left; background-size: auto 100%; color: #fff; z-index: 10}
+
+
+.h_grid2 div:first-child{ width: 20%; border-right: solid 3px #fff}
+.h_grid2 div:last-child{ width: 80%; border-left: solid 3px #fff}
+
+.h_grid2_white div:first-child{ width: 20%; border-right: solid 3px #f1f1f1}
+.h_grid2_white div:last-child{ width: 80%; border-left: solid 3px #f1f1f1}
+
+.h_grid2_2 div:first-child{ width: 86%; border-right: solid 3px #fff}
+.h_grid2_2 div:last-child{ width: 14%; border-left: solid 3px #fff}
+
+.h_grid2_3 div:first-child{ width: 74%; border-right: solid 3px #fff}
+.h_grid2_3 div:last-child{ width: 26%; border-left: solid 3px #fff}
+
+.h_grid2_4 div:first-child{ width: 50%; border-right: solid 3px #fff}
+.h_grid2_4 div:last-child{ width: 50%; border-left: solid 3px #fff}
+.h_grid2_4 div.whit{ border-color: #f1f1f1; border-width: 5px}
+
+.h_grid2_5 div:first-child{ width: 30%; border-right: solid 3px #fff}
+.h_grid2_5 div:last-child{ width: 70%; border-left: solid 3px #fff}
+
+.h_grid2_6 div:first-child{ width: 48%; border-right: solid 3px #fff}
+.h_grid2_6 div:last-child{ width: 52%; border-left: solid 3px #fff}
+
+.h_grid3 div:first-child{ width: 20%; border-right: solid 4px #fff}
+.h_grid3 div:nth-child(2){ width: 66%; border-left: solid 2px #fff; border-right: solid 2px #fff}
+.h_grid3 div:last-child{ width: 14%; border-left: solid 4px #fff}
+.h_grid3 div.phon:first-child{ width: 20%}
+.h_grid3 div.phon:nth-child(2){ width: 20%}
+.h_grid3 div.phon:last-child{ width: 60%}
+
+.h_grid2_bord_whit div:first-child{ border-right: solid 3px #fff}
+.h_grid2_bord_whit div:last-child{ border-left: solid 3px #fff}
+
+.h_grid2_bord div:first-child{ border-right: solid 3px #f1f1f1}
+.h_grid2_bord div:last-child{ border-left: solid 3px #f1f1f1}
+
+.h_grid3_bord div:first-child{ border-right: solid 4px #f1f1f1}
+.h_grid3_bord div:nth-child(2){ border-left: solid 2px #f1f1f1; border-right: solid 2px #f1f1f1}
+.h_grid3_bord div:last-child{ border-left: solid 4px #f1f1f1}
+
+.h_grid3_bord_whit div:first-child{ border-right: solid 4px #fff}
+.h_grid3_bord_whit div:nth-child(2){ border-left: solid 2px #fff; border-right: solid 2px #fff}
+.h_grid3_bord_whit div:last-child{ border-left: solid 4px #fff}
+
+.h_grid4_bord_whit div:first-child{ border-right: solid 4px #fff}
+.h_grid4_bord_whit div:nth-child(2){ border-left: solid 2px #fff; border-right: solid 3px #fff}
+.h_grid4_bord_whit div:nth-child(3){ border-left: solid 3px #fff; border-right: solid 2px #fff}
+.h_grid4_bord_whit div:last-child{ border-left: solid 4px #fff}
+
+.pagi_set{text-align: center; display: block; margin-left: auto; margin-right: auto}
+.pagi_set ul{ display: inline-block; margin: auto}
+.pagi_set li{width: 22px; height: 22px; margin-left: 10px; background-repeat: no-repeat; background-size: 22px; float: left; padding-top: 5px; font-size: 1.084rem}
+.pagi_set li:first-child{margin-left: 0}
+.pagi_set li.active{background: #ccc; font-weight: 700}
+.pagi_firs{ background-image: url(http://login.benecafe.co.kr/static/mobile/images/common/pagi_firs.png); text-indent: -10000px}
+.pagi_prev{ background-image: url(http://login.benecafe.co.kr/static/mobile/images/common/pagi_prev.png); text-indent: -10000px}
+.pagi_next{ background-image: url(http://login.benecafe.co.kr/static/mobile/images/common/pagi_next.png); text-indent: -10000px}
+.pagi_last{ background-image: url(http://login.benecafe.co.kr/static/mobile/images/common/pagi_last.png); text-indent: -10000px}
+
+.squa_radi{ padding: 10px; border: solid 1px #e3e3e3}
+.squa_radi label{margin-left: 20px}
+.squa_radi label:first-child{margin-left: 0}
+
+.squa_dl_wrap{background: #f1f1f1; padding: 10px}
+.squa_dl_wrap dl{margin-top: 10px}
+.squa_dl_wrap dl:first-child{margin-top: 0}
+
+.step_arro li{width: 19.44%; background: #e3e3e3; border: solid 1px #e3e3e3; font-size: 1.084rem; text-align: center; float: left; min-height: 50px; font-weight: 700; margin-left: 2px; letter-spacing: -1px; position: relative; display: table; vertical-align: middle; line-height: 120%; padding: 0 10px}
+.step_arro li span{ display: table-cell; vertical-align: middle}
+.step_arro li.step3{width: 32.9%}
+.step_arro li:first-child{margin-left: 0}
+.step_arro li.active{ background: #fff; border: solid 1px #333}
+.step_arro_arro{width: 10px; height: 14.667px; background-image: url(http://login.benecafe.co.kr/static/mobile/images/common/ico_step_off.png); background-position: top; background-repeat: no-repeat; background-size: 10px; position: absolute; top: 18px; left: -3px; z-index: 2 }
+.step_arro li.active .step_arro_arro{ background-image: url(http://login.benecafe.co.kr/static/mobile/images/common/ico_step_on_l.png)}
+.step_arro li.active+li .step_arro_arro{ background-image: url(http://login.benecafe.co.kr/static/mobile/images/common/ico_step_on.png); left: -4px}
+.emai_at{ width: 100%}
+
+.darken td a{display: block}
+
+@media (min-width:630px){
+    .step_arro li{width: 19.7%; padding: 16px 0}
+    .step_arro li.step3{width: 33%}
+    .emai_at{ width: 100%}
+}
+@media (min-width:1000px){
+    .step_arro li{width: 19.82%}
+    .step_arro li.step3{width: 32.9%}
+    .emai_at{ width: 100%}
+}
+
+/*회원가입 팝업 css 추가 2018.11.09 */
+.login_join_step_wrap{width:100%;}
+.login_join_step_wrap .step_arro{text-align:center;}
+.login_join_step_wrap .step_arro li.step3{display: inline-block;padding:0;margin-left:0;width:28%;text-align: center;box-sizing: border-box;float:none;line-height:48px;font-size:1.024rem;}
+.login_join_step_wrap .step_arro li span{display:block;}
+.login_join_step_wrap .step_arro_code{display: inline-block;padding:0;margin-left:0;float: none;width:5%;background:none;border:0;text-align:center;line-height:48px;}
+
+
+/* 이메일 입력 */
+.inputEmail dd .email-input-front {border-right:0;}
+.inputEmail dd .email-input-front .sub-email-input-front-1 {display:inline-block;width:89%;border-right:0;}
+.inputEmail dd .email-input-front .sub-email-input-front-2 {display:inline-block;width:8%;font-size:1.084rem;text-align:center;line-height:35px;border:0;}
+/* /이메일 입력 */
+
+.dim {position:fixed;top:0;right:0;bottom:0;left:0;background:#000;opacity:.5;z-index:99;filter: alpha(opacity=50); }
+.dim02 {position:fixed;top:0;right:0;bottom:0;left:0;background:#000;opacity:.5;z-index:105;filter: alpha(opacity=50); }
+.dim.load {background:#fff;opacity:.2}
+.dim02.load {background:#fff;opacity:.2}
+
+/* /common */
+
+/* loading */
+.loading {position:fixed;top:0;right:0;bottom:0;left:0;background:url(/static/pc/images/loading.gif) no-repeat 50% 50%;z-index:110;background-size:80px 80px;}
+.detail_search .chec_info_tit{ font-size: 1.084rem; background: #fff; border-top: solid 1px #ccc; border-bottom: solid 1px #ccc; line-height:1.4rem; height: auto}
+.detail_search .chec_info_tit .ui-accordion-header-icon{display:none}
+.detail_search .chec_info_tit .txt2_4{line-height:22px}
+
+/* .popS1Wrap input[type=text]{height: 28px} */
+
+.infotxtb {margin-top:7px;}
+.infotxtb li {position:relative;margin-bottom:6px;padding-left:9px;font-size:12px;line-height:18px;margin:0;}
+.infotxtb li:after {content:"";display:block;position:absolute;top:8px;left:0;width:4px;height:4px;background:url(/static/pc/images/icon.png) no-repeat -82px 0;}
+.infotxtb li ul {margin:10px 0 35px 0;}
+.infotxtb li ul li {padding:0;}
+.infotxtb li ul li strong {color:#f14829;}
+.infotxtb li ul li:after {display:none;}
+
+.pop_join_inpu input[type="text"] {height:35px !important}
+.pop_join_inpu input[type="password"] {height:35px !important}
+.pop_id_find input[type="text"] {height:35px !important}
+.pop_id_find input[type="password"] {height:35px !important}
+.pop_pw_find input[type="text"] {height:35px !important}
+.pop_pw_find input[type="password"] {height:35px !important}
+.pop_join_atypical input[type="text"] {height:35px !important}
+.pop_join_atypical input[type="password"] {height:35px !important}
+/* .btnBuy{bottom:29px !important} */
+.pop_join_inpu .email-input-select select{ -webkit-appearance:menulist;-moz-appearance:menulist;-o-appearance:menulist;} 
+.pop_pw_find .email-input-select select{ -webkit-appearance:menulist;-moz-appearance:menulist;-o-appearance:menulist;} 
+
+/*약관 iframe*/
+.iframe_clauseWrap {width: 100%; max-height: 100%; max-height: 100vh; position: relative;}
+.iframe_clauseWrap .iframe{width: 100%; height: 100%; height:100vh;/* padding-bottom:48px; */position: absolute; top:0; left:0; overflow:scroll;-webkit-backface-visibility: hidden;backface-visibility: hidden;-webkit-overflow-scrolling: touch;}
+.iframe_clauseWrap .iframe iframe{width: 100%; height: 100%; border:0 none;-webkit-backface-visibility: hidden;backface-visibility: hidden;}
+
+/* 어드민 단체여행상담 : 170628 추가 */
+#groupConsult{padding:25px 0;background:#e3e3e3 !important}
+#groupConsult .box_t3{background:#fff}
+#groupConsult .localBox{padding:13px 10px;border-width:1px 0;border-style:solid;border-color:#e3e3e3}
+#groupConsult .localBox:after{display:block;content:"";clear:both}
+#groupConsult .localBox p{float:left;font-size:14px;line-height:22px;color:#666}
+#groupConsult .localBox .radi_list{float:right}
+#groupConsult .localBox .radi_list label{margin-right:0;margin-bottom:0}
+#groupConsult .mypg_defa_info_tab dl{margin-top:10px}
+#groupConsult .mypg_defa_info_tab dl dt{font-size:14px;line-height:35px;color:#666}
+#groupConsult .mypg_defa_info_tab dl dd .txtBox{width:46%}
+#groupConsult .mypg_defa_info_tab dl dd .txtBox input{width:100%;}
+#groupConsult .mypg_defa_info_tab dl dd .btn7_4{width:20%;margin-left:3px}
+#groupConsult .tit_m_consult{margin-bottom:13px;padding-bottom:10px;border-bottom:1px solid #e3e3e3}
+#groupConsult .btn2_3{width:150px}
+
+/* 로하스 팝업 포인트 : 170706 추가 */
+.lohas_pop .popS1Wrap .txt{margin:6px 0 0 0;font-size:13px;line-height:28px;}
+.lohas_pop .popS1Wrap .ex ul{position:relative;width:100%;margin:20px auto 20px;}
+.lohas_pop .popS1Wrap .ex ul:after{content: "";display:block;height:0;font-size: 0;line-height: 0;clear: both;}
+.lohas_pop .popS1Wrap .ex ul li{position:relative;width:100%;padding:15px 0 0 0;text-align: center;font-size: 14px;font-weight: bold;color: #666;line-height: 22px;}
+.lohas_pop .popS1Wrap .ex ul li:after{content:"";display: block;position: absolute;top: -6px;left: 50%;width: 14px;height: 14px;margin-left: -7px;background: #73b71b;border-radius: 50%;}
+.lohas_pop .popS1Wrap .ex ul li.txt{color:#73b71b;min-height:80px;margin:6px 0 0 0;}
+.lohas_pop .popS1Wrap .ex ul li.txt:nth-child(4){color:#73b71b;min-height:100px;}
+.lohas_pop .popS1Wrap .ex ul li.txt:after{display:none}
+.lohas_pop .popS1Wrap .ex ul li strong{font-size:16px;line-height:20px;}
+.lohas_pop .popS1Wrap .table-type01 {border-top: 2px solid #999;}
+.lohas_pop .popS1Wrap .table-type01 table caption{display: none;}
+.lohas_pop .popS1Wrap .table-type01 table th{border-bottom: 1px solid #ccc;border-left:1px solid #ccc;font-size: 13px;line-height: 120%;font-weight:bold;text-align:center;padding: 7px 3px;vertical-align:middle}
+.lohas_pop .popS1Wrap .table-type01 table th:first-child {border-left: none;}
+.lohas_pop .popS1Wrap .table-type01 table td.title {text-align: left;}
+.lohas_pop .popS1Wrap .table-type01 table td:first-child {border-left: none;}
+.lohas_pop .popS1Wrap .table-type01 table td{border-bottom: 1px solid #ccc;border-left:1px solid #ccc;font-size: 13px;padding: 7px 3px;vertical-align:middle}
+
+/* 골프 문화상품권 바코드 : 170713 추가 */
+#barcode{position:absolute;left:0;top:0;width:100%;min-width:320px;height:670px !important;background:#ccc;display:none;z-index:100;overflow-y:auto !important;-webkit-overflow-scrolling:touch;}
+#barcode .tit{position:relative;width:100%;height:auto}
+#barcode .tit p{position:absolute;top:50%;right:10px;margin-top:-8%;font-family:"san-serif";font-size:48px;line-height:50px;;font-weight:bold;letter-spacing:-1px;text-align:right;color:#fff}
+#barcode .tit img{display:block;width:100%;height:auto}
+#barcode .con{padding:0 20px;background:#ccc}
+#barcode .con p{height:40px;font-size:16px;line-height:40px;text-align:center;font-weight:bold;color:#56575b}
+#barcode .con p span{font-size: 16px;color:#000}
+#barcode .con table{width:100%}
+#barcode .con table tr{border-top:1px solid #d5d3d4}
+#barcode .con table tr th{padding:10px 0;background:#fafafa}
+#barcode .con table tr td{background:#fff}
+#barcode .con table .barcodeArea{border:none}
+#barcode .con table .barcodeArea td{text-align:center}
+#barcode .con table .barcodeArea #barcode2{width:100%;height:130px}
+#barcode .con table .barcodeArea svg{width:100%;height:130px}
+#barcode .con .btn_close{position:absolute;bottom:20px;width:calc(100% - 40px);height:40px;background:#55565a;border:1px solid #55565a;color:#fff;font-size:18px;line-height:40px;text-align:center;font-weight:bold}
+#barcodeZoom{position:fixed;top:0;left:0;z-index:10;width:100%;height:100%;background:#fff}
+#barcodeZoom div{position:absolute;top:50%;left:0;width:100%;text-align:center;-ms-transform:rotate(90deg);-webkit-transform:rotate(90deg);transform:rotate(90deg);}
+#barcodeZoom .btn_close{position:absolute;top:15px;right:15px;width:40px;height:40px}
+#barcodeZoom .btn_close img{width:100%;height:100%}
+
+/* 메인 복리후생관 라이프스타일 탭 */
+#lsTab{}
+#lsTab:after{display:block;content:"";clear:both}
+#lsTab li{float:left;border-top:1px solid #ccc;border-right:1px solid #ccc;border-bottom:1px solid #ccc;box-sizing:border-box;}
+/* #lsTab li:first-child{border-left:1px solid #ccc} */
+#lsTab li:first-child:nth-last-child(1) {
+	width:100%;border-left:none !important;
+}
+#lsTab li:first-child:nth-last-child(2) ~ li {
+	width:50%;border-left:none !important;
+}
+
+#lsTab li:first-child:nth-last-child(3) ~ li {
+	width:33.3%;border-left:none !important;
+}
+
+#lsTab li:first-child:nth-last-child(4) ~ li {
+	width:25%;border-left:none !important;
+}
+#lsTab li a{display: flex;width:100%;height:100%;word-wrap: normal;vertical-align: middle;flex-direction: column;justify-content: center;}
+#lsTab li.ui-tabs-active{border-left:none !important}
+
+/* 종하건강검진 탭 */
+#checkTab{border-left:1px solid #ccc}
+#checkTab:after{display:block;content:"";clear:both}
+#checkTab li{float:left;width:20%;border-top:1px solid #ccc;border-right:1px solid #ccc;border-bottom:1px solid #ccc;box-sizing:border-box}
+/* checkTab li:first-child{border-left:1px solid #ccc} */
+checkTab li:first-child{width:33.4%;border-left:none !important}
+#checkTab li a{display:block;width:100%;height:100%}
+#checkTab li.ui-tabs-active{border-left:none !important}
+
+
+/* 이벤트 기간 및 발표일 추가 */
+.eventInfo{margin-top:3px;padding-right:40px}
+.eventInfo li{color:#666;font-size:1.084rem;line-height:1.5rem}
+.eventInfo li:after{display:block;content:"";clear:both}
+.eventInfo li em{display:block;float:left}
+.eventInfo li span{display:block;float:left;margin-left:2px}
+
+
+#eventPopDiv p img{width:100%;height:auto}
+/* #specialDisplay img{width:100% !important;height:auto !important} 20190618 임시 삭제 조치 whkim  */
+#specialDisplay .mdRecomLi .mdRecomLiImg a {text-align: center; background: #fff; } 
+
+#themeStory img{width:100% !important;height:auto !important}
+
+/* 앱 다운로드 팝업 추가 */
+#pop_appview .popS3 {background:transparent}
+#pop_appview .popS3 img{width:100%}
+#pop_appview .popS3 .app-view a{display:block;color:#fff;text-align:center}
+#pop_appview .popS3 .app-view a.mobile-view{margin-top:15px;font-weight:bold;font-size:14px;line-height:18px;text-decoration:underline}
+
+/* 수정내용 : 메인화면 각 영역별 타이틀 간격 조정 및 아이콘 추가 */
+.mdRecom{padding-top: 13px;padding-bottom:0;background: #f1f1f1;padding-left: 10px;padding-right: 10px;}
+.mdRecomTit{text-align: center; font-size: 20px; font-weight: 700; height: 42px; line-height: 38px; z-index: 10; background: #f1f1f1}
+h2[class*="RecomTit0"] span{display:inline-block;height:32px;padding-left:40px;background-image:url(http://image.benecafe.co.kr/cdnetbs/front/image/etbs/sprite_mainCate.png);background-repeat:no-repeat;background-position:0 1px;background-size:30px;line-height:32px;}
+h2.RecomTit02 span{background-position:0 -35px}
+h2.RecomTit03 span{background-position:0 -71px}
+h2.RecomTit04 span{background-position:0 -107px}
+h2.RecomTit05 span{background-position:0 -143px}
+h2.RecomTit06 span{background-position:0 -179px}
+h2.RecomTit07 span{background-position:0 -215px}
+h2.RecomTit09 span{background-position:0 -287px} /*20190130*/
+
+/* 수정내용 : 어드민에서 html로 이미지 등록시 이미지 크기 리사이징 */
+ [class*="popup-detail"] .inner p img{max-width:100%}
+ 
+/* css edit : start */
+/* 수정내용 : 주문배송화면 최상단 앱다운로드 배너 추가; */
+.top-banner{display:table;width:100%;width:100%;padding:10px;color:#fff;background:#333;box-sizing:border-box;}
+.top-banner a{display:table-cell;vertical-align:middle}
+.top-banner a div{display:table;width:100%}
+.top-banner a span{display:table-cell;vertical-align:middle;box-sizing:border-box}
+.top-banner a span img{vertical-align:middle}
+.top-banner a span:first-child img{width:36px}
+.top-banner a span:last-child{padding-right:10px}
+.top-banner a span:last-child img{width:80px}
+.top-banner a span.txt{width:80%;padding:0 10px;color:#fff;line-height:1.3}
+.top-banner a span.txt strong{display:block;font-size:1.25rem}
+.top-banner a span.txt em{display:block;font-size:1.084rem}
+/* css edit : end */
+ 
+/* 골프상담 */
+.box_t4 .advice-scut{display:table;width:100%;font-weight:600;font-size:1.084rem;text-align:center;}
+.box_t4 .advice-scut a{display:table-cell;width:50%;padding:10px;box-sizing:border-box}
+.box_t4 .advice-scut a:first-child{border-right:solid 1px #ccc}
+.box_t4 .advice-scut span{display:inline-block;margin-left:10px;}
+.golf .main_bann2_styl1{ background-image: url(http://image.benecafe.co.kr/cdnetbs/front/image/ico_golf_benefit01.png);background-size:32px auto;}
+.golf .main_bann2_styl2{ background-image: url(http://image.benecafe.co.kr/cdnetbs/front/image/ico_golf_benefit02.png);background-size:32px auto;}
+.golf .main_bann2_styl3{ background-image: url(http://image.benecafe.co.kr/cdnetbs/front/image/ico_golf_benefit03.png);background-size:32px auto;}
+.golf .main_bann2_styl4{ background-image: url(http://image.benecafe.co.kr/cdnetbs/front/image/ico_golf_benefit04.png);background-size:32px auto;}
+.golf .main_bann2_styl5{ background-image: url(http://image.benecafe.co.kr/cdnetbs/front/image/ico_golf_benefit05.png);background-size:32px auto;}
+
+/* 쪽지기능추가 */
+.btn5_msg{ background-image: url(http://image.benecafe.co.kr/cdnetbs/front/image/etbs/btnWrite.png); }
+.message .sort_cond{width:auto}
+.message .sort_cond .select-title{padding-right:25px;}
+.message .tbS5 th,.message .tbS5 td{padding:8px 5px;border-left:1px solid #e3e3e3;}
+.message .tbS5 th:first-child,.message .tbS5 td:first-child{border-left:none}
+.message .tbS5 th{line-height:16px}
+.message .tbS5 td{text-align:center}
+.message .tbS5 td.deta-l{text-align:left}
+.message table.tbS5{table-layout: fixed}
+.message table.tbS5 span{text-decoration:underline;cursor:pointer}
+.message table.tbS5 span.deta{display:block;overflow:hidden;white-space:nowrap;text-overflow:ellipsis;text-align:left;cursor:pointer}
+.message table.tbS5 span.deta2{overflow:hidden;text-overflow:ellipsis; display:-webkit-box;-webkit-line-clamp:2;/* 라인수 */ -webkit-box-orient:vertical;word-wrap:break-word;/*! line-height:1.2em; *//*! height:2.4em; */text-align:left;text-decoration:none}
+.message .pt_6{text-decoration:underline}
+.message .tab_bord .ui-tabs .ui-tabs-nav{border-left:none}
+.message .btnbox .btn1_3{width:auto;padding:0 4px}
+.message table.tbS2_2 th{min-width:60px;text-align:left}
+.message table.tbS2_2 td span.deta{text-decoration:underline;cursor:pointer}
+.message .popS3Wrap{margin-top:0}
+.message .popS_footer .btn1_5{width:70px}
+#alert01 .popS1Header .btnClose,#alert02 .popS1Header .btnClose{top:6px}
+.pop_msg_srch .star_day_coup,.pop_msg_srch .end_day_coup{width:32%;font-size:1rem}
+
+
+/* sunjoo : 180426 */
+.listS1 {border-top:1px solid #e3e3e3;}
+.listS1 .item {border-bottom:1px solid #e3e3e3;}
+.listS1 .item > a {display:block; padding:10px 20px 30px; position:relative;}
+.listS1 .item > a::before {content:""; position:absolute; right:10px; bottom:1px; width:30px; height:30px; background:url(http://login.benecafe.co.kr/static/mobile/images/common/icoDownarrow.png) 0 0 no-repeat; background-size:30px;}
+.listS1 .item > a::after {content:""; display:block; clear:both;}
+.listS1 .item > a .tit {font-size:16px; overflow:hidden;}
+.listS1 .item > a .price {float:right;}
+.listS1 .item > a .sub {font-size:11px; color:#999; position:absolute; left:20px; bottom:10px;}
+.listS1 .item > a .state {color:#999; position:absolute; right:40px; bottom:10px;}
+.listS1 .tbS11 {display:none; background-color:#f1f1f1;}
+.listS1 .item.open > a::before {transform:rotate(180deg);}
+.listS1 .item.open .tbS11 {display:table;}
+
+.listS2 {position:relative; padding-left:120px}
+.listS2 .img {width:110px; height:69px; left:0; position:absolute; top:0;}
+.listS2 .list {}
+.listS2 .list > li {position:relative; word-break:break-all; margin-top:3px;}
+.listS2 .list > li:nth-child(1) {margin-top:0;}
+.listS2 .list > li:nth-child(2) {padding-left:55px;}
+.listS2 .list > li:nth-child(2) .tit {position:absolute; left:0; top:0;}
+.listS2 .list > li:nth-child(3) {padding-left:92px;}
+.listS2 .list > li:nth-child(3) .tit {position:absolute; left:0; top:0;}
+.listS2 .list .tit {}
+/* // sunjoo : 180426 */
+
+/* 180503 edit : start */
+/* 옵션선택 가격 추가 */
+.option-type01 td{min-width:100px;border-left:0;text-align:right}
+/* 180503 edit : end */
+
+/* 180424 edit : start */
+/* 추가내용 : 간편로그인 관련 UI 추가*/
+.drawer{z-index:100;position:fixed;top:0;right:-100%;width:100%;height:100%;background:rgba(0,0,0,.5);
+-webkit-transition:right .6s cubic-bezier(0.190,1.000,0.220,1.000);transition:right .6s cubic-bezier(0.190,1.000,0.220,1.000)}
+.drawer.active{right:0}
+[class*="simpleLogin"] .popS1{background:#f1f1f1}
+[class*="simpleLogin"] .popS1Wrap{text-align:center}
+[class*="simpleLogin"] .popS1Wrap > .txt2_5{padding:30px 0}
+[class*="simpleLogin"] .popS1Wrap .btn7_2{width:auto;padding:0 20px}
+.login-box{margin:0 20px 30px;padding-bottom:20px;background:#fff}
+.login-box h2{margin-bottom:15px;padding-top:80px;font-size:16px;background:url(http://image.benecafe.co.kr/cdnetbs/front/image/etbs/ico_pw01.jpg) no-repeat center 34px;background-size:30px;}
+.login-box .box_t2_3:after{content:"";display:block;clear:both}
+.login-box .box_t2_3{margin:10px 20px 0;padding-left:18px;text-align:left}
+.login-box .box_t2_3 strong, .login-box .box_t2_3 a{float:left;vertical-align:middle;}
+.login-box .box_t2_3 a{float:right;width:auto;margin-top:-2px;padding:0 5px;font-weight:normal;}
+.login-box .box_s2_3{color:#333;background-position-y:10px;}
+
+.passw-box{margin:20px 20px 0;padding:20px;background:#f1f1f1}
+.passw-box .txt2_4 span{color:#f14829}
+.passw-box div{margin-top:20px;padding:15px;background:#fff}
+.passw-box div:after{content:"";display:block;clear:both}
+.passw-box div span{position:relative;float:left;width:16.666%;height:20px;box-sizing:border-box}
+.passw-box div input{width:20px;height:20px;border-radius:100%;font-size:12px;color:#bbb;border:1px solid #bbb;background:#bbb;text-align:center}
+.passw-box div span.on:after{content:'';display:block;position:absolute;top:0;left:calc(50% - 10px);width:20px;height:20px;border:1px solid #f14829;border-radius:100%;background:#f14829;box-sizing:border-box}
+.passw-box div span.off:after{content:'';display:block;position:absolute;top:0;left:calc(50% - 10px);width:20px;height:20px;border:1px solid #bbb;border-radius:100%;background:#bbb;box-sizing:border-box}
+
+[class*="simpleLogin"] .pw-info{padding:0 20px 20px;text-align:left}
+[class*="simpleLogin"] .pw-info p{padding-bottom:10px;font-size:1.12rem;font-weight:bold;}
+[class*="simpleLogin"] .pw-info ul li{position:relative;padding-left:12px;font-size:1.12rem;line-height:1.4}
+[class*="simpleLogin"] .pw-info ul li:after{display:block;content:"*";position:absolute;top:0;left:0}
+[class*="simpleLogin"] .pw-info ul li span{color:#f14829}
+
+.popup_pw{z-index:110 !important}
+.popup_pw .popS3Wrap{margin-top:0}
+.popup-pw .popup-cont{padding:20px}
+.pw-input{display:table;width:100%;margin:20px 0 10px;border:1px solid #999;background:#eee;box-sizing:border-box}
+.pw-input span{display:table-cell;width:20%;height:45px;vertical-align:middle;}
+.pw-input span label{display:block;height:35px;background:url(http://image.benecafe.co.kr/cdnetbs/front/image/etbs/ico_pw02.png) no-repeat center;background-size:45px;text-indent:-9999px;}
+.pw-input span input{width:100%;height:45px;border:none;background:#eee;line-height:45px;}
+.pw-input span:last-child{width:80%}
+/* 180424 edit : end */
+
+/* 앱 푸시 수신제어 css 시작 */
+.tableUI{display:table;width:100%}
+.tableUI > div{display:table-cell;vertical-align:middle}
+.tableUI > div:first-of-type{width:80px;text-align:left}
+
+.app-push > h3{min-height:40px;padding:12px 10px}
+.app-push .tableUI{height:40px;padding:10px;background:#fff}
+.app-push .tableUI.border{border-bottom:1px solid #e3e3e3}
+.app-push .tableUI > div{width:20%;font-size:1.084rem;text-align:right}
+.app-push .tableUI > div:first-of-type{width:80%;text-align:left;}
+.app-push .tableUI > div h3{font-size:1.084rem}
+.app-push .tableUI > div p{padding-top:5px;font-size:12px;color:#686868}
+.app-push .tableUI > div button{width:40px;height:26px;text-indent:-9999px;background:url(http://image.benecafe.co.kr/cdnetbs/front/image/etbs/ico_setup.png) no-repeat center 2px;background-size:40px auto;outline:none;-webkit-tap-highlight-color:transparent}
+.app-push .tableUI > div button.on{background-position:center -24px }
+.app-push .update > div,.app-push .update > div:first-of-type{width:50%}
+.app-push .update > div p{padding-top:0}
+.app-push .license> div{background:url(http://image.benecafe.co.kr/cdnetbs/front/image/etbs/ico_setup_arrow.png) no-repeat 98% center;background-size:9px auto}
+/* 앱푸시 수신제어 css 끝 */
+
+/* 법인콘도 상세·예약하기 */
+[class*="corp-condo"] .tbS5_2 th,[class*="corp-condo"] .tbS5_2 td{text-align:center}
+[class*="corp-condo"] .map-area{margin-bottom:80px}
+[class*="corp-condo"] .map-area img{width:100%}
+[class*="corp-condo"] .swiper-button-prev {left:0;width:30px;height:45px;background:url(http://login.benecafe.co.kr/static/pc/images/icon.png) no-repeat 0 -117px;font-size:0;}
+[class*="corp-condo"] .swiper-button-next {right:0;width:30px;height:45px;background:url(http://login.benecafe.co.kr/static/pc/images/icon.png) no-repeat -30px -117px;font-size:0;}
+[class*="corp-condo"] .swiper-pagination{bottom:10px}
+[class*="corp-condo"] .tbS5_2 .btn8{padding:0 5px}
+.condo-detail .popS1Wrap{padding-bottom:120px} 
+.condo-detail .slick-prev{width:30px;height:45px;left:0;}
+.condo-detail .slick-next{width:30px;height:45px;right:0;}
+.condo-detail .slick-prev:before{content: ''; display: inline-block;width:30px;height:45px; background:url(http://login.benecafe.co.kr/static/pc/images/icon.png) no-repeat  0 -117px}
+.condo-detail .slick-next:before{content: ''; display: inline-block;width:30px;height:45px; background:url(http://login.benecafe.co.kr/static/pc/images/icon.png) no-repeat -30px -117px}
+.condo-intro img{width:100%;}
+.condoLiImg{height:auto !important}
+.condoLiImg a{display: block;height:auto !important}
+.condoLiImg img{width: 100%; display: block}
+.newList .condoLiImg{position: relative;}
+
+
+
+
+/* 180413 css edit : start */
+/* 아이베네 기부방 */
+.header .btnS8_3{padding:0 10px;text-align:center}
+.btn5_write{background-image: url(http://image.benecafe.co.kr/cdnetbs/front/image/etbs/ico_write.png); }
+.donation .col-xs-10 .input-a{width:98%;}
+.donation .ui-tabs .ui-tabs-nav li{border-color:#333}
+.donation .ui-tabs .ui-tabs-nav li.ui-tabs-active{border-color:#f14829;background:#f14829}
+.donation .ui-tabs .ui-tabs-nav li.ui-tabs-active a{color:#fff}
+.donation .menu_hori2 ul li{width:25%}
+.donation .tbS5 td{text-align:center}
+.donation .tbS5 td div{text-align:left}
+.donation .tbS5 td div span{vertical-align:middle}
+.donation .tbS5 .txt span{font-size:13px}
+.donation .tbS5 .txt span.re{margin-left:5px;font-size:12px;}
+.donation .tbS5 .info{padding-top:8px;}
+.donation .tbS5 .info span:first-of-type{margin-left:0}
+.donation .tbS5 .info span{display:inline-block;margin:0 5px;font-size:12px;color:#666}
+.donation .tbS5 .info span[class*="btn3"]{border-radius:3px;font-weight:normal}
+.donation .tbS5 .info span.btnS3{color:#f14829}
+.donation .tbS5 .info span.btnS4_4{color:#257ed3;}
+.donation .tbS5 .info span.btnS4_2{color:#333;}
+.donation .tbS5 .info span.btnS4_3{color:#3a8d3b;}
+.popS1Header .btnClose2{left:7px}
+.popS1Header .btnS1_3{position:absolute;top:10px;right:10px;text-align:center}
+.donation-write .popS1Header .btnClose,.donaion-detail .popS1Header .btnClose{left:7px}
+.donation-write .popS1Header .btnS1_3,.donaion-detail .popS1Header .btnS1_3{position:absolute;top:10px;right:10px;text-align:center}
+[class*="donaion"] .tbS2_2 th{color:#333;font-weight:bold;text-align:left}
+[class*="donaion"] .tbS2_2 .check {/*! display:block; */margin-top:6px}
+[class*="donaion"] .tbS2_2 .check label{font-size:12px;font-weight:normal}
+[class*="donaion"] .detail{padding-top:20px}
+[class*="donaion"] .detail h2.tit_t2{margin:18px 0 10px;}
+[class*="donaion"] .detail .select-title{font-size:1.084rem;font-weight:normal}
+[class*="donaion"] .detail div.modi-cont{padding:15px 10px;font-size:1.084rem;border:1px solid #e3e3e3;line-height:1.4;}
+[class*="donaion"] .detail .btnBtm_t2 a{width:60%;}
+
+.donaion-detail .txt{font-size:1.084rem}
+.donaion-detail .img{margin-top:20px}
+.donaion-detail .img img{max-width:100%}
+/* 200304 벼룩시장 거래완료 css 추가 및 변경 : start */
+.reply .reply_btns{margin-bottom:3%;}
+.reply .rp_btn{border: 1px solid #e5e5e5;padding:3px 5px;background:white;}
+.reply .txt{margin:10% 0;}
+.reply .re-reply{background:#f8f8f8;padding:4%;position:relative;}
+.reply .re-reply .name{margin:1% 0;}
+/* 200304 벼룩시장 거래완료 css 추가 및 변경: end */
+
+/* 210202 벼룩시장 게시글 상태별 건수 css 추가 : start */
+.count_info{margin:27px 10px;}
+.count_info th{color:white;}
+.count_info td{text-align:center;}
+/* 210202 벼룩시장 게시글 상태별 건수 css 추가 : end */
+
+.reply-area{margin-top:10px}
+.reply-area ul{border-bottom:1px solid #e3e3e3}
+.reply-area .comm_cont{padding:15px;color:#666;font-size:12px;border-top:1px solid #e3e3e3;background:#f8f8f8;}
+.reply-area .comm_cont .info {position:relative}
+.reply-area .comm_cont .info p:last-of-type{padding:6px 0}
+.reply-area .comm_cont .info span{display:inline-block;vertical-align:middle}
+.reply-area .comm_cont .info span.name{padding-right:10px;color:#333;font-size:14px;font-weight:bold}
+.reply-area .comm_cont .info a.btn-reply{display:block;position:absolute;right:0;top:0;padding:3px 6px;font-size:12px;border:1px solid #333;}
+.reply-area .comm_cont .txt{padding-top:5px;font-size:1.084rem}
+.reply-area .reply{background:#f8f8f8 url(http://image.benecafe.co.kr/cdnetbs/front/image/etbs/ico_reply.jpg) no-repeat 20px 12px}
+.reply-area .reply .info p,.reply-area .reply .txt{margin-left:25px}
+.reply-area .reply .btnS3{height:20px;padding:0 5px;color:#f14829;font-weight:normal;border-radius:3px;font-size:12px;line-height:20px}
+.donation .btnBtm_t2{margin:20px 0 0}
+.donation .btnBtm_t2 a{width:60%}
+.reply-area .reply-write{margin-top:10px}
+.reply-area .reply-write:after{content:"";display:block;clear:both}
+.reply-area .reply-write > div{float:left;width:10%}
+.reply-area .reply-write > div:first-child{width:90%}
+.reply-area .reply-write textarea{resize:none;width:100%;height:80px;padding:10px 20px;box-sizing:border-box}
+.reply-area .reply-write a.btn-gray{width:100%;height:80px;line-height:78px}
+
+.pop-reply .reply-cont{margin:25px 10px 15px;font-size:1.084rem;}
+.pop-comment .reply-area{margin-top:0}
+.pop-comment .reply-area .reply .info p:last-of-type{padding-top:0}
+/* 180413 css edit : end */
+
+.line-banner img{width:100%}
+
+/* 180502 css edit : start */
+.manual > .box_t3_2{margin-bottom:25px}
+.manual .box_t3_2 .arro_cost_bott em{position:absolute;bottom:-13px;right:-30px}
+.manual .list_s1_3.no-bul li{margin-left:0;list-style:none}
+.manual .btn2{width:120px}
+.msg-area .kakao-msg > h5{margin:20px 0 10px}  
+.msg-area .kakao-msg > div{padding:20px;border:1px solid #e3e3e3}
+.msg-area .kakao-msg > div >  p{margin-bottom:10px}
+.msg-area .kakao-msg > div >  p span{display:block;padding-top:5px}
+.money-request .btnbox{margin-top:40px}
+/* 180502 css edit : end */
+
+
+/* 180525 edit : start */
+/* 건강검진수정 */
+input[type=tel]{ height: 35px; line-height: 33px; padding:0 7px; display: inline-block; font-size: 1.084rem}
+input[type=tel]{-webkit-appearance:none; border-radius:0; border-width: 1px; border-style: solid; border-color: #e3e3e3}
+select[class*="selectUI"] {/* 네이티브 외형 감추기 */-webkit-appearance:none;-moz-appearance:none;-ms-apparance:none;appearance:none;}
+select[class*="selectUI"] {width:100%;height:35px;padding:0 5px;font-weight:bold;color:#333;font-size:12px;border-radius:0;border:1px solid #e3e3e3 !important;background:#fff url('http://login.benecafe.co.kr/static/mobile/images/common/icoDownarrow.png') no-repeat 100% 50%;background-size:20px;vertical-align:middle;}
+select.selectUI2{width:auto !important;padding-right:20px;height:28px}
+.list_s1_3.c1 li.c4{color:#f14829}
+.ui-tabs .ui-tabs-nav2 li{height:36px;font-size:1.084rem;line-height:34px;letter-spacing:-1px;} 
+.checkup .ui-tabs .main-tab li.ui-tabs-active{border:1px solid #f14829;}
+.checkup-main{margin:16px 10px 0}
+.checkup-main .visual img{width:100%}
+.checkup-list li{margin-bottom:8px}
+.checkup-list li label{display:table;width:100%}
+.checkup-list .radio,.checkup-list strong{display:table-cell;color:#666}
+.checkup-list strong{padding-left:8px;font-weight:normal;font-size:1.084rem;line-height:1.4rem}
+[class*="tableUI"]{display:table;width:100%}
+[class*="tableUI"] > div{display:table-cell;width:30%;vertical-align:middle}
+.checkup .tableUI > div:first-of-type{width:70%;line-height:16px}
+.checkup .tableUI > div.taR{padding-top:2px;vertical-align:top}
+.checkup .tableUI > div .btn8{padding:0 5px}
+.checkup .tableUI2 > div{width:60%}
+.checkup .tableUI2 > div:first-of-type{width:40%}
+.checkup .list_s1_3 li{font-size:1.084rem}
+.checkup .sort_cond{width:auto}
+.checkup .sort_cond span{padding-right:25px;}
+.checkup .box_t3_2 .diB a{text-decoration:underline}
+.checkup .btn-modify{position:absolute;top:12px;right:8px;text-decoration:underline;}
+.select-area .pr10{padding-right:10px}
+.select-area .pl10{padding-left:10px}
+
+.pop_chec_org_defa .tableUI > div{width:30%;}
+.pop_chec_org_defa .tableUI > div:first-of-type{width:70%;}
+.pop_chec_org_defa .check-detail > h3{margin-top:20px;margin-bottom:5px;font-size:1.2rem;line-height:1.4rem}
+.pop_chec_org_defa .check-detail ul li{font-size:1.084rem;color:#666;line-height:1.4rem}
+.check-detail .chec_info h3.chec_info_tit{border-top:0}
+.check-detail div.chec_info h3:first-of-type{border-top:1px solid #ccc}
+.chec_info h3.chec_info_tit + .box_t1{border-bottom:1px solid #ccc}
+
+.checkup .inputEmail .email-input-front {border-right:0;}
+.checkup .inputEmail .email-input-front .sub-email-input-front-1 {display:inline-block;width:89%;border-right:0;}
+.checkup .inputEmail .email-input-front .sub-email-input-front-2 {display:inline-block;width:8%;font-size:1.084rem;text-align:center;line-height:35px;border:0;}
+.check-list a.btnS5{display:block;width:60px;margin:0 auto;padding:0 4px;font-size:12px}
+/* 180525 edit : end */
+
+/* 수정내용 : 할인쿠폰 표시 추가 */
+.saleCoupTag{position:absolute;bottom:0;left:0;padding:4px 8px;color:#fff;font-weight:bold;font-size:11px;background: #388d3c}
+
+/*2018.08.16 라마다 평창 이벤트 css*/
+/*
+html,body{height: 100%;}
+.ramada_pyeongchang_wrapper{height: 100%;background-color: #f1f1f1;}
+.ramada_pyeongchang_wrapper.ui-tabs .ui-tabs-nav2 li {height: 50px;line-height: 15px;background: #666;border:none;}
+.ramada_pyeongchang_wrapper.ui-tabs .ui-tabs-nav2 .center-li{border-left: 1px solid #555; border-right: 1px solid #555;}
+.ramada_pyeongchang_wrapper.ui-tabs .ui-tabs-nav {border-left: none;}
+.ramada_pyeongchang_wrapper.ui-tabs .ui-tabs-nav li.ui-tabs-active {background: #fff;outline: none !important;border-bottom:2px solid #000;}
+.ramada_pyeongchang_wrapper.ui-tabs .ui-tabs-nav li.ui-tabs-active a {color:#000;}
+.ramada_pyeongchang_wrapper.ui-tabs .ui-tabs-nav li a {padding-top: 8px;height: 42px; color: #d9d9d9;}
+.ramada_pyeongchang_wrapper .ramada_checkIn{padding:50% 0 12px;width:100%;background: url(http://login.benecafe.co.kr/static/mobile/images/top_bg.jpg) no-repeat top center #000;background-size: 100%;}
+.ramada_pyeongchang_wrapper .ramada_checkIn div{padding:0 10px;color:#fff;text-align: center;}
+.ramada_pyeongchang_wrapper .ramada_checkIn p{margin-top:5px;color:#fff;font-size: 13px;}
+.ramada_pyeongchang_wrapper .userName {font-size: 15px;}
+.ramada_pyeongchang_wrapper table {margin-top:17px;width: 100%;background: #fff;border:1px solid #e4e4e4;font-weight: bold;}
+.ramada_pyeongchang_wrapper th {padding:8px 0;background: #f2f2f2;font-size: 15px;border-bottom: 1px solid #cbcbcb;}
+.ramada_pyeongchang_wrapper td {padding:10px 10px;text-align: left;}
+.ramada_pyeongchang_wrapper td ul{margin: 10px 0 0 5px;}
+.ramada_pyeongchang_wrapper td li{font-size: 13px;}
+.ramada_pyeongchang_wrapper .ramada_checkIn .checkIn_period{padding:10px;background:#f2f2f2;color: #333;font-size: 13px;line-height: 15px;}
+.ramada_pyeongchang_wrapper .checkIn_period_inner{display: inline-block;margin:0 auto;}
+.ramada_pyeongchang_wrapper .checkIn_period_inner span{display: block;float: left;}
+.ramada_pyeongchang_wrapper .checkIn_period:after{content: "";display: block;height: 0;clear: both;}
+.ramada_pyeongchang_wrapper .cal_icon{margin-right:5px;width:17px;height:16px;background:url(http://login.benecafe.co.kr/static/mobile/images/ico_cal_black.jpg) #f2f2f2 no-repeat center;background-size: 17px auto;}
+.ramada_checkIn_voucher{padding:12px 10px 50px;background: #f1f1f1;}
+.ramada_checkIn_voucher .box_t2_3{padding:0px 10px 17px 16px;font-size: 13px;color: #666;background: url(https://cert.benecafe.co.kr/static/mobile/images/common/ico_info.png) no-repeat 0px 4px;background-size: 10px;}  
+.ramada_checkIn_voucher_inner{margin-top:;background-color: #fff;}
+.ramada_pyeongchang_wrapper .voucher {width: 100%;height: auto;background: url(http://login.benecafe.co.kr/static/mobile/images/voucher_bg.png) #fff no-repeat top center; background-size: 100%;border-radius: 5%;}
+.ramada_pyeongchang_wrapper .btn7_2{margin-bottom:20px;height: 40px;font-size: 14px;}
+.ramada_pyeongchang_wrapper .voucher_top{padding:4% 0 9% 0;text-align: center;}
+.ramada_pyeongchang_wrapper .voucher_top strong {color: #fff;font-size:1.534rem;}
+.ramada_pyeongchang_wrapper .voucher_top span{color:#faecbf; font-weight: bold;font-size: 0.984rem;}
+.ramada_pyeongchang_wrapper .voucher_bottom {padding:0 16px 16px;}
+.ramada_pyeongchang_wrapper .list_t1{font-weight: bold;}
+.ramada_pyeongchang_wrapper hr{margin: 12px 0;}
+@media screen and (max-width: 320px){
+  .ramada_pyeongchang_wrapper.ui-tabs .ui-tabs-nav2 li {font-size:0.984rem;}
+  .ramada_pyeongchang_wrapper .ramada_checkIn .checkIn_period{font-size:0.904rem;}
+  .ramada_pyeongchang_wrapper .voucher_top{padding: 3% 0 8% 0;}
+  .ramada_pyeongchang_wrapper.ui-tabs .ui-tabs-nav li a{padding-top:10px;height: 40px}
+}
+*/
+
+
+/*2018.08.22 포인트 상세보기 추가*/
+.point_tb .btn_point_detail_change {display: inline-block;margin-top:5px;padding-left: 14px;width: 78px;height: 28px;border: 1px solid #cdcdcd;color: #666;text-align: center;font-weight: 700;background: #f1f1f1 url(http://login.benecafe.co.kr/static/mobile/images/common/icoDownarrow.png) no-repeat 2px 3px;background-size: 20px;line-height: 26px;font-size: 12px;}
+.point_tb .btn_point_detail_change.on{background: #f1f1f1 url(http://login.benecafe.co.kr/static/mobile/images/common/icoUparrow.png) no-repeat 2px 3px;background-size: 20px;}
+.point_tb .remaining_point {display: block;}
+
+/* S : 2018.09.14 복지카드 이용안내 실시간 차감*/
+.realTime_deduction .pointColor_red{color:#f14829;}
+.realTime_deduction .text_line{text-decoration: underline;}
+.realTime_deduction ul{margin: 10px 0 25px 0;}
+.realTime_deduction table{margin:0 auto;width: 70%;text-align: center;background: #fff;}
+.realTime_deduction th {background:#f1f1f1;}
+.realTime_deduction th,.realTime_deduction td{padding:5px 0;border: 1px solid #e3e3e3;}
+.realTime_deduction .floating_wrap{position:relative;margin-bottom: 70px;}
+.realTime_deduction .layer_arrIcon {display:inline-block;position:absolute;top:30px;right:334px;width: 93px;height: 18px;background: url(http://image.benecafe.co.kr/cdnetbs/front/publish/images/layer_arrIcon.png);}
+.deduction_process:after{position: relative;content: "";display: block;height: 0;clear: both;}
+.deduction_process li{margin-bottom: 10px;}
+.deduction_process dt{display:inline-block;padding:3px 30px 3px 5px;background: #0a74a4;color: #fff;}
+.deduction_process dd{padding:10px;border: 1px solid #e3e3e3;font-weight: bold;}
+.layer_notification_message:after{position: relative;content: "";display: block;height: 0;clear: both;}
+.layer_notification_message li{margin-bottom: 10px;}
+.layer_notification_message dt{display:inline-block;padding:5px;margin:0 auto;background: #0070c0;color: #fff;}
+.layer_notification_message dd{margin-top:5px;padding:10px;border: 1px solid #e3e3e3;background: #d9d9d9;text-align: left;border-radius: 5px;font-weight: bold;}
+.layer_notification_message li:last-child dd{background: #8497b0;color: #fff;}
+/* E : 2018.09.14 복지카드 이용안내 실시간 차감*/
+
+/* S : 기획전 모음 페이지 20190318*/
+.promotion_collect .promotion_collect_bg{margin-bottom:10px;position:relative;}
+.promotion_collect h3{position:absolute;top:20px;width:100%;font-size:15px;text-align:center;}
+.promotion_collect h3 span{display:inline-block;margin-top:7px;padding:1px 12px 3px;background:#c44864;color:#fff;font-weight:bold;letter-spacing:-1px;}
+@media screen and (max-width:330px){.promotion_collect h3{top:9px;}}
+@media (min-width:331px) and (max-width:375px){.promotion_collect h3{top:15px;}}
+.promotion_collect img{width: 100%;}
+.promotion_collect .promotion_linkBox{display: block;}
+.promotion_collect .promotion_list_wrap{padding:0 10px 10px 10px;}
+.promotion_collect .promotion_list_wrap .ui-tabs-panel li{margin-bottom:20px;border:1px solid #ccc;}
+.promotion_collect .promotion_textBox{padding:10px;text-align: left;font-size: 13px;}
+.promotion_collect .promotion_textBox span.btn3_3{display: inline-block;}
+.promotion_collect .promotion_textBox span{display: block;margin-top:5px;}
+.promotion_collect span.text{font-weight: bold;text-overflow:ellipsis;overflow:hidden;white-space: nowrap;}
+.promotion_collect .ui-tabs .ui-tabs-nav{margin-bottom:10px;}
+.promotion_collect .promotion_list_wrap .tabUl li{margin-bottom:0;}
+/* E : 기획전 모음 페이지*/
+
+/* S : 여행-서브메인 2018.12.03 common.css 에 추가 될 css*/
+.tourSubMain img{width: 100%;}
+.tourSubMain .pointColor_red{color:#f15336}
+.tourSubMain .tourList{padding:10px;}
+.tourSubMain .tourList li:first-child{margin-bottom:10px;}
+.tourSubMain .tourTabbox{padding:10px;}
+.tourSubMain .ui-tabs .ui-tabs-nav li {background:#fff;font-size: 0.937rem;}
+.tourSubMain .ui-tabs .ui-tabs-nav li.ui-tabs-active{background:#333;border:1px solid #333;}/*20190118 속성 추가*/
+.tourSubMain .ui-tabs .ui-tabs-nav li.ui-tabs-active a{color:#fff;}
+.tourSubMain .ui-tabs-panel{padding:10px;border:1px solid #ccc;border-top:0;background:#e5e5e5;}
+.tourSubMain .tour_select_list{border-top:1px solid #ccc;border-left:1px solid #ccc;}
+.tourSubMain .tour_select_list:after{content:"";display:block;clear:both;}
+.tourSubMain .tour_select{width:33.3%;height:100px;float:left;background:#fff;border-right:1px solid #ccc;border-bottom:1px solid #ccc;box-sizing:border-box;}
+.tourSubMain .tour_select a{position:relative;padding:10px;display:block;height:100%;}
+.tourSubMain .tour_select a:after{content: "";display: block;position: absolute;bottom:10px;right:10px;width:14px;height:14px;background: url(http://image.benecafe.co.kr/cdnetbs/front/image/etbs/tour_more_ico_mo.png) no-repeat;background-size:14px 14px;font-size: 0;}
+.tourSubMain .tour_select .selected{color:#f15336;}
+.tourSubMain .tour_select strong{display:block;margin-bottom: 5px;font-size:13px;}
+.tourSubMain .select_search{padding:10px 0 0 10px;width: 33.3%;height: 100px;float: left;box-sizing: border-box;}
+.tourSubMain .select_search button{padding-top:50px;display:block;width:100%;height:100%;color:#fff;text-align:center;box-sizing:border-box;font-size: 13px;background:url(http://image.benecafe.co.kr/cdnetbs/front/image/etbs/tour_search_ico_mo.png) no-repeat 50% 35% #f15336;background-size:30px auto;}
+.tourSubMain .tour_list_tit_country{display:block;margin: 0 0 10px;text-align:center;font-size:15px;font-weight:bold;color:#666;}
+.tourSubMain .mdRecom{margin-bottom:20px;padding-top: 0;}
+.tourSubMain .mdRecomTit{height:36px;}
+.tourSubMain .mdRecomTitBox{margin-top: 7px;}
+
+.tourSubMain .local_tour .search_destination:after{content:"";display:block;height:0;clear:both;}
+.tourSubMain .local_tour .search_destination input{float:left;width:-webkit-calc(100% - 30px);width:-moz-calc(100% - 30px);width:calc(100% - 30px);height:30px;border: 1px solid #ccc;} 
+.tourSubMain .local_tour .search_destination_btn{float:left;display:block;width:30px;height:30px;border:1px solid #ccc;border-left:0;background:url(http://image.benecafe.co.kr/cdnetbs/front/image/etbs/tour_search_ico_mo_02.png) no-repeat center center #999;background-size:14px auto;}
+.tourSubMain .local_tour .search_btn{display:block;margin: 7px auto 0;width:100px;height:28px;background:#f14829;color:#fff;}
+.tourSubMain .tour_title_en{margin-top:4px;color:#999;font-weight:bold;}
+.tourSubMain .keywords_list{margin-top:10px;}
+.tourSubMain .keywords_list:after{content:"";display:block;height:0;clear:both;}
+.tourSubMain .keywords_list li{float:left;margin-right:7px;color:#666;font-weight:bold;}
+.tourSubMain .tour_list_price {display:inline-block;margin-top:10px;font-size:15px;}
+
+/*검색결과 페이지*/
+.tourSubMain .tour_search_list{background:#fff;}
+.tourSubMain .search_result_count{padding:20px 10px 15px;border-bottom:1px solid #e1e1e1;font-weight:bold;background:#ffffff;}
+.tourSubMain .tour_link_area{display:table;padding:10px;border-bottom:1px solid #e1e1e1;}
+.tourSubMain .tour_search_list_thumb{display:block;width:100px;height:100px;}
+.tourSubMain .tour_search_list_con{width:100%;position:relative;padding-left:10px;display:table-cell;vertical-align:top;}
+.tourSubMain img.tour_company_logo{margin-bottom:9px;width:73px;}
+.tourSubMain .tour_title{font-weight:bold;font-size:13px;}
+.tourSubMain .tour_search_list_charge{position:absolute;bottom:0;}
+.tourSubMain .tour_search_list_charge span{float:left;} /*20190501 추가*/ 
+.tourSubMain .tour_search_list_charge span:first-child{margin:3px 5px 0 0;} /*20190501 추가*/
+.tourSubMain .tour_search_list_charge del{color:#ccc;font-weight:bold;} /*20190501 추가*/
+.tourSubMain .tour_search_list_charge strong{font-size:1.334rem;}
+.tourSubMain .tour_search_list_charge span.txtN{font-size:1rem;}
+.tourSubMain .btn_wrapper{margin-top:20px;text-align:center;}
+.tourSubMain .btn_wrapper:after{content:"";display:block;clear:both;}
+.tourSubMain .btn_wrapper span{display: inline-block;}
+.tourSubMain .btn_wrapper button{float:left;display:block;width:100px;height:28px;color:#fff;text-align:center;}
+.tourSubMain .btn_wrapper .list_more_btn{background:#333;}
+.tourSubMain .btn_wrapper .list_reset_btn{margin-left:10px;background:#f14829;}
+.tourSubMain .search_result_count:after{content:"";display:block;height:0;clear:both;}
+.search_result_count_txt{display:inline-block;float:left;margin-top: 5px;}
+.tour_search_result_filter{-webkit-appearance: menulist;appearance:menulist;display: inline-block; float: right;padding: 0 0px; width: 100px;height: 28px;line-height: 26px;font-size: 12px;border: 1px solid #ccc;}
+/*여행지 검색 레이어*/
+.layer_search_destination legend{display:none;}
+.layer_search_destination .search_result_inner{padding:10px;}
+.layer_search_destination .pointColor_red{color:#f14829;}
+.layer_search_destination fieldset{position:relative;padding:10px 70px 10px 10px;border:1px solid #e4e4e4;background:#f1f1f1;}
+.layer_search_destination .search_destination_input{padding-left:10px;width:100%;height:28px;border:1px solid #ccc;} 
+.layer_search_destination .search_destination_btn{position:absolute;top:10px;right:10px;width:50px;height:28px;background:#999999;color:#ffffff;}
+.layer_search_destination .search_result_txt{display:inline-block;margin:10px 0 0 0;font-size:13px;}
+.layer_search_destination ul:after{content:"";display:block;height:0;clear:both;}
+.layer_search_destination .search_result a{font-weight:bold;font-size:13px;} 
+.layer_search_destination .search_result li{border-color:#f14829;}
+.layer_search_destination .quickly_select_txt{display: inline-block;margin:25px 0 5px 0;font-size:14px;letter-spacing:-1px;}
+.layer_search_destination li{float: left;margin:10px 20px 0 0;line-height:1.3;border-bottom:1px solid #333333;}
+.layer_search_destination .tbS1 th{font-weight:bold;}
+/*출발지 선택 레이어*/
+.layer_select_list .select_list a{display:block;padding:10px;border-bottom:1px solid #e2e2e2;}
+/*캘린더 레이어 추가 css*/
+.layer_departureDate .ui-datepicker-group{margin-top:10px;border-top:1px solid #e3e3e3;}
+.layer_departureDate .ui-datepicker-group:first-child{margin-top:0;border-top:0;}
+.layer_departureDate .ui-datepicker-calendar tbody td.ui-datepicker-week-end span, .layer_departureDate .ui-datepicker-calendar tbody td.ui-datepicker-week-end a{color:#1e65a8;}
+.layer_departureDate .ui-datepicker-calendar tbody td.ui-datepicker-week-end:first-child span, .layer_departureDate .ui-datepicker-calendar tbody td.ui-datepicker-week-end:first-child a{color: #f14829;}
+/* E : 여행-서브메인 2018.12.03 common.css 에 추가 될 css*/
+/*밑의 css 아이폰 대응이니 지우지 마세요!*/
+.mdRecomLiImg{
+transform: none !important;
+}
+
+/* S : 레이어 팝업 (연말정산 구분항목) 2019.01.03 */
+.layer_PointAggregation .popS1Header{height:44px;box-sizing:border-box;}
+.layer_PointAggregation .popS1Wrap{padding:15px 12px 15px;text-align:center;}
+.layer_PointAggregation .layer_PointAggregation_subtitle{margin-bottom:6px;display:inline-block;font-weight:bold;font-size:13px;}
+.layer_PointAggregation .tbS2_5 th{color:#333;font-weight:bold;}
+.layer_PointAggregation .tbS2_5 td{text-align:center;}
+/* E : 레이어 팝업 (연말정산 구분항목) 2019.01.03 */
+
+/* S : 국내여행 추가 css*/
+.container.domestic_tour{padding-bottom:0;}
+.domestic_tour .tour_affiliates_wrap{padding:0 10px;}
+.domestic_tour .tour_affiliates ul:after{content: "";display:block;height:0;clear:both;}
+.domestic_tour .tour_affiliates ul{text-align:center;overflow:hidden;}
+.domestic_tour .tour_affiliates li{display:inline-block;float:left;margin-right:1%;width:32.3%;}
+.domestic_tour .tour_affiliates li a{display:inline-block;height:90px;}
+.domestic_tour .tour_affiliates li .thumb{border:1px solid #e3e3e3;}
+.domestic_tour .tour_affiliates li .txt{margin:5px 0 0;overflow:hidden;text-overflow:ellipsis;display:-webkit-box;-webkit-line-clamp:1;-webkit-box-orient:vertical;word-wrap:break-word;text-align:center;}
+.domestic_tour .tour_affiliates li .phoneNum{display:block;text-align:center;color:#333;font-weight:bold;}
+.domestic_tour .tour_inquiry_wrap{padding: 10px 10px 0 10px;}
+.domestic_tour .tour_inquiry{width:100%;padding:15px 10px;background:#fff;}
+.domestic_tour .tour_inquiry ul:after{content:"";display:block;height:0;clear:both;}
+.domestic_tour .tour_inquiry li{float:left;padding:5px;width:32%;border-top:1px solid #ccc;border-left:1px solid #ccc;border-right:1px solid #adadad;border-bottom:2px solid #adadad;box-sizing:border-box;text-align:center;background:#f0f0f0;}
+.domestic_tour .tour_inquiry li:nth-child(2){margin:0 2% 0 2%;}
+.domestic_tour .tour_inquiry li strong{display:block;margin-bottom:2px;font-size:12px;letter-spacing:-0.5px;}
+.domestic_tour .tour_inquiry .contactNum_tit{position:relative;display:inline-block;padding-left:24px;margin-bottom:13px;font-size:14px;}
+.domestic_tour .tour_inquiry .contactNum_tit:after{content:"";display:block;position:absolute;top:1px;left:0;width:20px;height:17px;background:url(http://login.benecafe.co.kr/static/mobile/images/common/ico_phone.png) no-repeat;background-size:20px auto;}
+.domestic_tour .tour_inquiry li span{color:#999;font-weight:bold;font-size:13px;}
+@media screen and (max-width:340px){.domestic_tour .tour_inquiry li span{font-size:12px;}}
+h2.RecomTit08 span{background-position:0 -251px} /*2019.01.10 추가*/
+/* E : 국내여행 추가 css*/
+
+/*20190129 상단 카테고리 이동 버튼 수정*/
+.select-title.depth02_down_btn {background: none;padding-right: 0;}
+.depth02_down_btn strong {position: relative;display: inline-block;padding-right: 22px;}
+.depth02_down_btn strong:after {content: "";position: absolute;top: 2px;right: 0;display: block;width: 17px;height: 17px;background:url(http://image.benecafe.co.kr/cdnetbs/front/image/etbs/icoDownarrow.png) no-repeat; background-size: 17px;}
+
+/* S : 2018.10.16 나의복지 > 쿠폰 등록 추가*/
+.welfare_coupon .top-info{position: relative;text-align: center;}
+.welfare_coupon .top-info .register_coupon_btn{margin-top:10px;}
+.welfare_coupon .tbS2_4 th{font-size: 1.034rem;}
+.welfare_coupon .tbS2_4 td{font-size: 1.034rem;}
+.welfare_coupon .pagi_set li{padding-top: 3px;}
+.welfare_coupon .filterBox{text-align: center;}
+.welfare_coupon .filterBox_inner{display: inline-block;width:100%;}
+.welfare_coupon .filterBox_inner:after{position: relative;display: block;content: "";height: 0;clear: both;}
+.welfare_coupon .filterBox_inner .coupon_selectBox{-webkit-appearance:menulist;appearance:menulist;display: inline-block;float:left;margin-right:2%;padding:0 0px;width:40%;height: 28px;line-height: 26px;font-size: 12px;}
+.welfare_coupon .filterBox_inner .coupon_selectBox:nth-child(2) {width:30%;}
+.welfare_coupon .filterBox .register_coupon_btn{width:26%;float: left;box-sizing: border-box;}
+.welfare_coupon .mg_side{margin:0 5px;}
+.pop_register_coupon .inner{padding: 15px 15px 20px;}
+.pop_register_coupon h4{margin-bottom: 10px;text-align:center;}
+.pop_register_coupon .layer_guide_txt01{text-align: center;}
+.pop_register_coupon .coupon_input_area{margin:10px 0;text-align: center;}
+.pop_register_coupon .coupon_input_area_inner{display:inline-block;}
+.pop_register_coupon .coupon_input_area_inner:after{position:relative;display: block;content: "";height: 0;clear: both;}
+.pop_register_coupon .coupon_input_area input{float: left;height:33px;}
+.pop_register_coupon .variationBox{padding:15px 0;background:#f8f8fa;border-top: 1px solid #f4f4f6;border-bottom: 1px solid #f4f4f6;}
+.pop_register_coupon .pop_register_coupon_btn{padding:0 15px;margin-left:5px;float:left;background-color:#f1f1f1;border:1px solid #ccc;height: 35px;}
+.pop_register_coupon .layer_guide_txt{text-align: center;font-weight: bold;font-size: 12px;}
+.pop_register_coupon .tbS2{margin: 20px 0;}
+.pop_register_coupon .tbS2 th{padding:3px 5px;text-align: center;font-size: 12px;}
+.pop_register_coupon .tbS2 td{padding:3px 5px;font-size: 12px;text-align: left;}
+.pop_register_coupon .pointColor_red {margin-top:10px;text-align: center;color:red;font-weight: bold;}
+.pop_register_coupon .complete_input .layer_guide_txt {font-size: 16px;}
+.pop_register_coupon .complete_input:first-child span{display: block;margin:0 auto 5px;width:18px;height: 18px;}
+.pop_register_coupon .checkMark{background: url(http://image.benecafe.co.kr/cdnetbs/front/image/etbs/ico_check_black.png) no-repeat;background-size: 18px auto}
+.pop_register_coupon .exclamationMark{background: url(http://image.benecafe.co.kr/cdnetbs/front/image/etbs/ico_error_black.png) no-repeat;background-size: 18px auto}
+.pop_register_coupon .popS_footer{margin-bottom:20px;text-align: center;}
+/* E : 2018.10.16 나의복지 > 쿠폰 틍록 추가*/
+/*휴양소 서브메인 20190214*/
+.resort_submain_wrap{padding:10px;}
+.resort_submain_wrap img{width:100%;}
+.resort_submain_wrap .resort_submain_titBanner{margin-bottom:10px;}
+.resort_submain_wrap .resort_submain_menu{border:1px solid #ccc;}
+.resort_submain_wrap .resort_submain_menu li{box-sizing:border-box;}
+.resort_submain_wrap .resort_submain_menu li:first-child{border-right:1px solid #ccc;}
+.resort_submain_wrap .resort_submain_menu a{display:block;height:42px;text-align:center;line-height:40px;font-size:1.167rem;font-weight:700;}
+.resort_submain_wrap .resort_submain_textBox{position:relative;margin-bottom:20px;padding:20px 15px;border:1px solid #e3e3e3;background:#f2f2f2;}
+.resort_submain_wrap .resort_submain_textBox h5{margin-bottom:20px;font-size:13px;}
+.resort_submain_wrap .resort_submain_textBox.empty{padding:125px 20px 29px 30px;height:30px;}
+.resort_submain_wrap .resort_submain_textBox.empty p{text-align:center;font-size:15px;font-weight:bold;}
+.resort_submain_wrap .resort_submain_textBox.empty:after{content: "";display:block;position:absolute;top:25px;left:50%;width:80px;height:80px;margin-left:-40px;background:url(http://login.benecafe.co.kr/static/pc/images/icon.png) no-repeat -375px -150px;}
+.resort_submain_con01 .btn2_3.btnS6{display:block;margin:0 auto;}
+.resort_submain_con02{font-size:14px;}
+.resort_submain_con02 ul{margin-bottom:20px;}
+.resort_submain_wrap .tableWrap{margin:20px 0;}
+.resort_submain_wrap .table_filter{position:relative;margin-bottom:15px;}
+.resort_submain_wrap .table_search_btn{display:block;padding:0 20px;margin:20px auto 30px;height:30px;background:#333;color:#fff;}
+.table_filter .fL{float:left;width:35%}
+.table_filter .fR{float:right;padding-left:10px;width:65%;box-sizing:border-box;}
+.table_filter .sort_condition{position:relative;display:inline-block;float:left;width:45px;padding:0 5px 0 12px;margin:5px 0 0 0;font-size:13px;font-weight:bold;box-sizing:border-box;}
+.table_filter .sort_condition:after{content: "";display:block;position:absolute;top:8px;left:0;width:4px;height:4px;background:url(http://login.benecafe.co.kr/static/pc/images/icon.png) no-repeat -82px 0;}
+.table_filter .select-title{float:left;width:calc(100% - 45px);height:28px;line-height:26px;box-sizing:border-box;}
+.table_filter .select-title.condition02{width:calc(100% - 45px);white-space:nowrap;text-overflow:ellipsis;overflow:hidden;}
+.table_filter .txt_color{margin-top:5px;float:right;font-size:14px;font-weight:bold;}
+.table_filter .txt_color span{position:relative;float:left;}
+.table_filter .txt_color span:after{position:absolute;top:5px;left:-14px;content:"";display:block;width:11px;height:11px;}
+.table_filter .txt_color span:first-child{margin-right:30px;}
+.resort_submain_wrap .txt_color_shortfall{color:#5593d8;font-weight:bold;}
+.resort_submain_wrap .txt_color_shortfall:after{background:#5593d8;}
+.resort_submain_wrap .txt_color_competitionRate{color:#f14829;font-weight:bold;}
+.resort_submain_wrap .txt_color_competitionRate:after{background:#f14829;}
+.tableWrap .table_subTit{font-weight:bold;margin-bottom:14px;font-size:14px;}
+.tableWrap_inner{max-height:245px;overflow:auto;border-top:2px solid #999;border-bottom:2px solid #999;}
+.tableWrap_inner .tbS2{border-bottom:0;}
+.tableWrap_inner .tbS2 thead th{border-top:0;font-weight:bold;}
+.tableWrap_inner .tbS2 tbody th{background:#ebf7ff;border-right:1px solid #ccc;font-weight:bold;}
+.tableWrap_inner .tbS2 tbody tr:first-child th,.tableWrap_inner .tbS2 tbody tr:first-child td{border-top:1px solid #ccc;}
+.tableWrap_inner .tbS2 th.divisionCell{background:#e5e5e5;border-right-color:#ccc;}
+.tableWrap_inner .tbS2 th.room,.tableWrap_inner .tbS2 td:nth-child(even){background:#fef2eb;}
+.tableWrap_inner .tbS2 th{text-align:center;border-right:1px solid #e3e3e3;}
+.tableWrap_inner .tbS2 th:nth-child(3n){border-right:0;background:#fff;}
+.tableWrap_inner .tbS2 td{text-align:center;}
+.tableWrap_inner .tbS2 td:nth-child(even){border-right:1px solid #e3e3e3;}
+.tableWrap_inner .tbS2 caption{display:none;}
+.resort_submain_wrap .btn2_3.btnS6_2{display:block;margin:0 auto;width:150px;}
+
+
+
+/* S : 에브리몰 B2C 20190208 */
+.b2cMall_layer01 .popS1Wrap{position:relative;padding:20px 10px 40px;}
+.b2cMall_layer01 h4{margin-bottom:20px;text-align:center;font-size:14px;line-height:1.3;}
+.b2cMall_layer01 .con_txt{display:block;font-size:13px;text-align:center;}
+.b2cMall_layer01 dt{margin:20px 0 10px;text-align:left;font-size:12px;font-weight:bold;}
+.b2cMall_layer01 .tbS2 th{text-align:center;font-size:12px;}
+.b2cMall_layer01 .tbS2 td{text-align:left;font-size:12px;}
+.b2cMall_layer01 .box_t3_2{padding:10px 0 0 0;}
+.b2cMall_layer01 .con{border-top:1px solid #e3e3e3;}
+.b2cMall_layer01 .con iframe{border:1px solid #e4e4e4;}
+.b2cMall_layer01 .iframeTit{display:block;margin-top:15px;padding-bottom:5px;font-size:15px;}
+.b2cMall_layer01 .check label{font-size:11px;}
+.b2cMall_layer01 .acco_defa_styl{top:-30px;}
+@media screen and (max-width:330px){.b2cMall_layer01 .check label{font-size:10px;}}
+.b2cMall_layer01 .layer_option{position:absolute;bottom:0;right:10px;}
+.b2cMall_layer01 .apply_btn{display:block;margin:30px auto 0;padding:0 15px;height:40px;font-size:14px;font-weight:bold;border:1px solid #333;background-color:#333;color:#fff;}
+.b2cMall_layer02 .popS3Wrap, .b2cMall_layer03 .popS3Wrap{margin-top:0;}
+.b2cMall_layer02 .btn1_5{padding:0 10px;width:auto;}
+.b2cMall_layer02 .popS_footer input{height:28px;}
+.b2cMall_layer03 .btn1_5{width:92px;font-size: 11px;}
+/* E : 에브리몰 B2C 20190208 */
+
+/* 도서 검색 */
+.container img{/*width:100%;*/}
+.container .book_search_wrap{padding:15px 10px 12px;background:#f1f1f1;}
+.container .bookSubMain_logo{display:block;margin:0 auto 15px;width:103px;height:22px;background:url(http://image.benecafe.co.kr/cdnetbs/front/image/books/bookSubMain_logo.png);background-size:103px 22px;}
+.container .book_search_wrap legend{display:none;}
+.container .book_search_wrap .input_wrap{position:relative;border-right: solid 3px #f1f1f1;}
+.container .book_search_wrap .book_search_ico{position:absolute;top:8px;left:9px;display:block;width:13px;height:13px;background:url(http://image.benecafe.co.kr/cdnetbs/front/image/books/book_search_ico.png) no-repeat;background-size:13px;}
+.container .book_search_wrap .col-xs-2{width:15.666667%;}
+.container .book_search_wrap input{padding:0 7px 0 30px;width:100%;height:28px;border:1px solid #cdcdcd;box-sizing:border-box;}
+.container .book_search_wrap .book_search_btn{padding-top: 0px;width:100%;height:28px;background:#999;color:#fff;font-weight:bold;border-left: solid 3px #f1f1f1;text-align:center;}
+
+/*20190326 복지카드 차감 신청 > 수동 추가*/
+.deductApply_type a{top:-5px;right:10px;} 
+.pop_deductApply_type .mt30{margin-top:30px;}
+.pop_deductApply_type .tableLayout{display:table;width:100%;}
+.pop_deductApply_type label{display:block;position:absolute;top:7px;left:0;width:100%;text-align:center;}
+.pop_deductApply_type .radio{margin-right:5px;}
+.pop_deductApply_type .tableLayout .deductApply_type_wrap:first-child{border-right:0;color:#000;background:#eee;}
+.pop_deductApply_type .deductApply_type_wrap{position:relative;display:table-cell;padding:35px 10px 10px;width:50%;border:1px solid #ccc;color:#666;}
+
+/*20190417 기차예약*/
+/*.affiliate_btn_wrap .affiliate_btn{width:97px;} 20190425삭제*/
+.pop_ticket .popS1Header{position:fixed;}
+.pop_ticket .inner{padding-top:44px;height:100%;}
+.pop_transferTicket .inner{padding:10px;}
+.pop_transferTicket h4{margin-bottom:10px;font-size:15px;}
+.pop_transferTicket .topTxtList{margin-bottom:30px;font-size:14px;}
+.pop_transferTicket .tbS1 td{text-align:left;}
+.pop_transferTicket .result_message{margin-bottom:30px;color:#f14829;font-weight:bold;font-size:14px;text-align:center;}
+.pop_transferTicket .result_message p{display:inline-table;position:relative;padding:0 0 0 60px;text-align:left;color:#f14829;}
+.pop_transferTicket .result_message p:after{display:block;content:'전송결과 :';position:absolute;top:0;left:0;}
+.pop_transferTicket .price{font-size:14px;}
+.pop_transferTicket .radio{margin:0 3px 0 0;}
+.pop_transferTicket .message_layer_btn{text-decoration:underline;font-size:12px;}
+.pop_message_img img{width:100%;}
+
+/*  S : gnb개편 마이페이지 레이어 css 20190110*/
+#allmenuPop .popS1Header{box-sizing:border-box;}
+#allmenuPop .allmenuPop_con{border-top:1px solid #818181;}
+#allmenuPop .allmenuPop_con h2{padding-left:10px;height:42px;border-bottom:2px solid #eee;font-size:15px;line-height:42px;}
+#allmenuPop .gnb_menu_wrap{border-bottom:2px solid #cdcdcd;}
+#allmenuPop .gnb_menu_list{position:relative;float:left;width:50%;border-right:1px solid #f2f2f2;border-bottom:1px solid #f2f2f2;}
+#allmenuPop .gnb_menu_list:nth-child(2n){border-right-width:0;}
+#allmenuPop .gnb_menu_a{display:table;padding:0 10px;width:100%;height:67px;}
+#allmenuPop .gnb_menu_a:after{content:"";display:block;height:0;clear:both;}
+#allmenuPop .table_layout:first-child{width:52px;}
+#allmenuPop .table_layout{display:table-cell;vertical-align:middle;color:#333;font-size:14px;font-weight:bold;text-align:left;}
+#allmenuPop .gnb_menu_text{overflow:hidden;text-overflow:ellipsis;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;}
+#allmenuPop .ico_background{position:relative;display:block;width:42px;height:42px;background:#e5e5e5;border-radius:50%;}
+#allmenuPop .ico_background span{position:absolute;top:0;left:0;display:inline-block;width:100%;height:100%;text-align:center;}
+#allmenuPop .depth_ico img{margin-top:8px;width:26px;}
+#allmenuPop .gnb_menu_2depth{display:none;position:absolute;top:67px;left:0;padding:8px 30px 8px 0;width:100%;background:#f3f3f3;z-index:1;}
+#allmenuPop .gnb_menu_2depth a{display:block;padding:7px 0px 7px 27px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-size:12px;font-weight:bold;}
+#allmenuPop .gnb_menu_2depth a.point_ico{background:url(http://login.benecafe.co.kr/static/mobile/images/ico_point_mn.png) no-repeat 12px 9px;}
+#allmenuPop .close_2depth{display:block;position:absolute;top:13px;right:10px;width:20px;height:20px;background:url(http://image.benecafe.co.kr/cdnetbs/front/image/gnb/layer_close_ico.jpg) no-repeat;background-size:20px auto;cursor:pointer;}
+#allmenuPop .quick_menu_list{float:left;width:25%;}
+#allmenuPop .quick_menu_wrap{padding:10px 7px 0 7px;border-top:1px solid #f2f2f2;}
+#allmenuPop .quick_menu_list{margin-bottom:5px;}
+#allmenuPop .quick_menu_list a{display:block;height:80px;text-align:center;}
+#allmenuPop .quick_menu_list .quick_menu_ico img{margin-top:5px;width:63px}
+
+/*메인 배너 새 버전 20190110*/
+.mainBanner_v201901{position:relative;}
+.mainBanner_v201901 .slick-prev{left:4px;}
+.mainBanner_v201901 .slick-next{right:4px;}
+.mainBanner_v201901 .slick-prev:before{background: url(http://image.benecafe.co.kr/cdnetbs/front/image/gnb/banner_prevArrow_btn.png) no-repeat center left;background-size:8px;}
+.mainBanner_v201901 .slick-next:before{background: url(http://image.benecafe.co.kr/cdnetbs/front/image/gnb/banner_nextArrow_btn.png) no-repeat center right;background-size:8px;}
+.mainBanner_v201901 .slideShow_btn{position:absolute;right:10px;bottom:10px;z-index:20;box-sizing:border-box;min-width:58px;padding:3px 6px 5px 10px;border-radius:15px;background:rgba(0,0,0,.5);font-size: 12px;}
+.mainBanner_v201901 .slideShow_btn .slide_paging{display:inline-block;float:left;margin-top:1px;color:#fff;} /*20190509 margin값 추가*/
+.slide_plus_ico{display:inline-block;float:right;width:9px;height:9px;margin:4px 5px 0;background:url(http://image.benecafe.co.kr/cdnetbs/front/image/gnb/mainBanner_more_ico.png) no-repeat;background-position:0px 0px;background-size:9px 9px;vertical-align:middle;} /*20190509 margin값 수정*/
+/*메인배너 하단 띠배너 20190418*/
+.main_lineBanner_wrap{padding:4px 0;background:#d2d2d2;}
+.main_lineBanner_wrap .main_lineBanner_inner{height:72px;text-align:center;background:#fff;}
+.main_lineBanner_wrap ul{display:table;width:100%;}/*20190425 수정*/
+.main_lineBanner_wrap .lineBanner_list{display:inline-block;width:20%;height:100%;} /*20190425 수정*/
+.main_lineBanner_wrap .lineBanner_list a{display:block;padding-top:4px;width:100%;height:72px;text-align:center;vertical-align:middle;} /*20190425 수정*/
+.main_lineBanner_wrap img{width:64px;height:auto;}
+/*메인배너 전체보기 레이어 20190110*/
+.mainBanner_layer h3{padding-top:10px;height:45px;font-size:17px;color:#fff;text-align:center;}
+.mainBanner_layer_inner{padding-bottom:93px;height:100%;overflow:scroll;background:#fff;}
+.mainBanner_layer_inner li{border-bottom:2px solid #000;}
+.mainBanner_layer_inner a{display:block;}
+.mainBanner_layer_inner img{width:100%;}
+.mainBanner_layer .btnClose{position:absolute;top:12px;right:10px;}
+/*전메뉴 보기(1depth)20190110*/
+.categoryMenu_show_btn{position:absolute;top:6px;right:6px;width:30px;height:30px;text-indent:-9999em;background:url(http://image.benecafe.co.kr/cdnetbs/front/image/gnb/category_upDown_btn.png);background-size:30px auto;background-position:0 -30px;}
+.categoryMenu_show_btn.on{background-position:0 0;}
+/*전메뉴 보기 레이어 20190110*/
+.categoryMenu_layer{position:absolute;top:42px;}
+.categoryMenu_layer ul{background:#fff;border-top:1px solid #e3e3e3;}
+.categoryMenu_layer li{float:left;box-sizing:border-box;border-right:1px solid #e3e3e3;border-bottom:1px solid #e3e3e3;font-size:1.167rem;text-align:center;}
+.categoryMenu_layer li:nth-child(3n){border-right:0;}
+.categoryMenu_layer a{display:block;padding:11px 0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;} /*20190422 수정*/
+.categoryMenu_layer.depthMenu_layer {border-top:1px solid #e3e3e3;}
+.categoryMenu_layer.depthMenu_layer ul{border-top:0;}
+.categoryMenu_layer.depthMenu_layer li:nth-child(2n){border-right:0;}
+.categoryMenu_layer.depthMenu_layer li:nth-child(3n){border-right:1px solid #e3e3e3;}
+/*  E : gnb개편 마이페이지 레이어 css 20190110*/
+
+/*  S : 20191206 추가 및 수정*/
+#cate_layer{top:44px;}
+#cate_layer .popS1{height:auto !important;padding-bottom:0;border-top:1px solid #ebebeb;max-height:377px;overflow:visible !important;}
+#cate_layer .popS1Header{background:white;color:#333;top:-1px;border-top:1px solid #e3e3e3;}
+#cate_layer .popS1HeaderTit{color:#333;float:right;margin-right:30px;line-height:10px;font-size:13px;font-weight:500;}
+#cate_layer .tbS4 td{border-left:0; border-right:1px solid #e3e3e3;}
+#cate_layer .btnClose{background:url('http://image.benecafe.co.kr/cdnetbs/front/image/etbs/ico_close2.png') no-repeat center;background-size:12px 12px;right:17px;}
+
+.depth02_down_btn strong{padding-right:0;}
+.depth02_down_btn strong:after{width:22px; height:22px;background:url('http://image.benecafe.co.kr/cdnetbs/front/image/etbs/ico.png') no-repeat center;background-size:22px 22px;left:-30px;top:0;}
+
+.select-title.depth02_down_btn{margin-left:25px;}
+#cate_layer .popS1Wrap{height:auto;max-height:377px;overflow:auto;}
+/*  E : 20191206 추가 및 수정*/
+
+/* 공통 탭 마우스 오버 ui 20190501*/
+.tab_hover_wrap .hover_con_wrap .hover_conBox{display:none;}
+.tab_hover_wrap .hover_con_wrap .hover_conBox.on{display:block;}
+
+/* 랭크 뱃지 TOP5 20190509*/
+.top5_rankBadge{display:block;width:50px;height:19px;}
+.top5_rankBadge.n01{background:url(http://image.benecafe.co.kr/cdnetbs/front/image/common/label_top1_mo.png);background-size:50px 19px;}
+.top5_rankBadge.n02{background:url(http://image.benecafe.co.kr/cdnetbs/front/image/common/label_top2_mo.png);background-size:50px 19px;}
+.top5_rankBadge.n03{background:url(http://image.benecafe.co.kr/cdnetbs/front/image/common/label_top3_mo.png);background-size:50px 19px;}
+.top5_rankBadge.n04{background:url(http://image.benecafe.co.kr/cdnetbs/front/image/common/label_top4_mo.png);background-size:50px 19px;}
+.top5_rankBadge.n05{background:url(http://image.benecafe.co.kr/cdnetbs/front/image/common/label_top5_mo.png);background-size:50px 19px;}
+
+/*고객센터 UI TYPE2 20190509*/
+.csCenter_type2{padding:13px 16px;border:1px solid #ccc;background:#f1f1f1;}
+.csCenter_type2 .inner_left h2{margin-bottom:4px;}
+.csCenter_type2 .inner_left div{font-size:11px;font-weight:bold;color:#666;}
+.csCenter_type2 a{display:block;float:left;width:68px;height:68px;}
+.csCenter_type2 .call{margin-right:17px;background:url(http://image.benecafe.co.kr/cdnetbs/front/image/csCenter/icon_call.png);background-size:68px auto;}
+.csCenter_type2 .faq{background:url(http://image.benecafe.co.kr/cdnetbs/front/image/csCenter/icon_faq.png);background-size:68px auto;}
+
+/* 직영숙박 서브메인 */
+.ecanceSubMain img{width:100%;}
+.ecanceSubMain .ecanceSubMain_header{padding:13px 10px;}
+.ecanceSubMain .ecanceSubMain_header .logo_area {display:inline-block; float:left; width:90px; height:20px; background:url(http://image.benecafe.co.kr/cdnetbs/front/image/resort/ecance_logo.png) no-repeat center; background-size:90px auto;}
+.ecanceSubMain .ecanceSubMain_header span{display:inline-block;float:left;margin:2px 0 0 10px;font-weight:bold;}
+.ecance_etcSearch_btn{margin:1px 0 0 5px;float:right;width:23%;height:33px;background:#f14829;color:#fff;}
+.ecanceSubMain .fixBanner li{position:relative;margin-top:4px;float:left;width:50%;border-left:2px solid #f1f1f1;}
+.ecanceSubMain .fixBanner a{display:block;height:100%;}
+.ecanceSubMain .subVisualWrap{padding:0 10px 10px;}
+.ecanceSubMain .ecance_subTitle{margin-bottom:10px;font-size:20px;}
+.ecanceSubMain .ecance_subTitle a{display:inline-block;float:right;background:#fff;text-align:center;}
+.ecanceSubMain .newList{margin-bottom:10px;}
+.ecanceSubMain .menu_hori_wrap{padding-right:0;width:100%;height:42px;}
+.ecanceSubMain .menu_hori ul li{color:#333;}
+.ecanceSubMain .menu_hori ul li.active{font-weight:normal;}
+
+/* 공통 탭 마우스 오버 ui 20190501*/
+.tab_hover_wrap .hover_con_wrap .hover_conBox{display:none;}
+.tab_hover_wrap .hover_con_wrap .hover_conBox.on{display:block;}
+
+/*배송지 관리 레이어팝업 20190708*/
+.deli_info .ui-tabs .ui-tabs-nav li.ui-tabs-active {border:1px solid #f24729;}
+.deli_info table caption{display:none;}
+.deli_info table .al_top{padding: 15px 0;vertical-align:top;}
+.deli_info table th,.deli_info table td{padding:4px 0;}
+.deli_info table .input_guide{display:block;padding:11px 0 0 0;text-align:center;}
+.deli_info .daumPostNo_btn_wrap{padding:6px 0 0 7px;}
+.deli_info .address_list_wrap ul{background:#ffffff;}
+.deli_info .address_list_wrap li{position:relative;}
+.deli_info .radio_btn_wrap{position:absolute;top:12px;left:11px;}
+.deli_info .add_txt_wrap{padding-left:30px;}
+
+/*로그인 수정 20190722*/
+.login_input_wrap .btnbtm1{height:106px;}
+.login_input_wrap .col-xs-8{padding-right:4px;}
+.login_input_wrap .col-xs-4{padding-left:4px;}
+.id_pw_btn_wrap .col-xs-6:first-child{padding-right:4px;}
+.id_pw_btn_wrap .col-xs-6:last-child{padding-left:4px;}
+#identitySet .agree .emailCheckList{display:none;}
+
+/*20190916 팝업 정책 변경*/
+/*공통 스타일*/
+.popS5{position:absolute;left:20px;right:20px;width:auto;top:50%;transform:translateY(-50%);border:2px solid #000000;}
+.popS5 .scrollBox{max-height:400px;overflow:auto; min-height:250px;background:#fff;}
+.popS5 a{display:block;}
+.popS5 img{width:100%;}
+.popS5 .btnWrap span{position:relative;display:block;height:50px;background:#34538a;color:#ffffff;text-align:center;font-weight:bold;cursor:pointer;line-height:50px;font-size:14px;}
+.popS5 .bottom_btn{width:50%;float:left;}
+.popS5 .btn_close{width:100%;}
+.popS5 .bar:after{content:'';display:block;position:absolute;top:16px;right:0;width:1px;height:18px;background:#cdcdcd;}
+.popS5 .slick-prev, .slick-next{margin-top:0px;display:block;width:29px;height:35px;z-index:99;}
+.popS5 .slick-next:before{content:'';width:29px;height:35px;background:url(http://image.benecafe.co.kr/cdnetbs/front/image/main/btn_mainPop_right.png)no-repeat center;background-size:100%;}
+.popS5 .slick-next{right:0px;}
+.popS5 .slick-prev:before{content:'';width:29px;height:35px;background:url(http://image.benecafe.co.kr/cdnetbs/front/image/main/btn_mainPop_left.png)no-repeat center;background-size:100%;}
+.popS5 .slick-prev{left:0px;}
+.popS5 .slick-dots{bottom:3px;}
+.popS5 .slick-dots li{margin:0 6px;width:10px;height:10px;}
+.popS5 .slick-dots li button{width:10px;height:10px;}
+.popS5 .slick-dots li button:before{width:10px;height:10px;}
+/*20190916 팝업 정책 변경*/
+
+
+/*20200723 #34718 ID별 구매제한수량  신규 추가*/
+.purchase_limit{margin:12px 10px;}
+.purchase_limit .limit_sec{display: inline;    border: 1px solid red;    padding: 6px 0 4px 0;}
+.purchase_limit .limit_sec p{width: auto;    background: red;    display: inline;    color: white;    font-size: 14px;    padding: 5px;}
+.purchase_limit .limit_sec span{    color: red;    padding: 5px;    font-size: 15px;}
