@@ -36,28 +36,94 @@
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-80577434-5"></script>
 <!-- <script src="https://ssl.daumcdn.net/dmaps/map_js_init/postcode.v2.js"></script> -->
 <script src="http://login.benecafe.co.kr/static/both/js/member/password.validation.js"></script>
-<script src="./sub_detail.js"></script>
-<script src="./swiper/swiper.min.js"></script>
 <script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 </head>
 
 
 <body>
 
-<div id="content">
-	<div class="calendar-default">
-		<div class="inner">
-			<div class="chec_hope_day"></div>
-			<script type="text/javascript">
-				$(document).ready(function(){
-					$(".chec_hope_day").datepicker();
-					$('.chec_hope_day .rese_styl').css('display','none');
-				});
-			</script>
+<div id="content"> <!-- 제네두 기존 CSS -->
+	<div id="sub_detail">
+		<div class="product_info_wrap">
+			<div class="product_info_left">
+				<ul class="product_img">
+					<li><img src="images/sample_img01.jpg" alt=""></li>
+					<li><img src="images/sample_img02.jpg" alt=""></li>
+					<li><img src="images/sample_img03.jpg" alt=""></li>
+					<li><img src="images/sample_img04.jpg" alt=""></li>
+					<li><img src="images/sample_img05.jpg" alt=""></li>	
+					<li><img src="images/sample_img06.jpg" alt=""></li>
+					<li><img src="images/sample_img07.jpg" alt=""></li>
+					<li><img src="images/sample_img08.jpg" alt=""></li>
+					<li><img src="images/sample_img09.jpg" alt=""></li>
+					<li><img src="images/sample_img10.jpg" alt=""></li>		
+				</ul>
+				<div class="product_pager">
+					<a data-slide-index="0" href=""><img src="images/sample_img01.jpg" alt=""></a>
+					<a data-slide-index="1" href=""><img src="images/sample_img02.jpg" alt=""></a>
+					<a data-slide-index="2" href=""><img src="images/sample_img03.jpg" alt=""></a>
+					<a data-slide-index="3" href=""><img src="images/sample_img04.jpg" alt=""></a>
+					<a data-slide-index="4" href=""><img src="images/sample_img05.jpg" alt=""></a>	
+					<a data-slide-index="5" href=""><img src="images/sample_img06.jpg" alt=""></a>
+					<a data-slide-index="6" href=""><img src="images/sample_img07.jpg" alt=""></a>
+					<a data-slide-index="7" href=""><img src="images/sample_img08.jpg" alt=""></a>
+					<a data-slide-index="8" href=""><img src="images/sample_img09.jpg" alt=""></a>
+					<a data-slide-index="9" href=""><img src="images/sample_img10.jpg" alt=""></a>
+				</div>
+			</div>
+			<div class="product_info_right">
+				<div>
+					<span>경상도</span><span>|</span><span>경남 거제시 일운면</span>
+				</div>
+				<div>
+					<h2>소노캄거제(구 대명거제마리나)</h2>
+					<ul>
+						<li>&middot; 주소</li>
+						<li>&middot; 전화번호</li>
+						<li>&middot; 홈페이지</li>
+						<li>&middot; 총객실수</li>
+						<li>&middot; 체크인</li>
+						<li>&middot; 체크아웃</li>
+						<li>&middot; 고객평점</li>
+						<li>&middot; 태그</li>
+					</ul>
+				</div>
+			</div>	
+		</div>
+		<div class="product_detail_wrap">
+			<div class="tabbox">
+				<ul class="tab detail">
+					<li class="active"><a href="javascript:void(0);">요금정보/예약</a></li>
+					<li><a href="javascript:void(0);">상세정보</a></li>
+					<li><a href="javascript:void(0);">위치/주변명소</a></li>
+					<li><a href="javascript:void(0);">이용안내</a></li>
+					<li><a href="javascript:void(0);">포토갤러리</a></li>
+					<li><a href="javascript:void(0);">고객후기</a></li>
+				</ul>
+				<div class="tabboxcon tabboxcon0">
+					요금정보/예약
+				</div>
+				<div class="tabboxcon tabboxcon1">
+					상세정보
+				</div>
+				<div class="tabboxcon tabboxcon2">
+					위치/주변명소
+				</div>
+				<div class="tabboxcon tabboxcon3">
+					이용안내
+				</div>
+				<div class="tabboxcon tabboxcon4">
+					포토갤러리
+				</div>
+				<div class="tabboxcon tabboxcon5">
+					고객후기
+				</div>
+			</div>
 		</div>
 	</div>
 </div>
 
-
+<script src="./swiper/swiper.min.js"></script>
+<script src="./sub_detail.js"></script>
 </body>
 </html>
