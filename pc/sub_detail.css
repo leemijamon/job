@@ -370,6 +370,18 @@ html, body{}
 /* 
 # acitive color: #2E64FE
 # no color: (bg)#f8f8fa (border)#e3e3e3
-# height: 45px;
+# width:166px height: 45px;
 # font-size: 14px; font-weight: bold; font-family: "NotoKrR", "Noto Sans KR", "Nanum Gothic","나눔고딕 Regular","나눔 고딕","맑은 고딕","Malgun Gothic","돋움",dotum,Helvetica,sans-serif
 */
+.tab_style{width:100%;}
+.tab_style::after{content:""; clear:both; display:table;}
+.tab_style li{float:left; width:166px; height:45px; background-color:#f8f8fa; border:1px solid #e3e3e3; box-sizing:border-box; border-right:0;}
+.tab_style li:last-child{border-right:1px solid #e3e3e3;}
+.tab_style li.active{background-color:#2e64fe; border-color:#2e64fe;}
+.tab_style li.active a{color:#fff;}
+.tab_style li a{text-align:center; display:block; width:100%; line-height:45px;}
+
+.tab_con0_wap{}
+.tab_con0_wap::after{content:""; clear:both; display:table;}
+.tab_con0_left{width:498px; float:left;}
+.tab_con0_right{width:498px; float:right;}

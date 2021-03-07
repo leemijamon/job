@@ -1,3 +1,4 @@
+// bxslider
 var bigSlider = $(".product_img").bxSlider({
 		pager: false,
 		controls: false,
@@ -28,3 +29,11 @@ function linkSliders(bigImage,pagerImage){
 		bigImage.goToSlide(newIndex);
 	});
 }
+
+$(function(){
+	$("#datepicker").datepicker({
+		beforeShowDay: selectDaysRest
+	});
+});
+
+//

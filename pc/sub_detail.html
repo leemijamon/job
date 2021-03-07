@@ -92,7 +92,7 @@
 		</div>
 		<div class="product_detail_wrap">
 			<div class="tabbox">
-				<ul class="tab detail">
+				<ul class="tab detail tab_style">
 					<li class="active"><a href="javascript:void(0);">요금정보/예약</a></li>
 					<li><a href="javascript:void(0);">상세정보</a></li>
 					<li><a href="javascript:void(0);">위치/주변명소</a></li>
@@ -100,8 +100,21 @@
 					<li><a href="javascript:void(0);">포토갤러리</a></li>
 					<li><a href="javascript:void(0);">고객후기</a></li>
 				</ul>
+				<div class="reserve_step">
+					※ 예약순서 : ①번 객실선택 ▶ ②번 입실일선택 ▶ ③번 이용 박수/객실수/투숙인원 선택 ▶ ④번 예약하기(회원) or 비회원예약
+				</div>
 				<div class="tabboxcon tabboxcon0">
-					요금정보/예약
+					<div class="tab_con0_wap">
+						<div class="tab_con0_left">
+						
+						</div>
+						<div class="tab_con0_right">
+							<div id="calendar"></div>
+							<script>
+								$("#calendar").datepicker();
+							</script>
+						</div>
+					</div>
 				</div>
 				<div class="tabboxcon tabboxcon1">
 					상세정보
