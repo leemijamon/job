@@ -129,15 +129,58 @@
 					※ 예약순서 : <span>①</span>번 객실선택 ▶ <span>②</span>번 입실일선택 ▶ <span>③</span>번 이용 박수/객실수/투숙인원 선택 ▶ <span>④</span>번 예약하기(회원) or 비회원예약
 				</div>
 				<div class="tabboxcon tabboxcon0">
-					<div class="tab_con0_wap clearfix">
-						<div class="tab_con0_left">
-						
+					<div class="tab_con0_wap">
+						<div class="clearfix">
+							<div class="tab_con0_left">
+								<div class="reserve_step01">
+									<div class="reserve_step_title">
+										<strong>01</strong> 객실타입선택 <span>(예약하실 객실을 선택하세요)</span>
+									</div>
+									<div>
+										<ul class="room_info">
+											<li>
+												<label><input type="radio" name="room_type" value="패밀리/취사형">패밀리/취사형</label>
+												<div>
+													<p>약22평 4인기준-총 28실 원룸형</p>
+													<p>※ 본 객실은 기준인원 4명 / 최대인원 6명이 가능한 객실입니다.</p>
+												</div>
+											</li>
+											<li>
+												<label><input type="radio" name="room_type" value="패밀리/클린형">패밀리/클린형</label>
+												<div>
+													<p>약22평 4인기준-취사불가-총 77실 원룸형</p>
+													<p>※ 본 객실은 기준인원 4명 / 최대인원 6명이 가능한 객실입니다.</p>
+												</div>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							<div class="tab_con0_right">
+								<div class="reserve_step02">
+									<div class="reserve_step_title">
+										<strong>02</strong> 입실일 선택
+									</div>
+									<div class="calendar_wrap">
+										<div id="calendar"></div>
+										<script>
+											$("#calendar").datepicker();
+										</script>
+										<p>달력에서 입실일 을 선택하신후 ③번 이용하실 박수를 선택해주세요</p>
+										<p>(입실일 변경시에도 달력에서 다시 선택해주시면 됩니다)</p>
+									</div>
+								</div>
+								<div class="reserve_step03">
+									<div class="reserve_step_title">
+										<strong>03</strong> 투숙 박수 / 객실수 / 투숙인원 선택
+									</div>
+								</div>
+							</div>
 						</div>
-						<div class="tab_con0_right">
-							<div id="calendar"></div>
-							<script>
-								$("#calendar").datepicker();
-							</script>
+						<div class="tab_con0_center">
+							<div class="reserve_step_title">
+								<strong>04</strong> 선택사항 확인
+							</div>
 						</div>
 					</div>
 				</div>

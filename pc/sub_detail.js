@@ -36,4 +36,24 @@ $(function(){
 	});
 });
 
-//
+// accordion
+$(function(){
+	//$('.room_info > li:eq(0)').addClass('active').next().slideDown();
+
+	$('.room_info li').click(function(){
+		var dropDown = $(this).closest('li').find('div');
+
+		$(this).closest('.room_info').find('div').not(dropDown).slideUp();
+
+		if ($(this).hasClass('active')) {
+			$(this).removeClass('active');
+		} else {
+			$(this).closest('.room_info').find('li.active').removeClass('active');
+			$(this).addClass('active');
+		}
+
+		dropDown.stop(false, true).slideToggle();
+
+		event.preventDefault();
+	});
+});

@@ -1,358 +1,9 @@
 @charset "utf-8";
 
-
-/* 기존 페이지 존재하던  */
-
-:root{--swiper-theme-color:#f14829 !important;}
- span.im-caret {
-    -webkit-animation: 1s blink step-end infinite;
-    animation: 1s blink step-end infinite;
-}
-
-@keyframes blink {
-    from, to {
-        border-right-color: black;
-    }
-    50% {
-        border-right-color: transparent;
-    }
-}
-
-@-webkit-keyframes blink {
-    from, to {
-        border-right-color: black;
-    }
-    50% {
-        border-right-color: transparent;
-    }
-}
-
-span.im-static {
-    color: grey;
-}
-
-div.im-colormask {
-    display: inline-block;
-    border-style: inset;
-    border-width: 2px;
-    -webkit-appearance: textfield;
-    -moz-appearance: textfield;
-    appearance: textfield;
-}
-
-div.im-colormask > input {
-    position: absolute;
-    display: inline-block;
-    background-color: transparent;
-    color: transparent;
-    -webkit-appearance: caret;
-    -moz-appearance: caret;
-    appearance: caret;
-    border-style: none;
-    left: 0; /*calculated*/
-}
-
-div.im-colormask > input:focus {
-    outline: none;
-}
-
-div.im-colormask > input::-moz-selection{
-    background: none;
-}
-
-div.im-colormask > input::selection{
-    background: none;
-}
-div.im-colormask > input::-moz-selection{
-    background: none;
-}
-
-div.im-colormask > div {
-    color: black;
-    display: inline-block;
-    width: 100px; /*calculated*/
-}
-
-
-
-#wrap div, input{box-sizing:border-box;}
-#content{min-height:400px !important;}
-
-/* 스타일별 배경 */
-
-.bg_gray{width:100%;background:#f1f1f1;margin:30px 0;padding:30px 0;}
-.bg_white{width:100%;background:white;margin:30px 0;padding:30px 0;}
-.area{width:996px;margin:0 auto;position:relative;}
-.area .slide{width:100%;height:100%;overflow:hidden;position:relative;}
-
-/* 영역별 공통 타이틀*/	
-
-.title_area{border-bottom:2px solid #333;display:inline-block;width:100%;margin-bottom:29px;}
-.title_area h3{font-size:20px; font-weight:500;margin-bottom:10px;}
-.title_area span{float: right;
-    font-size: 12px;
-    line-height: 30px;
-    background: url(http://image.exanadu.co.kr/cdnetbs/inwork/images/icon/right_icon_black.png) no-repeat right;
-    background-size: 9px 7px;
-    padding-right: 15px;}	
-
-
-
-/*  상품 공통 적용 */
-
-.good-list li .price{
-	position: relative;
-    height: 34px;
-    text-align: right;
-    margin: 33px 0 14px 0px;
-	font-family: 'Titillium Web';
-}
-.good-list li .price .sale{font-weight:700;}
-.good-list li .price_area del{font-weight:400;}
-.good-list li .price strong{font-weight:700;}
-
-
-.prd_style_default .menu_item{width:996px; margin:0 auto;display:block;position:relative;}
-.prd_style_default .good-list li{width:234px !important;height:340px;padding:0;margin-right:20px;}
-.prd_style_default .good-list li .price{padding-top:4px;display: block;
-    position: relative;
-    height: 40px;
-    margin-top:20px;
-}
-.prd_style_default .good-list{display:block;margin:0;width:100%;}
-.prd_style_default .good-list li .title{margin-top:10px !important;font-weight:300;margin-top:10px;}
-.prd_style_default .good-list li .title p{font-size:14px;line-height:20px; height:40px;font-weight:400;}
-.prd_style_default .good-list li .price_area span{font-size:25px;margin-right:0;line-height:27px;}
-.prd_style_default .good-list li .price del{margin-left:0;display:block;}
-.prd_style_default .good-list li .price del:after{display:none;}
-.prd_style_default .good-list li .price .price_area{position: absolute;    right: 0;    width: 100%;    bottom: 0;    text-align:right;    }
-.prd_style_default .good-list li .price .price_area span{font-size:13px;}
-.prd_style_default .good-list li .price .sale{float: left;display: inline-block;width:43px;margin-right:10px;margin-top:6px;}    
-.prd_style_default .good-list li .price .sale p{width:auto;font-size:14px;color:#f14829;line-height:33px;text-align:left;}
-.prd_style_default .good-list li .price .sale span{font-size:25px;line-height:25px;}
-.prd_style_default .good-list li .price strong {font-size:20px;line-height:20px;}      
-.prd_style_default .good-list li .thumb{max-width:100%;height:234px;width:234px;margin:0;}
-.prd_style_default .good-list li .thumb img{width:100%;height:100%;border:1px solid #e3e3e3;max-width:234px;}    
-.prd_style_default .good-list li:nth-child(4){margin-right:0;}
-.prd_style_default .good-list .quick-menu::after{border:1px solid #333 !important;background:none;width:232px; height:232px;}
-.prd_style_default .good-list .quick-menu .btn-like,.good-list .quick-menu .btn-detail span{display:none !important;}
-
-
-
-
-.top_contents{background: url(./images/pc_main_bg.jpg) no-repeat center;height:590px;display:inline-block;width:100%;background-size:cover;}
-.top_contents .contents{width:996px; margin:0 auto;}
-.top_contents .contents > li:nth-child(1) img{display:block;margin:55px auto 45px;}
-.top_contents .contents > li:nth-child(2){float:left;height:184px;}
-.top_contents .contents > li:nth-child(3){display:inline-block;margin:0 auto; width:100%;}
-.top_contents .contents > li:nth-child(3) > ul{margin:43px auto;display:table;}
-.top_contents .contents > li:nth-child(3) > ul li{display:inline-block;margin-right:75px;}
-.top_contents .contents > li:nth-child(3) > ul li:last-child{margin-right:0;}
-
-	
-.tourSubMain h3 {
-
- font-size: 24px;
- width: 996px;
- margin: 0 auto 20px;
-}
-.tourSubMain .packageSearch_btn{top:68px;height:30px;background:white;border:1px solid #167de2;color:#167de2;font-weight:700;}
-.tourSubMain .con_wrapBox{display:table;margin:0 auto;}	
-.tourSubMain .con_wrapBox button {
-    padding: 6px 30px;
-    border: 1px solid #167de2;
-    color: #167de2;
-    height: 30px;
-    margin-left: 8px;
-}	
-.tourSubMain .select-list{width:346px !important; }		
-.tourSubMain .tabboxcon_inner > .fL{margin-right:8px;}		
-.tourSubMain .tabboxcon .date{width:186px;}	
-.tourSubMain .tab.layer li:first-child{margin-right:1%;}		
-.tourSubMain .tabbox .tabboxcon{background:white;border:1px solid #333;}		
-.tourSubMain .tab.layer{border-bottom:0;}
-.tourSubMain .tab.layer li{background:#333;width:49.5%;height:55px;    border-radius: 10px 10px 0 0;margin-bottom:-1px;border-color:#333;}
-.tourSubMain .tab.layer li span {
-    vertical-align: middle;
-    margin-top: 8px;
-    display: inline-block;
-    height: 24px;
-    line-height: 24px;}
-.tourSubMain .tab.layer li:nth-child(1) span{background: url(http://image.exanadu.co.kr/cdnetbs/inwork/images/icon/ico_tab1.png) no-repeat 0px 0px;  padding-left: 50px;}
-.tourSubMain .tab.layer li:nth-child(2) span{background: url(http://image.exanadu.co.kr/cdnetbs/inwork/images/icon/ico_tab2.png) no-repeat 0px 0px;    padding-left: 50px;}
-.tourSubMain .tab.layer .active span{background-position:-40px 0px !important;}
-.tourSubMain .tab.layer li.active{background:white;}
-.tourSubMain .tab.layer li a{color:white;font-weight:500 !important;}
-.tourSubMain .tab.layer li.active a{color:#333;}
-.tourSubMain .select-list{margin:0;}
-.tourSubMain .search_destination{width:28px;height:28px;}
-
-.check_area{margin-bottom:20px;}
-.check_area label{margin-right:20px;}
-.check_area .allbx{position:relative;width:50px;text-align:right;}
-.check_area .allbx span{position:absolute; left:0;padding-right:50px;}
-.check_area .checkbox{background:url('./images/mo_ico_check_1_off.png') no-repeat left;background-size:18px 18px;}
-.check_area .checkbox.checked{background:url('./images/mo_ico_check_1_on.png') no-repeat left;background-size:18px 18px;}
-
-.calendar_sec a{font-size:0;border: 1px solid #ccc7c7;
-    border-radius: 0;}
-.calendar_input{width:186px !important;float:left;}
- 
-
-
-
-/* 중간 배너 영역 */
-.midban_area .banner li{display:inline-block;margin:16px 16px 0 0;}
-.midban_area .banner li:last-child{margin-right:0;}
-.midban_area .area .swiper-button-prev:focus{outline:none;}
-.midban_area .area .swiper-button-next:focus{outline:none;}
-.midban_area .area .swiper-button-prev{top:30%;left:-60px;color:#8f8f8d;background:url(http://image.exanadu.co.kr/cdnetbs/inwork/images/icon/large_prev_icon.png);width:31px;height:57px;}
-.midban_area .area .swiper-button-next{top:30%;right:-60px;color:#8f8f8d;background:url(http://image.exanadu.co.kr/cdnetbs/inwork/images/icon/large_next_icon.png);width:31px;height:57px;}
-
-
-
-/* 주요 서비스 관련 */
-.service_link{background:white;padding:40px 0;overflow-x:hidden;}
-.mid_slider{width:996px;margin:0 auto;position:relative;height:140px;overflow:hidden;}
-.mid_slider .mid_event{width:100%;left:0;margin-bottom:40px;}
-.mid_slider .mid_event {position:relative;}
-.mid_slider .mid_event{width:100%;}
-.mid_slider .mid_event{
-    display: table;
-    margin: 0 auto;
-    width: auto;
-}
-.mid_slider .mid_event span{width: 100%;display:none;
-    height: 100%;    
-    background: black;    
-    display: block;    
-    margin-right: 12px;    
-    border-radius: 12px;    
-    opacity: 0.6;
-    }			
-.mid_slider .mid_event .img_add{
-	background:url("./images/ico_menu_1.png") no-repeat;
-	background-position:0 0;
-	background-size:100%;
-	display:inline-block;
-	width:93px;
-	margin-right:36px;
-	}
-.mid_slider .mid_event .img_add:last-child{margin-right:0;}
-.mid_slider .mid_event .img_cover{background:url("./images/ico_menu_1.png") no-repeat;background-position:0 -165px;background-size:100%;}
-.mid_slider li {height:158px;position:relative;}
-.mid_slider li:first-child{margin-left:0;}
-.mid_slider li:last-child{margin-right:0;}
-.mid_slider li img{width:100%;height:100%;}
-.mid_slider li p{position: absolute;
-    top: 0;
-    background: black;
-    color: white;
-    display: block;
-    width: 100%;
-    height: 100%;
-}
-
-
-
-.sec02 .title_area,.sec03 .title_area{margin-bottom:0;}
-
-
-.product_area .sec01 .content_area{height:350px;}		
-.product_area .left_slide{width:262px;border:1px solid #e5e5e5;margin-right:34px;display:inline-block;float:left;}
-
-.product_area .right_table{width:700px;display:inline-block;text-align:center;border-color:#e5e5e5;}
-.product_area .prd_sec{margin-top:30px;margin-bottom:30px;}
-.product_area .right_table .table-type01{border:1px solid #e5e5e5;border-bottom:0;border-left:0;border-right:0;}
-.product_area .right_table .table-type01 .price{color:red;}
-.product_area .right_table .table-type01 thead{background:#f1f1f1;border:1px solid #e5e5e5;}
-.product_area .right_table .table-type01 .resv_btn{border:1px solid #e5e5e5;padding:3px;}
-.product_area .right_table .table-type01 thead th{height:24px;font-size:14px;font-weight:400;}
-.product_area .right_table .table-type01 td{font-size:13px;font-weight:400;padding:8px 20px;border-left:0;border-right:0;}
-
-.product_area .hover_sec{display:none;}
-.product_area .tab_hover_wrap .on{display:block;}
-.product_area .tab_hover_wrap .tab_hover_ul li{width:16.76%;padding:5px 0;background-color:#f1f1f1;}
-.product_area .tab_hover_wrap .tab_hover_ul li a{font-weight:400;}
-.product_area .tab_hover_wrap .tab_hover_ul li.on{background-color:white !important;border-color:#e5e5e5 !important;border-bottom:0;}
-.product_area .tab_hover_wrap .tab_hover_ul li.on a{color:#333 !important;font-weight:700;}
-.product_area .sub_cate_list{height:30px;margin:10px 0;}
-.product_area .sub_cate_list .list li{    
-	display: inline-block;
-    width: 60px;
-    float: left;
-    margin-left: 20px;
-    line-height: 30px;
-    height: 30px;
-}
-.product_area .sub_cate_list .list li a{padding-left:25px;}
-.product_area .sub_cate_list .list .on span{font-weight:700;border-bottom:1px solid #c1c1c1;padding-bottom:3px;}
-.product_area .sub_cate_list .list .on a{background:url('http://image.exanadu.co.kr/cdnetbs/inwork/images/icon/mo_ico_check_2_on.png') no-repeat left;padding-left:25px;background-size:10px 10px;}    
-.product_area .sub_cate_list .list li span{font-size:15px;}
-.product_area .sub_cate_list .list_all{
-	float:right;
-	font-size:15px;
-	height:30px; 
-	line-height:30px;
-	background: url(http://image.exanadu.co.kr/cdnetbs/inwork/images/icon/right_icon_black.png) no-repeat right;
-    background-size: 9px 7px;
-    padding-right: 15px;
-}
-
-
-
-.midban_area{margin-top:0;margin-bottom:0;padding:40px 0;}
-.service_link{margin:0;}
-.product_area{margin-top:0;padding-top:0;}
-.product_area .sec01{margin-top:0;}
-.sec02 .prd_style_default .good-list .price_area p,.sec03 .prd_style_default .good-list .price_area p{    font-size: 12px;
-    display: inline-block;
-    margin-right: 5px;
-    color: #f14829;} 
-.sec01 .title_area span,.sec02 .title_area span,.sec03 .title_area span{display:none;}
-.sec01 .left_slide .swiper-button-prev{left:0 !important;background-color:white;background:url(http://login.benecafe.co.kr/static/pc/images/submain/shopping/middle_prev_icon.png) no-repeat center;width:30px;height:45px;background-size:30px 45px;}
-.sec01 .left_slide .swiper-button-next{right:0 !important;background-color:white;background:url(http://login.benecafe.co.kr/static/pc/images/submain/shopping/middle_next_icon.png) no-repeat center;width:30px; height:45px;background-size:30px 45px;}
-.sec01 .left_slide .swiper-button-prev:after,.sec01 .left_slide .swiper-button-next:after{display:none;}
-/*.sec01 .left_slide .swiper-button-prev:after{background:darkgray; color:white;font-size:34px;opacity:0.8;padding:0 4px;}
-.sec01 .left_slide .swiper-button-next:after{background:darkgray; color:white;font-size:34px;opacity:0.8;padding:0 4px;}
-*/
-
-
-
-.promotion-banner{margin-bottom:70px;margin-top:40px;}
-.promotion-banner .swiper-pagination {width:100%;margin-top:10px;}
-.promotion-banner .swiper-pagination .swiper-pagination-bullet {margin-right:10px;width:10px;height:10px;}
-.promotion-banner .swiper-button-next,.promotion-banner .swiper-button-prev{
-	    width: 35px;
-    top: 45%;
-    height: 35px;
-    /* background-size: 9px 14px; */
-    background-color: white;
-    border-radius: 20px;
-    
-	}
-.promotion-banner .swiper-button-next::after,.promotion-banner .swiper-button-prev::after{
-	font-size:0;
-	
-
-	    }
-.promotion-banner .swiper-button-prev{background:url('http://image.exanadu.co.kr/cdnetbs/inwork/images/icon/large_left_icon.png') no-repeat center;background-color:white;border:1px solid #e5e5e5;margin-top:0;}	    
-.promotion-banner .swiper-button-next{background:url('http://image.exanadu.co.kr/cdnetbs/inwork/images/icon/large_right_icon.png') no-repeat center;background-color:white;border:1px solid #e5e5e5;margin-top:0;}
-.product_area .sec03 .sub_cate_list{height:1px;}
-.product_area .sec03 .sub_cate_list .list_all{display:none;}
-
-
-	.swiper-button-next{}
-	 .swiper-button-prev{}
-#footer{margin-top:0;border-top:1px solid #333;}
-
-
 /*****## 21.03.07 - Leemija ##*****/
-
-
 /* 상품 갤러리&간단정보 */
 #sub_detail{margin-top:30px;}
-.product_info_wrap{}
+.product_info_wrap{padding-bottom:30px; border-bottom:1px solid #e3e3e3; margin-bottom:35px;}
 .product_info_left{width:500px; float:left;}
 .product_img{}
 .product_img img{width:500px; height:500px;}
@@ -376,24 +27,33 @@ div.im-colormask > div {
 .product_info_detail ul li p:first-child{font-weight:bold;}
 .product_info_detail ul li p:last-child{width:calc(100% - 90px);}
 .product_info_detail ul li p span{color:#2e64fe;}
-
-
 /* Tab */
-/* 
-# acitive color: #2e64fe
-# no color: (bg)#f8f8fa (border)#e3e3e3
-# width:166px height: 45px;
-# font-size: 14px; font-weight: bold; font-family: "NotoKrR", "Noto Sans KR", "Nanum Gothic","나눔고딕 Regular","나눔 고딕","맑은 고딕","Malgun Gothic","돋움",dotum,Helvetica,sans-serif
-*/
 .tab_style{width:100%;}
-.tab_style li{float:left; width:166px; height:45px; background-color:#f8f8fa; border:1px solid #e3e3e3; box-sizing:border-box; border-right:0;}
+.tab_style li{float:left; width:166px; background-color:#f8f8fa; border:1px solid #e3e3e3; box-sizing:border-box; border-right:0;}
 .tab_style li:last-child{border-right:1px solid #e3e3e3;}
 .tab_style li.active{background-color:#2e64fe; border-color:#2e64fe;}
 .tab_style li.active a{color:#fff;}
 .tab_style li a{text-align:center; display:block; width:100%; line-height:45px;}
-.reserve_step{}
+.reserve_step{width:996px; border:2px solid #2e64fe; text-align:center; line-height:50px; box-sizing:border-box; margin:20px 0 15px;}
 .reserve_step span{color:#2e64fe;}
-
-.tab_con0_wap{}
-.tab_con0_left{width:498px; float:left;}
-.tab_con0_right{width:498px; float:right;}
+.tab_con0_wap{border:1px solid #e3e3e3; box-sizing:border-box;}
+.reserve_step_title{width:100%; height:50px; padding:0 25px; box-sizing:border-box; line-height:50px; font-size:16px; background-color:#74afe1; color:#fff;}
+.reserve_step_title span{font-size:14px;}
+.tab_con0_left{width:497px; float:left;}
+.room_info{}
+.room_info li{width:100%; line-height:35px; border-bottom:1px solid #e3e3e3; position:relative; text-indent:8px;}
+.room_info li.active{background-color:#e2e7eb;}
+.room_info li.active label{font-weight:bold;}
+.room_info li.active label:after{transform:rotate(45deg); transition:all 0.2s ease-in-out; -moz-transition:all 0.2s ease-in-out; -webkit-transition:all 0.2s ease-in-out;}
+.room_info li:hover label{color:#579bdb;}
+.room_info li label{font-size:13px;}
+.room_info li label:after{width:8px; height:8px; border-right:1px solid #2e64fe; border-bottom:1px solid #2e64fe; position:absolute; top:13px; right:20px; content:""; transform:rotate(-45deg); transition:all 0.2s ease-in-out; -moz-transition:all 0.2s ease-in-out; -webkit-transition:all 0.2s ease-in-out;}
+.room_info li .radio{width:0; height:0;}
+.room_info input{position:static !important;}
+.room_info div{display:none; padding:10px; background-color:#f9f9f9;}
+.room_info div p{line-height:25px;}
+.tab_con0_right{width:496px; float:right; border-left:1px solid #e3e3e3;} 
+.reserve_step02{position:relative;}
+.calendar_wrap{position:relative; padding:15px 20px; background-color:#f4f4f4; box-sizing:border-box;}
+#calendar .ui-datepicker-header{}
+#calendar .ui-datepicker-calendar{margin-top:70px;}
