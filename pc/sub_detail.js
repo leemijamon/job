@@ -38,10 +38,17 @@ $(function(){
 
 // accordion
 $(function(){
-	//$('.room_info > li:eq(0)').addClass('active').next().slideDown();
-
 	$('.room_info li').click(function(){
 		var dropDown = $(this).closest('li').find('div');
+
+		$('.room_info').find('li').each(function (i, v){
+			$(this).find('span').removeClass('checked')
+		});
+
+		if ($(this).find('span').hasClass('checked')){
+		} else {
+			$(this).find('span').addClass('checked');
+		}
 
 		$(this).closest('.room_info').find('div').not(dropDown).slideUp();
 
@@ -56,4 +63,11 @@ $(function(){
 
 		event.preventDefault();
 	});
+});
+
+// datepicker
+$(function(){
+	var dateDay = $('.ui-datepicker-calendar tr td');
+
+	dateDay.append('<div class=room_pay>가격</div>');
 });
