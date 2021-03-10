@@ -1,17 +1,14 @@
 @charset "utf-8";
 
-/*****## 21.03.07 - Leemija ##*****/
-/* 상품 갤러리&간단정보 */
+/*****## 갤러리&간단정보 ##*****/
 #sub_detail{margin-top:30px;}
 .product_info_wrap{padding-bottom:30px; border-bottom:1px solid #e3e3e3; margin-bottom:35px;}
 .product_info_left{width:500px; float:left;}
-.product_img{}
 .product_img img{width:500px; height:500px;}
 .product_pager{width:500px;}
 .product_pager a{display:block; float:left; width:100px !important; height:100px; padding:5px 3px; box-sizing:border-box;}
 .product_pager a img{width:100%; height:100%;}
 .product_info_left .bx-wrapper{position:relative;}
-.product_info_left .bx-wrapper .bx-controls .bx-controls-direction{} 
 .product_info_left .bx-wrapper .bx-controls .bx-controls-direction .bx-prev{display:block; width:30px; height:30px; background:url('images/arrow_right.png') 0 0 no-repeat; position:absolute; top:35px; right:10px;} 
 .product_info_left .bx-wrapper .bx-controls .bx-controls-direction .bx-next{display:block; width:30px; height:30px; background:url('images/arrow_left.png') 0 0 no-repeat; position:absolute; top:35px; left:10px;}   
 .product_info_right{width:470px; float:right;}
@@ -27,7 +24,8 @@
 .product_info_detail ul li p:first-child{font-weight:bold;}
 .product_info_detail ul li p:last-child{width:calc(100% - 90px);}
 .product_info_detail ul li p span{color:#2e64fe;}
-/* Tab */
+/*****## Tab Menu ##*****/
+/* 예약 정보 입력 */
 .tab_style{width:100%;}
 .tab_style li{float:left; width:166px; background-color:#f8f8fa; border:1px solid #e3e3e3; box-sizing:border-box; border-right:0;}
 .tab_style li:last-child{border-right:1px solid #e3e3e3;}
@@ -36,7 +34,7 @@
 .tab_style li a{text-align:center; display:block; width:100%; line-height:45px;}
 .reserve_step{width:996px; border:2px solid #2e64fe; text-align:center; line-height:50px; box-sizing:border-box; margin:20px 0 15px;}
 .reserve_step span{color:#2e64fe;}
-.tab_con0_wap{border:1px solid #e3e3e3; box-sizing:border-box;}
+.tab_con0_wap{border:1px solid #e3e3e3; box-sizing:border-box; margin-bottom:60px;}
 .reserve_step_title{width:100%; height:50px; padding:0 25px; box-sizing:border-box; line-height:50px; font-size:16px; background-color:#74afe1; color:#fff;}
 .reserve_step_title span{font-size:14px;}
 .tab_con0_bg{background-color:#f4f4f4;}
@@ -64,3 +62,12 @@ a.state_btn:hover{color:#fff;}
 .state_btn02{background-color:#2c8aee;}
 .state_btn03{background-color:#ff831d;}
 .state_btn04{background-color:#5ab69f;}
+.reserve_info{padding:15px 20px;}
+.reserve_info table tr td{padding:5px;}
+.reserve_result{background-color:#fff;}
+.reserve_result table{text-align:left; width:100%;}
+.reserve_result table tr th, .reserve_result table tr td{padding:5px;}
+.reserve_result_left{float:left; width:599px; padding:15px 20px; box-sizing:border-box; border-right:1px solid #e3e3e3;}
+.reserve_result_right{float:left; width:366px; padding:15px 20px; box-sizing:border-box;}
+
+.detail_info_wrap{padding:20px 30px; box-sizing:border-box; border:1px solid #e3e3e3;}
