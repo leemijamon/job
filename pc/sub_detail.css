@@ -38,7 +38,7 @@
 .reserve_step_title{width:100%; height:50px; padding:0 25px; box-sizing:border-box; line-height:50px; font-size:16px; background-color:#74afe1; color:#fff;}
 .reserve_step_title span{font-size:14px;}
 .tab_con0_bg{background-color:#f4f4f4;}
-.tab_con0_left{width:497px; float:left;}
+.tab_con0_left{width:497px; float:left; overflow-y:scroll;}
 .room_info li{width:100%; line-height:35px; border-bottom:1px solid #e3e3e3; position:relative; text-indent:8px; background-color:#fff;}
 .room_info li.active{background-color:#e2e7eb;}
 .room_info li.active label{font-weight:bold;}
@@ -68,6 +68,11 @@ a.state_btn:hover{color:#fff;}
 .reserve_result table{text-align:left; width:100%;}
 .reserve_result table tr th, .reserve_result table tr td{padding:5px;}
 .reserve_result_left{float:left; width:599px; padding:15px 20px; box-sizing:border-box; border-right:1px solid #e3e3e3;}
+.all_price_box{margin-top:10px;}
+.all_price_box div {padding:9px 15px; border:4px solid #eaeaea; box-sizing:border-box; width:300px; float:left; margin-right:10px;}
+.all_price_box div span{font-size:14px;}
+.all_price_box div .all_price{display:inline-block; width:150px; font-size:18px; color:#2e64fe; font-weight:bold; text-align:right;}
+.all_price_box a{margin-right:5px; display:inline-block;}
 .reserve_result_right{float:left; width:366px; padding:15px 20px; box-sizing:border-box;}
-
+.info_title{font-size:20px; margin:5px 0; font-weight:bold; letter-spacing:-1px;}
 .detail_info_wrap{padding:20px 30px; box-sizing:border-box; border:1px solid #e3e3e3;}
