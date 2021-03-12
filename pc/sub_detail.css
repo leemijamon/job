@@ -21,14 +21,14 @@
 .product_info_detail table{text-align:left;}
 .product_info_detail table tr th, .product_info_detail table tr td{padding:5px 0;}
 .product_info_detail span{color:#2e64fe;}
+.product_info_right .btn.h53{width:100%;}
 /*****## Tab Menu ##*****/
 /* 예약 정보 입력 */
-.tab_style{width:100%;}
-.tab_style li{float:left; width:166px; background-color:#f8f8fa; border:1px solid #e3e3e3; box-sizing:border-box; border-right:0;}
-.tab_style li:last-child{border-right:1px solid #e3e3e3;}
-.tab_style li.active{background-color:#2e64fe; border-color:#2e64fe;}
-.tab_style li.active a{color:#fff;}
-.tab_style li a{text-align:center; display:block; width:100%; line-height:45px;}
+.product_detail_wrap .tab.detail li{width:166px;}
+.tab.detail li{position:relative; float:left;}
+.tab.detail a{display:block; height:45px; margin:0 0 0 -1px; text-align:center; color:#333; line-height:45px; font-size:14px; font-weight:bold; border:1px solid #e3e3e3; background-color:#f8f8fa;}
+.tab.detail li.active{z-index:10;}
+.tab.detail li.active a{background-color:#fff; border:1px solid #2e64fe;}
 .reserve_step{width:996px; border:2px solid #2e64fe; text-align:center; line-height:50px; box-sizing:border-box; margin:20px 0 15px;}
 .reserve_step span{color:#2e64fe;}
 .tab_con0_wap{border:1px solid #e3e3e3; box-sizing:border-box; margin-bottom:60px;}
@@ -74,6 +74,16 @@ a.state_btn:hover{color:#fff;}
 .all_price_box a{margin-right:5px; display:inline-block;}
 .reserve_result_right{float:left; width:366px; padding:15px 20px; box-sizing:border-box;}
 .info_title{font-size:20px; margin:5px 0; font-weight:bold; letter-spacing:-1px;}
-.detail_info_wrap{padding:20px 30px; box-sizing:border-box; border:1px solid #e3e3e3;}
+.detail_info_wrap{padding:35px 30px; box-sizing:border-box; border:1px solid #e3e3e3;}
 
-/* 위치&주변명소 */
+/* 고객후기 */
+.review_wrap{border-top:2px solid #e3e5e6; border-bottom:1px solid #e3e5e6; margin:10px 0;}
+.review_wrap li{padding:20px 15px; box-sizing:border-box; border-bottom:1px solid #e3e5e6;}
+.review_wrap .review_con_left{float:left; width:750px;}
+.review_wrap p{font-size:14px; margin-bottom:20px;}
+.review_wrap p.review_title{font-size:16px; font-weight:bold; margin-bottom:10px;}
+.review_wrap span{color:#9c9c9c;}
+.review_wrap span.bar{margin:0 5px;}
+.review_wrap .review_con_right{float: right; text-align:right}
+.review_wrap .review_con_right span{font-size:22px; font-weight:bold;}
+.review_wrap .review_con_right .review_num{font-size:35px; color:#2e64fe;}
