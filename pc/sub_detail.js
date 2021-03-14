@@ -86,3 +86,12 @@ function initialize() {
 		title: markerTitle
 	});
 }	
+
+//
+
+
+ $('#review_iframe').load(function() {
+
+      $(this).height($(this).contents().find('body')[0].scrollHeight+50+"px");
+
+ });
