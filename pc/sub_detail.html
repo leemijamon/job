@@ -113,7 +113,23 @@
 						</tr>
 						<tr>
 							<th><span>&middot;</span> 고객평점</th>
-							<td>평점</td>
+							<td>
+								<ul class="star_mark_wrap clearfix">
+									<li>평점</li>
+									<li>
+										<img src="images/review_star_on.png" alt="">
+										<img src="images/review_star_on.png" alt="">
+										<img src="images/review_star_on.png" alt="">
+										<img src="images/review_star_on.png" alt="">
+										<img src="images/review_star_off.png" alt="">
+									</li>
+									<li>
+										<span class="num">4</span>
+										<span>/</span>
+										<span>5</span>
+									</li>
+								</ul>
+							</td>
 						</tr>
 						<tr>
 							<th><span>&middot;</span> 태그</th>
@@ -261,17 +277,38 @@
 										<strong>02</strong> 입실일 선택
 									</div>
 									<div class="calendar_wrap">
-										<div id="calendar"></div>
-										<script>
-											$("#calendar").datepicker({ });	
-										</script>
-										<p>달력에서 입실일 을 선택하신후 ③번 이용하실 박수를 선택해주세요</p>
+										<div id="room_date"></div>
+										<p>달력에서 <font color="#ff0000;">입실일</font>을 선택하신후 ③번 이용하실 박수를 선택해주세요</p>
 										<p>(입실일 변경시에도 달력에서 다시 선택해주시면 됩니다)</p>
-										<div class="state_btn_wrap">
-											<a class="state_btn state_btn01">즉시예약</a>
-											<a class="state_btn state_btn02">예약접수</a>
-											<a class="state_btn state_btn03">대기요청</a>
-											<a class="state_btn state_btn04">예약마감</a>
+										<div class="state_box_wrap">
+											<div class="state_box state_box01">
+												<a class="state_btn state_btn01">즉시예약</a>
+												<div class="state_info state_info01">
+													<p class="state_title">즉시예약</p>
+													<p>해당일에 확보된 객실이므로 예약과 동시에 확정됩니다.</p>
+												</div>
+											</div>
+											<div class="state_box state_box02">
+												<a class="state_btn state_btn02">예약접수</a>
+												<div class="state_info state_info02">
+													<p class="state_title">즉시예약</p>
+													<p>예약 후 담당자가 객실가능 여부 확인 후 유선 및 문자로 알려드립니다.</p>
+												</div>
+											</div>
+											<div class="state_box state_box03">
+												<a class="state_btn state_btn03">대기요청</a>
+												<div class="state_info state_info03">
+													<p class="state_title">즉시예약</p>
+													<p>해당일에 개실이 마감되었으나, 공실이 생길경우 대기접수자에게 개별통보를 드립니다.</p>
+												</div>
+											</div>
+											<div class="state_box state_box04">
+												<a class="state_btn state_btn04">예약마감</a>
+												<div class="state_info state_info04">
+													<p class="state_title">즉시예약</p>
+													<p>해당일에 객실마감으로 다른 날짜 또는 다른 숙소로 예약바랍니다.</p>
+												</div>
+											</div>
 										</div>
 									</div>
 								</div>
@@ -435,22 +472,20 @@
 									<li><img src="images/sample_img10.jpg" alt=""></li>		
 								</ul>
 							</div>
-							<!--
 							<div class="tab_product_pager">
 								<div>
-									<a data-slide-index="0" href=""><img src="images/sample_img01.jpg" alt=""></a>
-									<a data-slide-index="1" href=""><img src="images/sample_img02.jpg" alt=""></a>
-									<a data-slide-index="2" href=""><img src="images/sample_img03.jpg" alt=""></a>
-									<a data-slide-index="3" href=""><img src="images/sample_img04.jpg" alt=""></a>
-									<a data-slide-index="4" href=""><img src="images/sample_img05.jpg" alt=""></a>	
-									<a data-slide-index="5" href=""><img src="images/sample_img06.jpg" alt=""></a>
-									<a data-slide-index="6" href=""><img src="images/sample_img07.jpg" alt=""></a>
-									<a data-slide-index="7" href=""><img src="images/sample_img08.jpg" alt=""></a>
-									<a data-slide-index="8" href=""><img src="images/sample_img09.jpg" alt=""></a>
-									<a data-slide-index="9" href=""><img src="images/sample_img10.jpg" alt=""></a>
+									<a data-slideIndex="0" href=""><img src="images/sample_img01.jpg" alt=""></a>
+									<a data-slideindex="1" href=""><img src="images/sample_img02.jpg" alt=""></a>
+									<a data-slideindex="2" href=""><img src="images/sample_img03.jpg" alt=""></a>
+									<a data-slideindex="3" href=""><img src="images/sample_img04.jpg" alt=""></a>
+									<a data-slideindex="4" href=""><img src="images/sample_img05.jpg" alt=""></a>	
+									<a data-slideindex="5" href=""><img src="images/sample_img06.jpg" alt=""></a>
+									<a data-slideindex="6" href=""><img src="images/sample_img07.jpg" alt=""></a>
+									<a data-slideindex="7" href=""><img src="images/sample_img08.jpg" alt=""></a>
+									<a data-slideindex="8" href=""><img src="images/sample_img09.jpg" alt=""></a>
+									<a data-slideindex="9" href=""><img src="images/sample_img10.jpg" alt=""></a>
 								</div>
 							</div>
-							-->
 						</div>
 					</div>
 				</div>
