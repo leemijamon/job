@@ -1,4 +1,4 @@
-// bxslider
+// bxslider - 숙소에 대한 간단정보와 함께 상단에 위치
 var bigSlider = $(".product_img").bxSlider({
 		pager: false,
 		controls: false,
@@ -30,6 +30,14 @@ function linkSliders(bigImage,pagerImage){
 	});
 }
 
+// bxslider - Tab Menu 안에 위치한 포토갤러리
+var tabInSlider = $(".tab_product_img ul").bxSlider({
+	pager: false,
+	nextText: "Next",
+	prevText: "Prev"
+});
+
+// 예약날짜 선택
 $(function(){
 	$("#datepicker").datepicker({
 		beforeShowDay: selectDaysRest
@@ -86,12 +94,3 @@ function initialize() {
 		title: markerTitle
 	});
 }	
-
-//
-
-
- $('#review_iframe').load(function() {
-
-      $(this).height($(this).contents().find('body')[0].scrollHeight+50+"px");
-
- });

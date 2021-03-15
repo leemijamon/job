@@ -30,19 +30,22 @@
 <script src="http://login.benecafe.co.kr/static/both/js/module/etbs.validator.js?20180816"></script>
 <script src="http://login.benecafe.co.kr/static/pc/js/module/ui-new.js?20180816"></script>
 <script src="http://login.benecafe.co.kr/static/both/js/lib/jquery.mask.js"></script>
- <script src="http://login.benecafe.co.kr/static/both/js/module/underscore-1.8.3.min.js"></script>
- <script src="http://login.benecafe.co.kr/static/both/RobinHerbots-Inputmask/dist/jquery.inputmask.bundle.js"></script>
+<script src="http://login.benecafe.co.kr/static/both/js/module/underscore-1.8.3.min.js"></script>
+<script src="http://login.benecafe.co.kr/static/both/RobinHerbots-Inputmask/dist/jquery.inputmask.bundle.js"></script>
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-80577434-5"></script>
 <!-- <script src="https://ssl.daumcdn.net/dmaps/map_js_init/postcode.v2.js"></script> -->
 <script src="http://login.benecafe.co.kr/static/both/js/member/password.validation.js"></script>
 <script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 <script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script> <!--## 구글맵 ##-->
+<script>
+	function resizeIframe(obj) {
+		obj.style.height = obj.contentWindow.document.documentElement.scrollHeight + 'px';
+	}
+</script>
 </head>
 
-
 <body onload="initialize()">
-
 <div id="content">
 
 	<div id="sub_detail">
@@ -417,7 +420,38 @@
 				</div>
 				<div class="tabboxcon tabboxcon2">
 					<div class="detail_info_wrap">
-						
+						<div class="tab_gallery">
+							<div class="tab_product_img">
+								<ul>
+									<li><img src="images/sample_img01.jpg" alt=""></li>
+									<li><img src="images/sample_img02.jpg" alt=""></li>
+									<li><img src="images/sample_img03.jpg" alt=""></li>
+									<li><img src="images/sample_img04.jpg" alt=""></li>
+									<li><img src="images/sample_img05.jpg" alt=""></li>	
+									<li><img src="images/sample_img06.jpg" alt=""></li>
+									<li><img src="images/sample_img07.jpg" alt=""></li>
+									<li><img src="images/sample_img08.jpg" alt=""></li>
+									<li><img src="images/sample_img09.jpg" alt=""></li>
+									<li><img src="images/sample_img10.jpg" alt=""></li>		
+								</ul>
+							</div>
+							<!--
+							<div class="tab_product_pager">
+								<div>
+									<a data-slide-index="0" href=""><img src="images/sample_img01.jpg" alt=""></a>
+									<a data-slide-index="1" href=""><img src="images/sample_img02.jpg" alt=""></a>
+									<a data-slide-index="2" href=""><img src="images/sample_img03.jpg" alt=""></a>
+									<a data-slide-index="3" href=""><img src="images/sample_img04.jpg" alt=""></a>
+									<a data-slide-index="4" href=""><img src="images/sample_img05.jpg" alt=""></a>	
+									<a data-slide-index="5" href=""><img src="images/sample_img06.jpg" alt=""></a>
+									<a data-slide-index="6" href=""><img src="images/sample_img07.jpg" alt=""></a>
+									<a data-slide-index="7" href=""><img src="images/sample_img08.jpg" alt=""></a>
+									<a data-slide-index="8" href=""><img src="images/sample_img09.jpg" alt=""></a>
+									<a data-slide-index="9" href=""><img src="images/sample_img10.jpg" alt=""></a>
+								</div>
+							</div>
+							-->
+						</div>
 					</div>
 				</div>
 				<div class="tabboxcon tabboxcon3">
@@ -436,7 +470,7 @@
 				<div class="tabboxcon tabboxcon5">
 					<div class="detail_info_wrap">
 						<h3>고객후기 2건</h3>
-						<iframe id="review_iframe" name="review_iframe" src="review_list.html" frameborder="0" width="100%" height="100%" scrolling="no"></iframe>
+						<iframe id="review_iframe" name="review_iframe" onload="resizeIframe(this);" src="review_list.html" frameborder="0" width="100%" height="350px" scrolling="no"></iframe>
 					</div>
 				</div>
 			</div>
@@ -444,11 +478,6 @@
 	</div>
 
 </div>
-<script>
-	$('#review_iframe').load(function() {
-		$(this).height($(this).contents().find('body')[0].scrollHeight+30);
-	});
-</script> 
 <script src="./swiper/swiper.min.js"></script>
 <script src="./sub_detail.js"></script>
 </body>
