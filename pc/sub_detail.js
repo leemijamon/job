@@ -32,25 +32,6 @@ $(document).ready(function(){
 	}
 });
 
-// 예약날짜 선택
-$(document).ready(function(){
-	$("#room_date").datepicker({ });
-
-	var date_box = $("#room_date .ui-datepicker-calendar tbody td");
-
-	date_box.prepend("<div class='date_default state_text01'>58,900</div>");
-	date_box.prepend("<div class='state_icon state_btn01'>확정</div>");
-	//date_box.prepend("<div class='state_icon state_btn02'>예약</div>");
-	//date_box.prepend("<div class='state_icon state_btn03'>대기</div>");
-
-	date_box.mouseover(function(){
-		$(this).find('div.state_icon').css('display','block');
-	});
-	date_box.mouseleave(function(){
-		$(this).find('div.state_icon').css('display','none');
-	});
-});
-
 // bxslider - Tab Menu 안에 위치한 포토갤러리
 $(document).ready(function(){
 	var tabInSlider = $(".tab_product_img ul").bxSlider({
@@ -99,6 +80,25 @@ $(document).ready(function(){
 		else slider.goToSlide(slider.getSlideCount()-1);
 	}
 
+});
+
+// 예약날짜 선택
+$(document).ready(function(){
+	$("#room_date").datepicker();
+
+	var date_box = $("#room_date .ui-datepicker-calendar tbody td");
+
+	date_box.prepend("<div class='date_default state_text01'>58,900</div>");
+	date_box.prepend("<div class='state_icon state_btn01'>확정</div>");
+	//date_box.prepend("<div class='state_icon state_btn02'>예약</div>");
+	//date_box.prepend("<div class='state_icon state_btn03'>대기</div>");
+
+	date_box.mouseover(function(){
+		$(this).find('div.state_icon').css('display','block');
+	});
+	date_box.mouseleave(function(){
+		$(this).find('div.state_icon').css('display','none');
+	});
 });
 
 // accordion
