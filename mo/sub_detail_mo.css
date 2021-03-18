@@ -1,154 +1,21 @@
 @charset "utf-8";
 @import url(http://fonts.googleapis.com/earlyaccess/notosanskr.css); 
 
-body{font-family: "Noto Sans KR", sans-serif;overflow-x:hidden !important;}
+#product_view div{width:100%;}
+#product_view div img{width:100%;}
+#product_view .slick-arrow{z-index:10;}
+#product_view .slick-arrow:before{content:""; width:22px; height:38px; display:block;}
+#product_view .slick-prev{left:10px;}
+#product_view .slick-prev:before{background: url('images/banner_prev.png') 0 0 no-repeat;}
+#product_view .slick-next{right:10px;}
+#product_view .slick-next:before{background: url('images/banner_next.png') 0 0 no-repeat;}
+#product_view .slick-dots{bottom:0;  background-color:#ddd; opacity:0.8;}
+#product_view .slick-dots li{top:7px;}
 
-section{box-shadow: 0 1px 0 0 #c7cccf;margin-bottom:8px;background:white;}
-
-
-
-
-
-
-
-.top_contents{background: url(./images/mo_main_bg.jpg) no-repeat center;;width:100%;background-size:100% 100%;}
-
-.top_contents .contents > li:nth-child(1){padding:30px 24% 10px;}
-
-
-.top_contents .ui-tabs .ui-tabs-nav li{background:#333;border-color:#333;border-radius:5px 5px 0 0;opacity:0.8;}
-.top_contents .ui-tabs .ui-tabs-nav li a{color:white;font-weight:400;font-size:14px;}
-.top_contents .ui-tabs .ui-tabs-nav li.ui-tabs-active{background:white;border-color:white;border-radius:5px 5px 0 0;opacity:1;}
-.top_contents .ui-tabs .ui-tabs-nav li.ui-tabs-active a{color:#333;font-weight:400;font-size:14px;}
-
-.top_contents .ui-tabs .ui-tabs-nav{border-left:0;}
-.top_contents .ui-tabs-panel{background:white;border:0;border-radius:0 0 5px 5px;}
-.top_contents .tour_select_list{border:0;}
-.top_contents .select_search{width:100%;padding:0;}
-.top_contents #accommNameInput{background:url('./images/mo_ico_search.png') no-repeat 10px;background-size:17px 17px;padding-left:36px;}
-.top_contents .star_day_coup{background:url('./images/mo_ico_calendar.png') no-repeat 10px;background-size:17px 17px;padding-left:36px;}
-.top_contents .end_day_coup{background:url('./images/mo_ico_calendar.png') no-repeat 10px;background-size:17px 17px;padding-left:36px;}
-.top_contents .col-xs-14{width:50%;}
-.top_contents .plr5{padding:0;}
-.top_contents .padd_both10{padding:0;}
-.top_contents .select_search{height:34px;}
-.top_contents .select_search button{padding-top:0;background:#2b8ff1;}
-.top_contents input[type=checkbox]:checked + label:before{background:url('./images/mo_ico_check_1_on.png'); background-size:15px;width:15px;height:15px;margin-top:4px;}
-.top_contents input[type=checkbox]+ label:before{background:url('./images/mo_ico_check_1_off.png'); background-size:15px;width:15px;height:15px;margin-top:4px;}
-
-
-.top_contents .tour_select_list li{display:inline-block;float:left;width:100%;}
-.top_contents .tour_select_list li:nth-child(1){margin-left:4px;margin-bottom:5px;}
-.top_contents .tour_select_list li:nth-child(2){width:100%;border-radius:5px 5px 0 0;}
-.top_contents .tour_select_list li:nth-child(2) input{border-radius:5px 5px 0 0;}
-.top_contents .tour_select_list li:nth-child(3){margin-top:-1px;margin-bottom:10px;}
-.top_contents .tour_select_list li:nth-child(3) .plr5:nht-child(1) input{border-radius:0 0 0 5px;}
-.top_contents .tour_select_list li:nth-child(3) .plr5:nht-child(2) input{border-radius:0 0 5px 0;}
-.top_contents .tour_select_list li:nth-child(4) button{border-radius:5px;}
-
-.top_contents .tourSubMain .tourTabbox{padding:10px 10px 15px 10px;min-height:232px;}
-
-
-.swp_scroll01 .list01{margin-left:-52% !important;}
-.swp_scroll01 .list01 li{width:20% !important;}
-
-
-.top_contents .tour_select_list .check_area input[type='checkbox']{width:15px;height:15px;}
-.top_contents .tour_select_list .check_area strong{font-size:12px;font-weight:400;}
-
-
-.middleBanner_wrap .swiper-button-next:after,.middleBanner_wrap  .swiper-button-prev:after{font-size:12px; color:#333;}
-
-.plus_mo #features{margin-bottom:8px;box-shadow:0 1px 0 0 #c7cccf;}
-.plus_mo img{width:100%;}
-.plus_mo .service_link {margin-bottom:10px;padding:20px 10px;margin-top:-8px;}
-
-
-/* 상품 영역 기본 스타일 */
-
-
-.prd_style_default{padding:10px 0;}
-.prd_style_default .mdRecomTit{text-align:left;background:white;display:inline-block;}
-.prd_style_default .mdRecomTitBox{background:white;margin-bottom:5px;}
-.prd_style_default h2.RecomTit05 span{margin-left:15px;padding:0;background:none;font-weight: 500;
-    font-size: 18px;}
-.prd_style_default .mdRecomTitBox .list_all{display:inline-block;float:right;margin-right:15px;line-height:36px;padding-right:20px;background:url(./images/list_all_btn.png) no-repeat right;background-size:16px 16px;}
-.prd_style_default .cate_list .list_all{display:inline-block;float:right;margin-right:15px;line-height:30px;padding-right:20px;background:url(./images/list_all_btn.png) no-repeat right;background-size:16px 16px;}
-.prd_style_default .sub_cate ul{margin:0 15px 15px;}
-.prd_style_default .sub_cate li{display:inline-block;float:left;width:33.3%;border:1px solid #e5e5e5;text-align:center;padding:10px 0;margin-left:-1px;margin-top:-1px;}
-.prd_style_default .sub_cate li:last-child{float:none;}
-.prd_style_default .sub_cate .on{background:#333;}
-.prd_style_default .sub_cate .on a{color:white;}
-
-.prd_style_default .cate_list{margin-bottom:15px;}
-.prd_style_default .cate_list ul{margin-left:15px;display:inline-block;}
-.prd_style_default .cate_list li{display:inline-block;float:left;margin-right:5px;}
-.prd_style_default .cate_list li:last-child{float:none;}
-.prd_style_default .cate_list li a{border:1px solid #e5e5e5;border-radius:15px;padding:5px 10px 5px 26px;background:url('./images/mo_ico_check_2_off.png') no-repeat 10px 10px; background-size:14px 10px;}
-.prd_style_default .cate_list .on a{border-color:#333;background:url('./images/mo_ico_check_2_on.png') no-repeat 7px 10px; background-size:14px 10px;font-weight:700;}
-
-.prd_style_default .mdRecom{padding:0;background:white;}
-.prd_style_default .mdRecomUl{margin:0 15px;}
-.prd_style_default .mdRecomLiImg a{border:1px solid #e5e5e5;}
-.prd_style_default .mdRecomLiTxt{padding:0;display:inline-block;}
-.prd_style_default .mdRecomLiTit{display:inline-block;font-weight:400;margin-top:5px;}
-.prd_style_default .mdRecomLiTit a{
-	overflow: hidden;
-    text-overflow: ellipsis;
-    display: -webkit-box;
-    -webkit-line-clamp: 2;
-    -webkit-box-orient: vertical;
-    word-wrap: break-word;
-    line-height: 16px;
-    height: 32px;}
-
-.prd_style_default .mdRecomSns{position:inherit;display:inline-block;width:20%;height:100%;margin-top:20px;font-family: 'Titillium Web';}
-.prd_style_default .mdRecomSns span{float: left;    font-size: 30px;    line-height: 30px;margin-right:1px;font-weight:700;color:#e93330;}
-.prd_style_default .mdRecomSns p{font-size: 20px;    line-height: 35px;font-weight:700;color:#e93330;}
-.prd_style_default .price_area{float:right;text-align:right;width:80%;margin-top:10px;font-family: 'Titillium Web';}
-.prd_style_default .price_area p{margin-top:0;}
-.prd_style_default .price_area .mdRecomLiP{font-weight:700;} 
-/* 그리드 세팅 */
-.grid2 li{width:48%;display:inline-block;margin:0;float:left;margin:0 4% 15px 0;}
-.grid2 li:last-child{float:none;}
-.grid2 li:nth-child(2n){margin-right:0;}
-.grid2 .mdRecomSns{width:30%;margin-top:17px;}
-.grid2 .mdRecomSns span{font-size:22px;}
-.grid2 .mdRecomSns p{font-size:14px; line-height:33px;}
-.grid2 .price_area{width:70%;margin-top:3px;}
-.grid2 .price_area .mdRecomLiP strong{font-size:19px;line-height:19px;}
-
-/* 리스트 스타일 */
-.list_style li{display:inline-block;position:relative;margin-bottom:15px;}
-.list_style .mdRecomLiImg{width:30%;float:left;}
-.list_style .mdRecomLiTxt{width:67%;margin-left:3%;}
-.list_style .price_area p{text-align: left;
-    left: -18%;}
-.list_style .mdRecomLiMp{position:absolute;left:0;}
-.list_style .price_area .mdRecomLiP strong{font-size:20px;}
-.list_style .mdRecomSns{position: absolute;
-    bottom: -5px;
-    height: auto;
-    margin: 0;
-    left: 33%;}
-.list_style .price_area{position: absolute;
-    bottom: 0;
-    left: 48%;}
-.list_style .price_area .mdRecomLiP{margin-top:20px;}
-.list_style .mdRecomSns span{font-size:25px;}
-.list_style .mdRecomSns p{font-size:15px;line-height:38px;}
-
-
-
-
-.prd_sec01  h2.RecomTit05 span{background:url(./images/sale_mo.jpg) no-repeat;padding-left:70px;background-size:60px 33px;}
-.prd_sec01 .mdRecomTitBox .list_all,.prd_sec02 .mdRecomTitBox .list_all,.prd_sec03 .mdRecomTitBox .list_all{display:none;}
-.prd_sec03 .cate_list ul{visibility:hidden;}
-
-
-.prd_sec02 .mdRecomUl,.prd_sec03 .mdRecomUl{display:none;}
-.prd_sec02 .mdRecomUl.on,.prd_sec03 .mdRecomUl.on{display:block;}
-
-
-.foot_logo {width:100px;} 
-.footer{margin-top:0;}
+.tabs_wrap{width:100%;}
+.tabs_title{margin-top:15px;}
+.tabs_title span{display:inline-block; padding:2% 0; text-align:center; font-size:12px;}
+.tabs_title .tabs_title_num{width:10%; background-color:#f14829; color:#fff;}
+.tabs_title .tabs_titlet_text{width:90%; background-color:#333; color:#fff; text-align:left; text-indent:2%}
+.tabs_con{padding:4% 5%; box-sizing:border-box; background-color:#fff;}  
+.room_type{}

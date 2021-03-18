@@ -18,6 +18,9 @@
 
 <link type="text/css" rel="stylesheet" href="./swiper.min.css" />
 <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" />
+<!--## 가이드내에 포함되어 있는 플러그인(Slick) 추가했습니다 ##-->
+<link rel="stylesheet" type="text/css" href="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+<link rel="stylesheet" type="text/css" href="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
 <title>e제너두</title>
 
 <script src="http://login.benecafe.co.kr/static/mobile/js/lib/jquery.min.js?20180614"></script>
@@ -47,19 +50,132 @@
 <script src="./sub_detail_mo.js"></script>
 <script src="./swiper/swiper.min.js"></script>
 
-
 </head>
 
-<style>
-html, body {width: 1px !important; min-width: 100% !important; *width: 100% !important; width: 100%; height: 100%; overflow: auto; -webkit-overflow-scrolling: touch;}
+<style type="text/css">
+	html, body {width: 1px !important; min-width: 100% !important; *width: 100% !important; width: 100%; height: 100%; overflow: auto; -webkit-overflow-scrolling: touch;}
 </style>
 <!-- top버튼 (누르면 맨위로 이동) -->
 <style type="text/css">
-.bybtn_all_top{display:none;position:fixed;right:14px;width:40px;height:36px;background:url('http://image.exanadu.co.kr/cdnetbs/front/image/top_bt.png');background-size:40px;text-indent:-9999px;z-index: 100;}
-.bybtn_all_fc{display:none;position:fixed;right:12px;width:50px;height:46px;background:url('http://image.exanadu.co.kr/cdnetbs/front/image/top_bt_fc.png') no-repeat 0 0;background-size:50px;text-indent:-9999px;z-index: 100;}
-
+	.bybtn_all_top{display:none;position:fixed;right:14px;width:40px;height:36px;background:url('http://image.exanadu.co.kr/cdnetbs/front/image/top_bt.png');background-size:40px;text-indent:-9999px;z-index: 100;}
+	.bybtn_all_fc{display:none;position:fixed;right:12px;width:50px;height:46px;background:url('http://image.exanadu.co.kr/cdnetbs/front/image/top_bt_fc.png') no-repeat 0 0;background-size:50px;text-indent:-9999px;z-index: 100;}
 </style>
+
 <body>
 
+<div id="content">
+	<div id="product_view">
+		<div><img src="images/sample_img01.jpg" alt=""></div>
+		<div><img src="images/sample_img02.jpg" alt=""></div>
+		<div><img src="images/sample_img03.jpg" alt=""></div>
+		<div><img src="images/sample_img04.jpg" alt=""></div>
+		<div><img src="images/sample_img05.jpg" alt=""></div>
+	</div>
+	<div class="product_info">
+		<div class="product_address">
+			<span>경상도</span><span class="bar">|</span><span>경남 거제시 일운면</span>
+		</div>
+		<h2>소노캄거제(구 대명거제마리나)</h2>
+		<p>거제대명,대명거제,아쿠아,대명,거제,경상도,오션베이,동해,워터파크,소노오션플레이,소노호텔&리조트,소노겨울방학</p>
+	</div>
+
+	<div class="lifeStyle">
+		<div class="tabs">
+			<ul class="tabUl">
+				<li class="col-xs-4"><a href="#tabs-1">객실선택</a></li>
+				<li class="col-xs-4"><a href="#tabs-2">상품정보</a></li>
+				<li class="col-xs-4"><a href="#tabs-3">위치안내</a></li>
+			</ul>
+			<div id="tabs-1">
+				<div class="tabs_wrap">
+					<div class="tabs_title">
+						<span class="tabs_title_num">01</span><span class="tabs_titlet_text">객실타입/패키지 선택</span>
+					</div>
+					<div id="reserve_step01" class="tabs_con clearfix">
+						<table class="room_type">
+							<colgroup>
+								<col width="20%">
+								<col width="*">
+							</colgroup>
+							<tr>
+								<td>객실타입</td>
+								<td>
+									<span class="select-title w_t1" title="#room_type"><strong>패밀리/취사형</strong></span>
+									<div>
+										약22평 4인기준-[총 28실] 원룸형<br>
+										※본 객실은 기준인원 4명 / 최대인원 6명이 가능한 객실입니다	.<br>
+										<strong>객실타입을 선택 하셔야 가능일자가 조회됩니다.<br>
+										★[24시간출발 OK] 아이콘 선택 객실은 주문 후 바로 입실이 가능합니다.</strong>
+									</div>
+								</td>
+							</tr>
+						</table>
+					</div>
+				</div>
+				<div> <!--## 투숙일 선택 ##-->
+				
+				</div>
+				<div> <!--## 옵션선택 ##-->
+					
+				</div>
+				<div> <!--## 예약 ##-->
+				
+				</div>
+			</div>
+			<div id="tabs-2">
+				상품정보
+			</div>
+			<div id="tabs-3">
+				위치안내
+			</div>
+		<div>
+	</div>
+</div>
+
+
+<div id="phon1" class="darken layer-default">
+	<div class="popS1">
+		<div class="popS1Header">
+			<h1 class="popS1HeaderTit">옵션 선택</h1>
+			<a onClick="closePop('#phon1')" class="btnClose">닫기</a>
+		</div>
+		<div class="popS1Wrap">
+			<table class="tbS4">
+				<tbody>
+					<tr>
+						<td><a href="#">010</a></td>
+					</tr>
+					<tr>
+						<td>011</td>
+					</tr>
+					<tr>
+						<td>016</td>
+					</tr>
+					<tr>
+						<td>017</td>
+					</tr>
+					<tr>
+						<td>018</td>
+					</tr>
+					<tr>
+						<td>019</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+</div>
+
+<!--## 가이드내에 포함되어 있는 플러그인(Slick) 추가했습니다 ##-->
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script type="text/javascript">
+	$(document).ready(function(){
+		  $('#product_view').slick({
+			  autoplay: false,
+			  dots: true
+		  });
+	});
+</script>
 </body>
+
 </html>
