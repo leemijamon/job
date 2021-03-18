@@ -1,6 +1,7 @@
 @charset "utf-8";
 @import url(http://fonts.googleapis.com/earlyaccess/notosanskr.css); 
 
+/*## ¼÷¼Ò °¶·¯¸®&Á¤º¸ ##*/
 #product_view div{width:100%;}
 #product_view div img{width:100%;}
 #product_view .slick-arrow{z-index:10;}
@@ -11,11 +12,33 @@
 #product_view .slick-next:before{background: url('images/banner_next.png') 0 0 no-repeat;}
 #product_view .slick-dots{bottom:0;  background-color:#ddd; opacity:0.8;}
 #product_view .slick-dots li{top:7px;}
-
+.product_info{padding:0 5%; box-sizing:border-box; margin-bottom:30px;}
+.product_info .product_address{font-size:13px; margin-bottom:10px;}
+.product_info .product_address span:first-child{color:#f14829;}
+.product_info .product_address span.bar{margin:0 5px;}
+.product_info p{font-size:13px; word-break:keep-all;}
+.product_title{font-size:18px; margin-bottom:10px;}
+/*## Tab Menu ##*/
 .tabs_wrap{width:100%;}
 .tabs_title{margin-top:15px;}
 .tabs_title span{display:inline-block; padding:2% 0; text-align:center; font-size:12px;}
 .tabs_title .tabs_title_num{width:10%; background-color:#f14829; color:#fff;}
 .tabs_title .tabs_titlet_text{width:90%; background-color:#333; color:#fff; text-align:left; text-indent:2%}
-.tabs_con{padding:4% 5%; box-sizing:border-box; background-color:#fff;}  
-.room_type{}
+.tabs_con{padding:4% 5%; box-sizing:border-box; background-color:#fff;}
+.tabs_con02{margin-top:15px;}
+.select-title{box-sizing:border-box;}
+.room_check_wrap{background-color:#999; padding:2% 4%; box-sizing:border-box;}
+.room_check_wrap li{width:33.3333%; float:left; text-align:center; padding:0 2px; box-sizing:border-box;}
+.room_check_wrap li input{width:100%; box-sizing:border-box;}
+.room_check_wrap li span{color:#fff;}
+.room_check_wrap li span.select-title{color:#333;}
+.room_option tr th{text-align:left; vertical-align:top;}
+.room_option tr th, .room_option tr td{padding:5px;}
+.room_option ul li{margin-bottom:1%;}
+.room_option ul li.left{width:49.5%; float:left;}
+.room_option ul li.right{width:49.5%; float:right;}
+.all_price_wrap{margin-top:15px;}
+.all_price_wrap div{background-color:#333; padding:4%; box-sizing:border-box;}
+.all_price_wrap span{font-size:20px; color:#fff; font-weight:bold;}
+.all_price_wrap span.all_price{margin-left:5px; color:#f14829;}
+.all_price_wrap a{width:50%; box-sizing:border-box; float:left;}
