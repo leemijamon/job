@@ -1,4 +1,63 @@
-// Google Map
+//## 투숙일 선택
+$(document).ready(function(){
+	// 오늘날짜
+	var date = new Date(); 
+	var year = date.getFullYear();
+ 	var month = date.getMonth() + 1;
+	var nowday= date.getDate();  
+	
+	if(month < 10){month = "0" + month;}
+	if(nowday < 10){nowday = "0" + nowday;}
+
+	var todayDate = year + "." + month + "." + nowday
+
+	$('.room_order_day .today').text(todayDate);
+
+	// 일주일 뒤
+	var weekDate = date.getTime() + (6 * 24 * 60 * 60 * 1000);
+	date.setTime(weekDate);
+	var weekDay = date.getDate();
+
+	if(weekDay < 10){weekDay = "0" + weekDay;}
+
+	var oneWeek = month + "." + weekDay;
+
+	$('.room_order_day .oneweek').text(oneWeek);
+
+	// 오늘~일주일 나열
+	var currentDay = new Date();  
+	var theYear = currentDay.getFullYear();
+	var theMonth = currentDay.getMonth();
+	var theDate  = currentDay.getDate();
+	var theDayOfWeek = currentDay.getDay();
+	 
+	var thisWeek = ""
+	 
+	for(var i=1; i<8; i++) {
+		var resultDay = new Date(theYear, theMonth, theDate + (i - theDayOfWeek));
+		var yyyy = resultDay.getFullYear();
+		var mm = Number(resultDay.getMonth()) + 1;
+		var dd = resultDay.getDate();
+		var qq = resultDay.getDay();
+
+		if(qq == 0) qq = "일"; 
+		else if(qq == 1) qq = "월"; 
+		else if(qq == 2) qq = "화"; 
+		else if(qq == 3) qq = "수"; 
+		else if(qq == 4) qq = "목"; 
+		else if(qq == 5) qq = "금"; 
+		else if(qq == 6) qq = "토"; 
+
+		mm = String(mm).length === 1 ? '0' + mm : mm;
+		dd = String(dd).length === 1 ? '0' + dd : dd;
+
+		thisWeek = mm + '/' + dd + '(' + qq + ')';
+
+		$('.room_order_date li:nth-child('+i+') .day_date').text(thisWeek);
+	}
+});
+
+//## Google Map
 function initialize() {
 	var Y_point			= 34.8435243;		// Y 좌표
 	var X_point			= 128.7016137;		// X 좌표

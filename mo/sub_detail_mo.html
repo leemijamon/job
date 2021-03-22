@@ -118,7 +118,77 @@
 						<span class="tabs_title_num">02</span><span class="tabs_titlet_text">투숙일 선택</span>
 					</div>
 					<div>
-						<div><!-- 달력 --></div>
+						<!--## 투숙일 선택 : Start ##-->
+						<div class="room_order_wrap">
+							<div class="room_order_arrow clearfix">
+								<div class="room_order_prev">
+									<a><img src="images/arrow_prev02.png" alt="한달전"></a>
+									<a><img src="images/arrow_prev01.png" alt="일주일전"></a>
+								</div>
+								<div class="room_order_day">
+									<span class="today"></span><span>~</span><span class="oneweek"></span>
+								</div>
+								<div class="room_order_next">
+									<a><img src="images/arrow_next01.png" alt="일주일후"></a>
+									<a><img src="images/arrow_next02.png" alt="한달후"></a>
+								</div>
+							</div>
+							<ul class="room_order_date">
+								<li>
+									<div class="day_date left"></div>
+									<div class="right">
+										<span class="day_price day_state00">요금미정</span>
+										<a class="day_state_btn day_state00">요금미정</a>
+									</div>
+								</li>
+								<li>
+									<div class="day_date left"></div>
+									<div class="right">
+										<span class="day_price day_state01">111,570</span>
+										<a class="day_state_btn day_state01">즉시예약</a>
+									</div>
+								</li>
+								<li>
+									<div class="day_date left"></div>
+									<div class="right">
+										<span class="day_price day_state02">111,570</span>
+										<a class="day_state_btn day_state02">예약접수</a>
+									</div>
+								</li>
+								<li>
+									<div class="day_date left"></div>
+									<div class="right">
+										<span class="day_price day_state03">111,570</span>
+										<a class="day_state_btn day_state03">대기요청</a>
+									</div>
+								</li>
+								<li>
+									<div class="day_date left"></div>
+									<div class="right">
+										<span class="day_price day_state04">111,570</span>
+										<a class="day_state_btn day_state04">예약마감</a>
+									</div>
+								</li>
+								<li>
+									<div class="day_date left"></div>
+									<div class="right">
+										<span class="day_price day_state01">111,570</span>
+										<a class="day_state_btn day_state01">즉시예약</a>
+									</div>
+								</li>
+								<li>
+									<div class="day_date left"></div>
+									<div class="right">
+										<span class="day_price day_state01">111,570</span>
+										<a class="day_state_btn day_state01">즉시예약</a>
+									</div>
+								</li>
+							</ul>
+							<div class="pat_etc_wrap">
+								<span class="select-title w_t1" title="#pay_etc"><strong>세금 봉사료 별도 금액 보기</strong></span>
+							</div>
+						</div>
+						<!--## 투숙일 선택 : End ##-->
 						<ul class="room_check_wrap clearfix">
 							<li>
 								<input type="text" class="input-a" placeholder="체크인">
@@ -241,6 +311,27 @@
 					</tr>
 					<tr>
 						<td>패밀리객실+와이너리투어티켓 2매/클린</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+</div>
+<!--## 02.투숙일 선택 > 세금&봉사료 금액 팝업 ##-->
+<div id="pay_etc" class="darken layer-default">
+	<div class="popS1">
+		<div class="popS1Header">
+			<h1 class="popS1HeaderTit">세금 봉사료 포함 여부</h1>
+			<a onClick="closePop('#pay_etc')" class="btnClose">닫기</a>
+		</div>
+		<div class="popS1Wrap">
+			<table class="tbS4">
+				<tbody>
+					<tr>
+						<td><a href="#">세금 봉사료 별도 금액 보기</a></td>
+					</tr>
+					<tr>
+						<td>세금 봉사료 포함 금액 보기</td>
 					</tr>
 				</tbody>
 			</table>
