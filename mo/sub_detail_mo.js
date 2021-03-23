@@ -1,5 +1,19 @@
 //## 투숙일 선택
 $(document).ready(function(){
+	$("#room_order_date").datepicker();
+
+	var date_box = $(".calendar-default .inner #room_order_date .ui-datepicker-calendar tbody td a.ui-state-default");
+
+	date_box.prepend("<div class='day_state_text day_state_text01'>115,000</div>");
+	date_box.prepend("<div class='day_state_btn day_state_btn01'>확정</div>");
+	//date_box.prepend("<div class='day_state_btn day_state_btn02'>예약</div>");
+	//date_box.prepend("<div class='day_state_btn day_state_btn03'>대기</div>");
+	//date_box.prepend("<div class='day_state_btn day_state_btn04'>마감</div>");
+
+});
+
+/*
+$(document).ready(function(){
 	// 오늘날짜
 	var date = new Date(); 
 	var year = date.getFullYear();
@@ -56,6 +70,7 @@ $(document).ready(function(){
 		$('.room_order_date li:nth-child('+i+') .day_date').text(thisWeek);
 	}
 });
+*/
 
 //## Google Map
 function initialize() {

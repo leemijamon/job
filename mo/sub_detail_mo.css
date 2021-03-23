@@ -28,6 +28,21 @@
 .tabs_con02{margin-top:15px;}
 .select-title{box-sizing:border-box;}
 .room_order_wrap{background-color:#fff;}
+/* Datepicker CSS */
+.calendar-default .inner #room_order_date .ui-datepicker-calendar tbody td a{height:auto;}
+.calendar-default .inner #room_order_date .ui-datepicker-calendar tbody td a.ui-state-default{}
+.day_state_text{font-weight:normal; position:absolute; bottom:3px; right:3px;}
+.day_state_text00{color:#a8a8a8;} /* 요금미정 */
+.day_state_text01{color:#d55151;} /* 확정 */
+.day_state_text02{color:#2c8aee;} /* 예약 */
+.day_state_text03{color:#ff831d;} /* 대기 */
+.day_state_text04{color:#5ab69f;} /* 마감 */
+.day_state_btn{font-weight:normal; position:absolute; right:3px; color:#fff; padding:0 3px; line-height:18px; text-align:center;}
+.day_state_btn01{background-color:#d55151;} /* 확정 */
+.day_state_btn02{background-color:#2c8aee;} /* 예약 */
+.day_state_btn03{background-color:#ff831d;} /* 대기 */
+.day_state_btn04{background-color:#5ab69f;} /* 마감 */
+/*
 .room_order_arrow{padding:5%; box-sizing:border-box;}
 .room_order_arrow div{float:left; text-align:center;}
 .room_order_prev{width:25%;}
@@ -48,11 +63,12 @@
 .room_order_date li span.day_state02{color:#2c8aee;}
 .room_order_date li span.day_state03{color:#ff831d;}
 .room_order_date li span.day_state04{color:#5ab69f;}
-.room_order_date li a.day_state00{background-color:#a8a8a8;} /* 요금미정 */
-.room_order_date li a.day_state01{background-color:#d55151;} /* 즉시예약 */
-.room_order_date li a.day_state02{background-color:#2c8aee;} /* 예약접수 */
-.room_order_date li a.day_state03{background-color:#ff831d;} /* 대기요청 */
-.room_order_date li a.day_state04{background-color:#5ab69f;} /* 예약마감 */
+.room_order_date li a.day_state00{background-color:#a8a8a8;}
+.room_order_date li a.day_state01{background-color:#d55151;}
+.room_order_date li a.day_state02{background-color:#2c8aee;}
+.room_order_date li a.day_state03{background-color:#ff831d;} 
+.room_order_date li a.day_state04{background-color:#5ab69f;} 
+*/
 .pat_etc_wrap{padding:3%; box-sizing:border-box;}
 .room_check_wrap{background-color:#999; padding:2% 4%; box-sizing:border-box;}
 .room_check_wrap li{width:33.3333%; float:left; text-align:center; padding:0 2px; box-sizing:border-box;}
