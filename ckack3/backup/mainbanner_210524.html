@@ -1,0 +1,130 @@
+<!-- <script type="text/javascript" src="/jscript/main_rolling.js"></script> -->
+<style type="text/css">
+ #main_banner_wrap{width:100%; height:436px;}
+ /* 링크스타일 */
+ #main_banner{position:relative; width:1100px; height:436px; overflow:hidden; margin:0 auto;}
+ #main_banner .part{ position:relative; width:1100px; height:436px; display:none;}
+ #main_banner .vpart{position:absolute; width:1100px; height:436px; display:none;}
+ #main_banner  ul li{list-style-type:none;}
+ /* 좌우 화살표 */
+ #main_banner .imgviewbodx .prev{float: left; position:absolute; width:100px; height:100px; background-image:url(/images/main/icon_prev.png); background-position:50% 50%; background-repeat:no-repeat; z-index:9994;}
+ #main_banner .imgviewbodx .next{float: right; position:absolute;width:100px;height:100px;background-image:url(/images/main/icon_next.png); background-position:50% 50%; background-repeat:no-repeat; z-index:10000;}
+ #main_banner .imgviewbodx .buttom{cursor:pointer}
+ /* 좌우 화살표 */
+ #main_banner .imgviewbodx .vpart{position:absolute; display:none; left:0;}
+ #main_banner .titlebodx{float: left; position:absolute; bottom:0; left:-2px; width:100%; height:45px;  z-index:999; margin:auto; margin-top:230px; margin-left:3px;}
+ #main_banner .titlebodx .item{float: left; position:relative; width:16.66%; height:45px; background-color:rgba(0,0,0,0.6); text-align:center;}
+ #main_banner .titlebodx .item img{margin-top:8px;}
+ #main_banner .titlebodx .item .subitem{float: left; position:absolute; width:auto; min-width:92px; height:auto; font-size:11px; background-color:rgba(0,0,0,0.6); display:none; opacity: 70;}
+ #main_banner .titlebodx .item .subitem li{width:183px; height:45px; text-align:center; line-height:45px; font-size:14px; color:#fff; border-bottom:1px solid #000;}
+ #main_banner .titlebodx .item .subitem li:last-of-type{border-bottom:0;}
+ #main_banner .titlebodx .item .subitem li a{color:#fff;}
+ #main_banner .titlebodx .item .subitem li:hover{color:#21b5e6;}
+ #main_banner .titlebodx .item .subitem  li  a:hover{text-decoration:none; color:#21b5e6;}
+ img{height:auto;}
+
+ .titStyle1{position:relative;width:1100px;font-size:24px;color:#000;padding-top:50px;padding-bottom:20px;}
+ .titStyle1 .tit{vertical-align:middle;padding:0 5px;}
+ .titStyle1 p{font-size:17px;color:#555;}
+ .titStyle1 h1{margin-top:5px;font-size:30px;color:#2d2d37;line-height:1;font-weight:normal;}
+ .titStyle1 .image{}
+ .titStyle1 .stit{font-size:13px;color:#888;}
+ .titStyle1 .more{font-size:13px;color:#333;border:1px solid #ddd;padding:3px 5px;position:absolute;right:0;bottom:0;}
+ .titStyle1 .more:before{content:"";display:inline-block;width:7px;height:8px;background:url("/images/ico_arrow_right.png")no-repeat center;margin-right:5px;}
+ .titStyle1 .color{color:{{COLORTYPE1}};}
+</style>
+
+<div id="main_banner_wrap">
+<!-- 로딩 이미지 -->
+<div align="center" id="loading">
+ {{BANNER:1}}
+</div>
+<div id="main_banner">
+ <div class="part" out="/images/main/btn01.png" over="/images/main/btn01_.png"  title="특별 기획전">
+  <div class="partitem" title="미세먼지 가라!">
+   <a href="/eventmall_category.asp?uid=2296" target="_self">{{BANNER:27}}</a>
+  </div>
+ </div>
+
+ <div class="part" out="/images/main/btn02.png" over="/images/main/btn02_.png"  title="브랜드전">
+  <div class="partitem" title="삼성&LG 특가전">
+   <a href="/eventmall_category.asp?uid=2297" target="_self">{{BANNER:25}}</a>
+  </div>
+  <div class="partitem" title="정관장 브랜드위크">
+   <a href="/eventmall_category.asp?uid=2188" target="_self">{{BANNER:6}}</a>
+  </div>
+ </div>
+
+ <div class="part" out="/images/main/btn03.png" over="/images/main/btn03_.png"  title="시즌 기획전">
+  <!--<div class="partitem" title="블랙프라이데이">
+   <a href="/eventmall_category.asp?uid=2319" target="_self">{{BANNER:2}}</a>
+  </div>-->
+  <div class="partitem" title="특별야식 추천모음">
+   <a href="/eventmall_category.asp?uid=2293" target="_self">{{BANNER:24}}</a>
+  </div>  
+  <!--<div class="partitem" title="겨울준비 특별전">
+   <a href="/eventmall_category.asp?uid=2295" target="_self">{{BANNER:26}}</a>
+  </div>--> 
+ </div>
+ <div class="part" out="/images/main/btn04.png" over="/images/main/btn04_.png"  title="핫이슈">
+  <div class="partitem" title="필승다이엇투!">
+   <a href="/eventmall_category.asp?uid=2334" target="_self">{{BANNER:30}}</a>
+  </div>
+  <div class="partitem" title="네이버 초히트&최저가 보장">
+   <a href="/eventmall_category.asp?uid=2294" target="_self">{{BANNER:28}}</a>
+  </div>
+  <div class="partitem" title="건강용품 기획전">
+   <a href="/eventmall_category.asp?uid=2186" target="_self">{{BANNER:11}}</a>
+  </div>
+ </div>
+ <div class="part" out="/images/main/btn05.png" over="/images/main/btn05_.png"  title="행복한 여행">
+  <div class="partitem" title="제주항공 X 괌/사이판">
+   <a href="/aspLink/aspLink1.asp?dealerId=hanatour&goUrl=http%3A%2F%2Fc09513s002%2Etravelmanager%2Eco%2Ekr%2Fapp%2Fwsv%2Fhomepage%2Fpromotion%2Fautopromo%2Fap%2D20000%2Easp%3Fpromo%5Fcode%3DP16346" target="_blank">{{BANNER:14}}</a>
+  </div>
+  <div class="partitem" title="제주 여행백서">
+   <a href="/aspLink/aspLink1.asp?dealerId=jejucom&goUrl=http%3A%2F%2Fwww%2Ejeju%2Ecom%2Fspprice%2Fspecial%5Fprice%2Ehtml%3Fagt%3Doorione" target="_blank">{{BANNER:15}}</a>
+  </div>
+  <!--<div class="partitem" title="주말에 뭐하지?">
+   <a href="/eventmall_category.asp?uid=2100" target="_blank">{{BANNER:16}}</a>
+  </div>-->
+  <div class="partitem" title="알짜배기국내여행">
+   <a href="/aspLink/aspLink1.asp?dealerId=toursketch&goUrl=http%3A%2F%2Foorione%2Etoursketch%2Eco%2Ekr%2Fexshow%2Ephp%3Fexno%3D114" target="_blank">{{BANNER:17}}</a>
+  </div>
+  <!--
+  <div class="partitem" title="강릉 씨베이 호텔 할인">
+   <a href="/aspLink/aspLink1.asp?dealerId=placem&goUrl=http%3A%2F%2Fwww%2Epensionlife%2Eco%2Ekr%2Fsub%2F%3Fmid%3Ddetail%26id%3D3132" target="_blank">{{BANNER:18}}</a>
+  </div>
+  -->
+ </div>
+ <div class="part" out="/images/main/btn06.png" over="/images/main/btn06_.png"  title="라이프 케어">
+  <!--
+  <div class="partitem" title="2019 최현우의 빌리브">
+   <a href="/aspLink/aspLink1.asp?dealerId=clipservice&goUrl=http%3A%2F%2Foorione%2Eclipservice%2Eco%2Ekr%2FPlay%2FPlayDetail%3FplayNum%3D74214" target="_blank">{{BANNER:29}}</a>
+  </div>
+  -->
+  <!--
+  <div class="partitem" title="뮤지컬<세종, 1446>">
+   <a href="/aspLink/aspLink1.asp?dealerId=clipservice&goUrl=http%3A%2F%2Foorione%2Eclipservice%2Eco%2Ekr%2FPlay%2FPlayDetail%3FplayNum%3D74098" target="_blank">{{BANNER:19}}</a>
+  </div>
+  -->
+  <div class="partitem" title="공기청정식물">
+   <a href="/aspLink/aspLink1.asp?dealerId=cultwoflower&goUrl=http%3A%2F%2Foori%2Ecultwo%2Dflower%2Ecom%2Fshop%2Ehtm%3Fmc%5Fcode%3D01%5F05" target="_blank">{{BANNER:20}}</a>
+  </div>
+  <div class="partitem" title="렌터카 할인">
+   <a href="/aspLink/aspLink1.asp?dealerId=lotterental" target="_blank">{{BANNER:21}}</a>
+  </div>
+  <div class="partitem" title="다이어트 노하우">
+   <a href="/aspLink/aspLink1.asp?dealerId=okaymedi&goUrl=http%3A%2F%2Fokaymedi%2Ecom%2Findex%2Ephp%2Fmedical%2Fcontents%2Fevent%5Fhospital%2FviewEvent%3Fseq%3D106" target="_blank">{{BANNER:22}}</a>
+  </div>
+ </div>
+
+</div>
+</div>
+
+
+<script type="text/javascript">
+ $(window).load(function() {
+  $('#loading').hide();
+  $('#main_banner').hdamalleffect();
+ });
+</script>

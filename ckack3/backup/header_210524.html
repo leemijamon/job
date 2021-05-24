@@ -1,0 +1,205 @@
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
+<style>
+/* 띠배너 펼치기&접기 */
+#rollDown{display:none; cursor:pointer;}
+.menuVisible{display:block !important;}
+.top_m_rgt > li.logoutBtn{margin-right:0;}
+.top_m_rgt > li.logoutBtn:after{display:none;}
+.top_m_rgt > li.menuBG{margin-right:20px;}
+.top_m_rgt > li.menuBG:after{display:block; content: ""; position: absolute; top: 3px; right: -10px; width: 1px; height: 13px; background: #c2c2c2;}
+/* 탑배너 */
+.top_ban{width: 100%; position: relative;}
+.top_imgbox{width: 100%; background:#02d564; position: relative;}
+.top_imgbox .img_ban{margin: 0 auto;}
+.top_btn{width: 100%; position: absolute; top: 0; left: 0;}
+.btn_box{width: 1100px; height: 61px; margin: 0 auto; position: relative}
+.tb_icon1{background: url("/images/main/top_ban_btn.png") no-repeat; width: 17px; height: 16px; position: absolute; top: 20px; right: 0; z-index: 99; cursor: pointer;}
+.tb_icon2{background: url(/data/familymall/banner/top_btn_2.png) no-repeat; width: 33px; height: 38px; opacity: 0.2; position: absolute; top: 0; right: 0; transform: rotate(180deg); cursor: pointer;}
+/* 로고, 검색 */
+.mypg_mgt4{margin-top:4px}
+.mypg_mgt7{margin-top:7px}
+#logoSerch{width: 100%; border-bottom:1px solid #e5e5e5; font-family:'Noto Sans KR', sans-serif; font-weight:300;}
+#logoSerch > #logoSerUl{position:relative; width:1100px; margin:0 auto; padding:20px 0; overflow:hidden;}
+#logoSerch > #logoSerUl li{float:left}
+#logoSerch > #logoSerUl .logoBox{position:absolute; top:15px; left:0;}
+#logoSerch > #logoSerUl .serchBox .serch{width:387px; height:41px; margin:0 auto; position:relative; top:0px; left:0px;}
+#logoSerch > #logoSerUl .serchBox .serch .serTxt{width: 387px; height: 42px; float:left; border:2px solid #2d2d37; padding:0 40px 0 15px; outline:none; color:#2e2f34; font-size:16px; font-weight:normal; box-sizing:border-box; background:none; font-family:'Noto Sans KR', sans-serif;}
+#logoSerch > #logoSerUl .serchBox .serch .serBtn{position:relative;}
+#logoSerch > #logoSerUl .serchBox .serch .serBtn span{position:absolute; top:10px; right:10px;}
+#logoSerch > #logoSerUl .serchBox .serch .serBtn span:before{content:""; display:inline-block; width:26px; height:24px; background:url("/images/main/srch_btn.png") no-repeat;}
+#logoSerch > #logoSerUl .mypgBox{width: 280px;}
+#logoSerch > #logoSerUl .mypgBox p{font-size:12px; color:#606060; text-align:right;}
+#logoSerch > #logoSerUl .mypgBox p:first-child{font-size:11px;}
+#logoSerch > #logoSerUl .mypgBox p span::after{content:"\007c"; color:#bbb; font-size:10px; padding:0 7px; display:inline-block;}
+#logoSerch > #logoSerUl .mypgBox p span:last-child::after{content: ""; padding:0;}
+#logoSerch > #logoSerUl .mypgBox p span a{color:#606060;}
+#logoSerch > #logoSerUl .mypgBox p span.userName strong{font-size:12px; color:#111;}
+#logoSerch > #logoSerUl .mypgBox p span.logBtn{display:inline-block; padding:3px 5px; border:1px solid #606060;}
+
+#top_menu{background:#f8f8f8; height:30px;}
+.top_inn{position:relative; width:1100px; margin:0 auto;}
+.top_m_rgt{position:absolute; top:6px; right:0;}
+.top_m_rgt > li{position:relative; float:left; height:25px; margin-right:20px; font-size:13px; color:#707070;}
+.top_m_rgt > li:last-child{margin-right:0;}
+.top_m_rgt > li:after{content:""; position:absolute; top:3px; right:-10px; width:1px; height:13px; background:#c2c2c2;}
+.top_m_rgt > li:last-child:after{display:none;}
+.top_m_rgt > li:hover .myp_sub{display:block;}
+.top_m_rgt li a{color:#606060;}
+.top_m_myp > a{position:relative; padding-right:20px;}
+.top_m_myp > a:after{content:""; position:absolute; top:7px; right:-5px; width:12px; height:10px; padding-left:5px; background:url("/images/main/top_mypage.png") no-repeat;}
+.myp_sub{display:none; position:absolute; top:25px; left:50%; transform:translateX(-50%); z-index:999; width:100px; border:1px solid #000; padding:20px; box-sizing:border-box; background:#fff;}
+.myp_sub li{height:25px; line-height:25px;}
+.myp_sub li > a{font-size:13px; color:#252525;}
+.myp_sub li > a:hover{color:#1db3e5;} 
+.top_home{position:absolute; top:6px; left:0;}
+.top_home a:before{content:""; display:inline-block; width:12px; height:10px; padding-left:5px; background:url("/images/main/top_home.png") no-repeat;}
+.top_home a{font-size:13px; color:#707070;}
+.top_m_shobsk a span{display:inline-block; width:20px; height:20px; margin-left:5px; border-radius:10px; background:#16b1e5; color:#fff; font-size:12px;}
+.lowpbox{position:absolute; top:15px; right:0;}
+</style>
+
+<div class="top_ban">
+ <div class="top_imgbox" id="hiddenList">
+  <div class="img_ban">
+   <div class="btn_box">
+    <a href='/eventmall_category.asp?uid=2294' target=''><img src='/data/familymall/banner/top_event_banner02.png' border=0 style="height:100%"></a>
+    <div class="tb_icon1" id="spreadBtn"></div>
+   </div>
+  </div>
+ </div>
+ <div id="logoSerch">
+  <div id="top_menu">
+   <div class="top_inn">
+    <div class="top_home"><a href="/">HOME</a></div>
+    <ul class="top_m_rgt">
+     <li>{{USER_NAME}}님</li>
+     <li class="top_m_myp">
+      <a href="/my/main_2.asp">마이페이지</a>
+      <ul class="myp_sub">
+       <li><a href="/my/order_total_2.asp?mode=norma">주문내역</a></li>
+       <li><a href="/my/order_total_2.asp?mode=cancel">취소내역</a></li>
+       <li><a href="/my/my_wishlist_2.asp">찜리스트</a></li>
+      </ul>
+     </li>
+     <li class="top_m_shobsk"><a href="/product/cart_2.asp">장바구니<span class="cartCnt">0</span></a></li>
+     <li><a href="/cscenter/faq_2.asp">고객센터</a></li>
+     <li class="logoutBtn"><a href="/member/logout.asp">로그아웃</a></li>
+     <li id="rollDown">배너보기</li>
+    </ul>
+   </div>
+  </div>
+  <div id="logoSerUl">
+   <div class="logoBox" id="toplogoid"></div>
+   <div class="serchBox">
+    <div class="serch">
+     <form id='tsFrm' name="tsFrm" method="get" action="/product/search_2.asp">
+      <input class="serTxt" type="text" name="sword" id="topSearchWord" data-url="" data-chk="" placeholder="" />
+      <div onClick="topSearchChk(document.tsFrm);" class="serBtn" style="cursor:pointer"><span class="iconfont"></span></div>
+     </form>
+    </div>
+   </div>
+   <!--<div class="lowpbox"><a href="/lowestprice.asp?uid=2025"><img src="/images/main/top_lowpri.png" alt="최저가 존"></a></div>-->
+  </div>
+ </div>
+</div>
+
+<script type="text/javascript">
+ //--## 띠배너 펼치기/접기 ##--//
+ $("#spreadBtn").click(function(){
+  if($("#hiddenList").is(":visible")){
+   $("#hiddenList").slideUp();
+   $("#rollDown").addClass('menuVisible');
+   $(".logoutBtn").addClass('menuBG');			
+  }
+ });
+ $("#rollDown").click(function(){
+  $("#hiddenList").slideDown();
+  $("#rollDown").removeClass('menuVisible');
+  $(".logoutBtn").removeClass('menuBG');	
+ });
+</script>
+
+<script type="text/javascript">
+
+$(document).ready(function(){
+ //상단 검색어 - 자동검색어 --> 클릭시 초기화
+ $("#topSearchWord").on("click", function(){
+ $("#topSearchWord").val("");
+ $("#topSearchWord").attr("data-url", "");
+ $("#topSearchWord").attr("data-chk", "");
+});
+
+fnGetTopSearchWord();
+});
+
+//자동검색어 랜덤 추출
+function fnGetTopSearchWord(){
+ var SearchWord = "";
+ var SearchURL = "";
+
+ var search_text = getParameterByName("sword");
+
+ if (search_text == ""){
+  $.ajax({
+   type:"post",
+   url:"/common/ajax/exec_getTopSearchWord.asp",
+   success:function(data){
+    if (data != ""){
+     SearchWord = data.split("||")[0];
+     SearchURL = data.split("||")[1];
+
+     //data = search_txt & "||" & search_url
+     $("#topSearchWord").val(SearchWord);
+     $("#topSearchWord").attr("data-url", SearchURL);
+     $("#topSearchWord").attr("data-chk", "T");
+    }
+   }
+  })
+ }
+ else{
+  $("#topSearchWord").val(search_text);
+ }
+}
+
+function getParameterByName(name, url){
+ if (!url) url = window.location.href;
+ name = name.replace(/[\[\]]/g, "\\$&");
+ var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
+ results = regex.exec(url);
+ if (!results) return "";
+ if (!results[2]) return '';
+ return decodeURIComponent(results[2].replace(/\+/g, " "));
+}
+
+// 검색확인
+function topSearchChk(f){
+
+//자동검색어 추출
+var val = $("#topSearchWord").val();
+var url = $("#topSearchWord").attr("data-url");
+var chk = $("#topSearchWord").attr("data-chk");
+
+//자동검색어에 url 있으면 이동 처리
+if (chk == "T" && url != ""){
+ location.href = url;
+ return false;
+}
+
+if (checkEmpty(f.sword)){
+ alert("검색어를 입력해 주세요.");
+ f.sword.focus();
+ return false;
+}
+
+f.submit();
+}
+
+$.ajax({
+ type:"post",
+ url:"/common/ajax/exec_getCartCnt.asp",
+ success:function(data, state, xhr){
+  $(".cartCnt").each(function(){$(this).html(data);});
+  }
+})
+</script>
