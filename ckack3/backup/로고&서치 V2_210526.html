@@ -1,0 +1,250 @@
+<script type="text/javascript">
+    <!--
+        $(document).ready(function(){
+        //상단 검색어 - 자동검색어 --> 클릭시 초기화
+        $("#topSearchWord").on("click", function(){
+            $("#topSearchWord").val("");
+            $("#topSearchWord").attr("data-url", "");
+            $("#topSearchWord").attr("data-chk", "");
+        });
+
+        fnGetTopSearchWord();
+    });
+
+    //자동검색어 랜덤 추출
+    function fnGetTopSearchWord(){
+        var SearchWord = "";
+        var SearchURL = "";
+
+        var search_text = getParameterByName("sword");        
+
+        if (search_text == "")
+        {
+            $.ajax({
+                type:"post",
+                url:"/common/ajax/exec_getTopSearchWord.asp",
+                success:function(data){
+                    if (data != "")
+                    {
+                        SearchWord = data.split("||")[0];
+                        SearchURL = data.split("||")[1];
+
+                        //data = search_txt & "||" & search_url
+                        $("#topSearchWord").val(SearchWord);
+                        $("#topSearchWord").attr("data-url", SearchURL);
+                        $("#topSearchWord").attr("data-chk", "T");
+                    }
+                }
+            })
+        } else{
+            $("#topSearchWord").val(search_text);
+        }
+    }
+
+    function getParameterByName(name, url){
+        if (!url) url = window.location.href;
+        name = name.replace(/[\[\]]/g, "\\$&");
+        var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
+            results = regex.exec(url);
+        if (!results) return "";
+        if (!results[2]) return '';
+        return decodeURIComponent(results[2].replace(/\+/g, " "));
+    }
+
+    // 검색확인
+    function topSearchChk(f){
+
+        //자동검색어 추출
+        var val = $("#topSearchWord").val();
+        var url = $("#topSearchWord").attr("data-url");
+        var chk = $("#topSearchWord").attr("data-chk");
+
+        //자동검색어에 url 있으면 이동 처리
+        if (chk == "T" && url != "")
+        {
+            location.href = url;
+            return false;
+        }
+
+        if (checkEmpty(f.sword)){
+            alert("검색어를 입력해 주세요.");
+            f.sword.focus();
+            return false;
+        }
+
+        f.submit();
+    }
+    //-->
+</script>
+
+<style type="text/css">
+    .gnbBox_1{position:relative;background:#e8ecef;}
+    .top_navi ul{width:700px;height:40px;font-size:0;text-align:center;margin:0 auto;position:relative;}
+    .top_navi ul li{position:absolute;bottom:0;}
+    .top_navi ul li:nth-child(1){left:0;}
+    .top_navi ul li:nth-child(2){left:228px;z-index:1;}
+    .top_navi ul li:nth-child(3){left:457px;}
+    .top_navi ul li:nth-child(4){left:657px;}
+    .top_navi ul li img{}
+    .top_navi .shadowbg{width:700px;height:50px;background:url({{BANNER_SRC:5}})repeat-x;position:absolute;bottom:-20px;left:50%;margin-left:-350px;z-index:-3;}
+    .top_navi .line{border-bottom:solid 1px #eee;position:relative;z-index:2;}
+
+    .logoSearchWrap{min-width:{{SITE_WIDTH}}px;background:#fff;}
+    .logoSearch{width:{{SITE_WIDTH}}px;height:92px;margin:0 auto;text-align:left;overflow:hidden;}
+    .logoSearch .logo{float:left;width:300px;height:92px;display:table;}
+    .logoSearch .logo a{display:table-cell;vertical-align:middle;}
+    .logoSearch .search{display:table;float:left;width:512px;height:92px;overflow:hidden;}
+    .logoSearch .search>div{display:table-cell;vertical-align:middle;}
+    .logoSearch .search input{float:left;width:376px;height:43px;padding:0 22px;border:1px solid #333;border-right:0;color:#000;font-size:14px;line-height:41px;box-sizing:border-box;}
+    .logoSearch .search .btn_search{float:left;width:49px;height:43px;padding-top:12px;background:#fff;text-align:center;box-sizing:border-box;border:1px solid #333;border-left:0;}
+    .logoSearch .search .btn_search .ftic-search{display:inline-block;width:20px;height:20px;margin:-2px 0 0 -2px;color:#333;font-size:25px;line-height:20px;font-weight:bold;vertical-align:top;}
+    .logoSearch .bannerBX{float:right;position:relative;width:190px;height:80px;}
+    .logoSearch .bannerBX .bnSlide{margin:0;vertical-align:top;}
+    .visualWrap .bx-controls .bx-controls-direction a.bx-prev{position:absolute;top:33px;left:50%;right:21px;width:18px;height:22px;background:url('{{BANNER_SRC:6}}') no-repeat 0 0;text-indent:-999px;overflow:hidden;z-index:60;}
+    .visualWrap .bx-controls .bx-controls-direction a.bx-next{position:absolute;top:33px;left:50%;right:0;width:18px;height:22px;background:url('{{BANNER_SRC:7}}') no-repeat 0 0;text-indent:-999px;overflow:hidden;z-index:60;}
+    .logoSearch .bannerBX .dsp-t{height:92px;}
+    .logoSearch .bannerBX .dsp-tc{display:table-cell;vertical-align:bottom;}
+    .bx-wrapper .bx-viewport {background:none!important;}
+
+.logoSearchWrap .logoSearch .search {
+	width: 420px;
+	height: 41px;
+	margin: 0 auto;
+	position: relative;
+	top: 30px;
+	left: 0px;
+}
+/*
+	.serTxt {
+			width: 369px;
+			height: 39px;
+			float: left;
+			border-radius: 4px 0 0 4px;
+			-webkit-border-radius: 4px 0 0 4px;
+			-moz-border-radius: 4px 0 0 4px;
+			border-width: 1px 0 1px 1px;
+			border-style: solid;
+			border-color: #cbcbcb;
+		}
+
+	.serBtn {
+			width: 50px;
+			height: 43px;
+			background-color: #66b4d1;
+			float: right;
+			text-align: center;
+			line-height: 44px;
+			border-radius: 0 4px 4px 0;
+			-webkit-border-radius: 0 4px 4px 0;
+			-moz-border-radius: 0 4px 4px 0;
+			position: absolute;
+			top: 0px;
+			right: 0px;
+		}
+.serBtn span {
+	color: #fff;
+	font-size: 22px;
+}
+*/
+/*추가*/
+#logoSerch {
+	width: 100%;
+	border-bottom:1px solid #e5e5e5;
+	font-family: 'Noto Sans KR', sans-serif;
+        font-weight:300;
+}
+#logoSerch > #logoSerUl {
+	position:relative;
+	width: 1100px;
+	margin: 0 auto;
+	padding: 20px 0;
+	overflow: hidden;
+}
+#logoSerch > #logoSerUl li {
+	float: left
+}
+#logoSerch > #logoSerUl .logoBox {
+	position:absolute;
+	top:15px;
+	left:0;
+}
+#logoSerch > #logoSerUl .serchBox .serch {
+	width: 387px;
+	height: 41px;
+	margin: 0 auto;
+	position: relative;
+	top: 0px;
+	left: 0px;
+}
+#logoSerch > #logoSerUl .serchBox .serch .serTxt {
+	width: 387px;
+	height: 42px;
+	float: left;
+	border:2px solid #2d2d37; 
+        padding:0 40px 0 15px;
+        outline:none;
+        color:#2e2f34;
+        font-size:16px;
+        font-weight:normal;
+	box-sizing:border-box;
+	background:none;
+        font-family: 'Noto Sans KR', sans-serif; 
+        
+}
+#logoSerch > #logoSerUl .serchBox .serch .serBtn {
+	position:relative;
+}
+#logoSerch > #logoSerUl .serchBox .serch .serBtn span {
+	position:absolute;top:10px;right:10px;
+}
+#logoSerch > #logoSerUl .serchBox .serch .serBtn span:before{content:"";display:inline-block;width:26px;height:24px;background:url("/images/main/srch_btn.png") no-repeat;}
+#logoSerch > #logoSerUl .mypgBox {
+	width: 280px;
+}
+#logoSerch > #logoSerUl .mypgBox p {
+	font-size: 12px;
+	color: #606060;
+	text-align: right;
+}
+#logoSerch > #logoSerUl .mypgBox p:first-child {
+	font-size: 11px;
+}
+#logoSerch > #logoSerUl .mypgBox p span::after {
+	content: "\007c";
+	color: #bbb;
+	font-size: 10px;
+	padding: 0 7px;
+	display: inline-block;
+}
+#logoSerch > #logoSerUl .mypgBox p span:last-child::after {
+	content: "";
+	padding: 0;
+}
+#logoSerch > #logoSerUl .mypgBox p span a {
+	color: #606060;	
+}
+#logoSerch > #logoSerUl .mypgBox p span.userName strong {
+	font-size: 12px;
+	color: #111;
+}
+#logoSerch > #logoSerUl .mypgBox p span.logBtn {
+	display: inline-block;
+	padding: 3px 5px;
+	border: 1px solid #606060
+}
+</style>
+<div id="logoSerch">
+  <div id="logoSerUl">
+    <div class="logoBox" id="toplogoid_sub"></div>
+     <div class="serchBox">
+       <div class="serch">
+         <form id='tsFrm' name="tsFrm" method="get" action="/product/search_2.asp">
+         <input class="serTxt" type="text" name="sword" id="topSearchWord" data-url="" data-chk="" placeholder="" />
+         <div onClick="topSearchChk(document.tsFrm);" class="serBtn" style="cursor:pointer"><span class="iconfont"></span></div>
+         </form>
+       </div>		
+    </div>
+    <!--<div class="lowpbox"><a href="/lowestPrice.asp?uid=2025"><img src="/images/main/top_lowpri.png" alt="최저가 존"></a></div>-->
+   </div>
+ </div>
+</div>

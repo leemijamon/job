@@ -1,0 +1,94 @@
+<script type="text/javascript">
+  $(document).ready(function(){
+    $(".gnb_btn").hover(function(){
+	$(".gnb_btn_lst").toggleClass('on');
+        $(".gnb_btn a").toggleClass('on');
+    });
+  });
+
+
+    function menuonoff(name){
+        $("#submenu"+name).stop(true,true).slideToggle("fast");
+        $(".allMenu span").toggleClass("on");
+    }
+    
+    $(window).scroll(function() {
+
+        
+        var top = $(window).scrollTop(); 
+        if (top > 133){
+            $('.gnbWrap').addClass('fix');
+        }else{
+            $('.gnbWrap').removeClass('fix');
+        }
+
+    });
+
+
+</script>
+
+<link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR:300,400,500,700&subset=korean" rel="stylesheet">
+
+<style type="text/css">
+ 
+    .gnbWrap.fix {position:fixed; left:0; top:0; right:0; z-index:9999999;}
+    .gnbWrap {
+		background:#fff; z-index:600;
+		border-bottom:1px solid #e5e5e5; 
+		font-family: 'Noto Sans KR', sans-serif;
+		height:55px;
+    }
+.gnb_inn{position:relative;width:1100px;margin:0 auto;}
+.gnb_btn{position:absolute;top:20px;left:0;left:0;height:40px;padding-right:40px;}
+.gnb_btn > a.on{background:url("/images/main/gnb_btn_ovr.png") no-repeat;}
+.gnb_btn > a{display:inline-block;width:22px;height:16px;background:url("/images/main/gnb_btn.png") no-repeat;}
+.gnb_btn_lst{display:none;position:absolute;left:0;top:36px;z-index:999;width:1100px;padding:20px 45px;background:#fff;border:1px solid #e4e4e4;border-top:none;box-sizing:border-box;}
+.gnb_btn_lst.on{display:block;}
+.gnb_btn_lst ul{float:left;}
+.gnb_btn_lst ul:first-child{margin-right:50px;margin-left:25px;}
+.gnb_btn_lst ul:nth-child(2){margin-right:84px;margin-left:15px;}
+.gnb_btn_lst ul:nth-child(3){margin-right:63px;}
+.gnb_btn_lst ul:nth-child(4){margin-right:82px;margin-left:20px;}
+.gnb_btn_lst ul:nth-child(5){margin-right:85px;margin-left:0px;}
+.gnb_btn_lst ul li{height:30px;line-height:30px;}
+.gnb_btn_lst ul li a:hover{color:#21b5e6;}
+.gnb_btn_lst ul li a{font-size:15px;color:#252525;}
+.btn_lst_top{padding-bottom:20px;border-bottom:1px solid #e4e4e4;}
+.btn_lst_btm{padding-top:20px;}
+
+.gnbBox{position:absolute;top:16px;left:80px;color:#fff;}
+.gnbBox > ul > li{position:relative;float:left;height:55px;margin-right:60px; }
+.gnbBox > ul > li:last-child{margin-right:0;}
+.gnbBox > ul > li:first-of-type{background:none;border:0;}
+.gnbBox > ul > li:first-of-type:before{display:none;}
+.gnbBox > ul > li:last-of-type{padding-right:0;}
+.gnbBox > ul > li > a{color:#000; font-size:16px; font-weight:normal;}
+.gnbBox > ul > li > a:hover{color:#21b5e6;}
+.gnbBox > ul > li:hover .gnb_box_sub{display:block;}
+.gnb_box_sub{display:none;position:absolute;top:40px;left:50%;transform:translateX(-50%);z-index:9999;width:175px;padding:20px 10px;background:#fff;border:1px solid #000;box-sizing:border-box;}
+.gnb_box_sub li{height:30px;line-height:30px;}
+.gnb_box_sub li a{font-size:15px;color:#252525;}
+.gnb_box_sub li a:hover{color:#21b5e6}
+.gnb_event{position:absolute;top:16px;right:0;height:34px;}
+.gnb_event:hover{border-bottom:6px solid #1db3e5;}
+.gnb_event a{position:relative;padding-left:25px;font-size:16px;color:#1db3e5;}
+.gnb_event a span{position:absolute;left:0;top:0;width:18px;height:21px;background:url("/images/main/gnb_event.png") no-repeat;}
+
+</style>
+
+<div class="gnbWrap" id="gnb">
+	<div class="gnb_inn">
+		<div class="gnb_btn"><a href="#a"></a>
+			<div class="gnb_btn_lst">{{MENUGNBFULLLIST}}</div>
+		</div>
+
+		<div class="gnbBox">
+			<ul>{{MENUGNBLIST}}</ul>
+		</div>	
+
+		<div class="gnb_event">
+			<a href="/eventmall_list.asp"><span></span>이벤트/기획전</a>
+		</div>
+
+	</div>
+</div>
