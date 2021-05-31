@@ -1,0 +1,48 @@
+<!--## Swiper #3-->
+<div class="main_visual main-visual-wrap">
+ <div class="swiper-container">
+  <div class="swiper-wrapper">
+   <!--## Content ##-->
+   <!--<div class="swiper-slide" name="mbanner">{{BANNER:3}}</div>-->
+   <div class="swiper-slide" name="mbanner">{{BANNER:21}}</div>
+   <div class="swiper-slide" name="mbanner">{{BANNER:17}}</div>
+   <div class="swiper-slide" name="mbanner">{{BANNER:19}}</div>
+   <div class="swiper-slide" name="mbanner">{{BANNER:20}}</div>
+   <!--<div class="swiper-slide" name="mbanner">{{BANNER:16}}</div>-->
+   <div class="swiper-slide" name="mbanner">{{BANNER:8}}</div>
+   <div class="swiper-slide" name="mbanner">{{BANNER:18}}</div>
+   <div class="swiper-slide" name="mbanner">{{BANNER:12}}</div>
+  </div>
+  <!-- Add Pagination -->
+  <div class="swiper-pagination"></div>
+  <!-- Add Arrows 
+  <div class="swiper-button-next"></div>
+  <div class="swiper-button-prev"></div>
+  -->
+  <!-- page-list -->
+  <div class="pagination-num" style='text-align:center;font-size:16px;'>
+   <div class="pagenum-list">
+    <span class="pagenum-atcive">1</span>
+    <span>/</span>
+    <span class="pagenum-total">9</span>
+   </div>
+   <!--<span class="banner-all"><a href="#none">전체보기</a></span>-->
+  </div>
+ </div>
+</div>
+
+<!-- Initialize Swiper -->
+<script>
+ var swipermainVisual = new Swiper('.main_visual .swiper-container', {
+  paginationType: 'fraction',
+  pagination: '.main_visual .pagenum-list',
+  nextButton: '.main_visual .swiper-button-next',
+  prevButton: '.main_visual .swiper-button-prev',
+  paginationClickable: true,
+  spaceBetween: 30,
+  centeredSlides: true,
+  autoplay: 2500,
+  loop: true,
+  autoplayDisableOnInteraction: false
+ });
+</script>

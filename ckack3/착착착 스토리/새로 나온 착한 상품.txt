@@ -1,0 +1,32 @@
+<li>
+		<div class="liWrap">
+			<a href="{{GOODS_LINK:2}}" class="pdLink"></a>
+			<div class="image cutImgBox">{{GOODS_IMG:2}}</div>
+			<div class="infoWrap">
+				<div class="tit">
+					<dl>
+					<dt>
+					{{GOODS_TITLE:2}}
+					</dt>
+					<dd><del class="marketprice">{{GOODS_MARKETPRICE_2:2}}</del></dd>
+				</div>
+				<div class="numValue">
+					<p>
+					<span>{{GOODS_SALEPERCENT_2:2}}<em class="m_per">%</em></span>
+					<strong>{{GOODS_PRICE:2}}</strong>
+					</p>
+				</div>
+			</div>
+			<!--<div class="icoWrap">
+			{{GOODS_ICON_C:2}}
+			{{GOODS_ICON_D:2}}
+			</div>-->
+		</div>
+</li>
+
+
+링크 : {{GOODS_LINK:1}}
+이미지 : {{GOODS_IMG:1}}
+업체구분 : {{GOODS_COMTYPE:1}} - 이거는 나도 추가해야됨..
+상품명 : {{GOODS_TITLE:1}}
+상품가격 : {{GOODS_PRICE:1}}

@@ -1,0 +1,242 @@
+<link rel="stylesheet" type="text/css" href="/m/css/commontotal_2.css">
+<style type="text/css">
+iframe {width:1px;min-width:100%;}
+.titStyle1 {text-align:left;}
+.titStyle1 .tit{display:inline-block;text-indent:10px;font-size:1em;}
+.titStyle1 .stit {font-size:11px;color:#888;}
+.head_top {position:fixed; top:0; box-sizing:border-box; width:100%; background-color:#2690FE; z-index:601; max-width:568px}
+.head_top .btn-all-menu {position:absolute; top:-5px; left:0; width:53px; height:53px; font-size:26px; line-height:55px; text-align:center;color:#fff; overflow:hidden;}
+.head_top .btn-all-menu:after{content:'메뉴';display:inline-block; font-size:10px; position:absolute; bottom:-18px; left:17px; color:#fff;}
+.head_top .logo {padding:0 50px;height:43px; text-align:center; box-sizing:border-box;}
+.head_top .logo h1{display:block; height:100%;margin:0; text-align:center; padding:0;}
+.head_top .logo h1 a{display:table-cell;vertical-align:middle;}
+.head_top .btn_cart {display:block; position:absolute; top:0; right:0; width:53px; height:53px; text-align:center; overflow:hidden;}
+.head_top .btn_cart .ftic-cart {font-size:30px; line-height:53px; color:#fff;}
+.head_top .btn_cart .cartCnt {display:block; position:absolute; top:4px; right:4px; width:18px; height:18px; border-radius:50%; color:#000; font-size:11px; line-height:18px; text-align:center; background:#fff;}
+.header-top.head_top{padding:0 20px; border-bottom:1px solid #d9d9d9;}
+.header-top.head_top .logo.company{width:49%;}
+.header-top.head_top .search_box.top-search{margin:10px 0 0 0; width:50%; float:right;}
+.header-top.head_top .search_box.top-search span.placeholder{width:100%; box-sizing:border-box;}
+.header-top.head_top .logo.company a img{width:auto; height:auto; padding:8px 0; display:block;}
+.float_btn_wrap {position:fixed; bottom:-150px; right:5%; transition:bottom .4s; z-index:9988;}
+.float_btn_wrap.show {bottom:45px;}
+.float_btn_wrap li {margin-bottom:5px;}
+.float_btn_wrap li a {display:block; width:38px; height:38px; color:#fff; background-color:#000; border-radius:50%; text-align:center; box-sizing:border-box; padding-top:9px; opacity:.8; border:1px solid #fff;}
+/*.m_search3 {display:block; width:53px; height:53px; border-radius:50%; text-align:center; box-sizing:border-box; position:absolute; top:0; right:38px; color:#888; font-size:30px; line-height:53px;}*/
+#container {position:relative;}
+.head_height{height:107px !important;}
+.head_top .search_box {border:1px solid #e7e7e7; background-color:#f7f7f7; margin:8px 10px; position:relative; height:25px;}
+.head_top span.placeholder {display:inline-block; width:70%; text-align:left; height:25px; font-size:13px; color:gray; box-sizing:border-box; padding-left:10px; line-height:25px;}
+.head_top span.search_btn {font-size:18px; color:#000; font-weight:bold; position:absolute; top:1px; right:7px;}
+.gnb_box{top:56px;}
+/*##### 검색CSS #####*/
+.search_pop{background-color:#fff;}
+.search_bar{padding:10px; border-bottom:1px solid #d9d9d9;}
+.search_bar input{border:1px solid #22b5e6; width:86%; height:45px; box-sizing:border-box; padding:0 0 0 45px; background:#fff url('/m/images/new/top-search.png') no-repeat 2% center; background-size:10%;}
+.search_bar input::placeholder{color:#cecece;}
+.search_bar button{background-color:#22b5e6; border:0; width:13%; height:45px; color:#fff; font-size:14px; float:right;}
+.search_result{width:100%; height:100%; clear:both; overflow:hidden;}
+.search_result div p{color:#22b5e6; padding:10px 15px; box-sizing:border-box; border-bottom:1px solid #d9d9d9;}
+.search_result div ul{padding:10px 15px;}
+.search_left{width:50%; height:100%; float:left;}
+.search_left p{}
+.search_history{max-height:400px; overflow-y:scroll;}
+.search_history li{line-height:35px; font-size:14px; clear:both; overflow:hidden;}
+.search_history li a{color:#555; width:90%; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; display:block; float:left;}
+.search_history li span{float:right;}
+.search_all_del{width:100%; text-align:center; display:block; border-top:1px solid #d9d9d9; border-bottom:1px solid #d9d9d9; line-height:40px; font-size:14px; color:#555;}
+.search_right{width:50%; height:100%; float:right; border-left:1px solid #d9d9d9; box-sizing:border-box;}
+.searchKeyword{border-bottom:1px solid #d9d9d9; margin-bottom:10px; max-height:400px; min-height:91px;}
+.searchKeyword li{line-height:35px; width:100%; font-size:14px; overflow:hidden; text-overflow:ellipsis; white-space:nowrap;}
+.searchKeyword li span{color:#fff; background-color:#22b5e6; padding:0 5px; border-radius:3px; line-height:5px; font-size:12px; margin-right:5px;}
+.searchKeyword li a{color:#555;}
+.search_close{width:55px; line-height:45px; display:block; color:#fff; background-color:#22b5e6; text-align:center; float:right; margin-right:10px; font-size:14px;}
+
+
+
+
+@media (max-width:500px){
+ .header-top.head_top{padding:0 10px;}
+}
+@media (max-width:480px){
+ .header-top.head_top .logo.company{width:48%;}
+ .head_top .logo h1 a{height:55px;}
+ .header-top.head_top .logo.company a img{width:100%; height:auto;}
+ .header-top.head_top .search_box.top-search{width:49%;}
+}
+@media (max-width:420px){
+ .head_top .logo h1 a{height:48px;}
+ .header-top.head_top .search_box.top-search{margin-top:9px; width:48%; height:30px}
+ .header-top.head_top .search_box.top-search span.placeholder{font-size:12px; height:30px; line-height:30px;}
+ .header-top.head_top .search_box.top-search span.search_btn{width:25px; top:0; right:5px;}
+ .head_height{height:113px !important;}
+}
+</style>
+<header>
+ <div class="header-top head_top">
+  <div class="btn-all-menu iconfont ftic-allmenu"></div>
+  <div class="logo company" id="mobile_logo">
+   <h1>{{BANNER:1}}</h1>
+  </div>
+  <!-- <a href="/m/product/cart.asp" class="btn_cart">
+   <span class="iconfont ftic-cart"></span>
+   <span class="cartCnt">1</span>
+  </a> -->
+  <div class="search_box top-search" onclick="open_pop();">
+   <div><span class="placeholder">검색어 입력</span><span class="search_btn m_search3"><img src='/m/images/new/top-search.png' ></span></div>
+  </div>
+  <!--<div class="top-rightmenu">
+   <a href="/m/my/main.asp" class="top-mypage"></a>
+   <a href="/m/product/cart.asp" class="top-cart"><span class="cartCnt">0</span></a>
+  </div>-->
+ </div>
+ <!-- <div class="head_height"></div> -->
+ <div class="float_btn_wrap go-top">
+  <ul class="float_btn_ul">
+   <!-- <li><a href="javascript:;" onclick="open_pop();" class="iconfont ftic-search m_search"></a></li> -->
+   <li><a href="javascript:;" onclick="go_top();" class="top_btn"><img src="/m/images/new/top-btn.png"></a></li>
+   <!-- <li><a href="javascript:;" onclick="go_btm();" class="iconfont ftic-bottom btm_btn"></a></li> -->
+  </ul>
+ </div>
+<!--########## 검색 ##########-->
+<div class="search_pop"> <!-- Container -->
+ <div class="search_bar"> <!-- Search Bar -->
+  <form name="searchFrm" method="post" action="/m/goods/search.asp">
+   <div>
+    <fieldset>
+     <legend>검색</legend>
+     <input type="text" id="searchStr" name="sword" placeholder="검색어를 입력하세요." data-role="none" autofocus>
+     <button data-role="none">검색</button>	
+    </fieldset>
+   </div>
+  </form>
+ </div>
+ <script>
+  document.searchFrm.sword.focus();
+ </script>
+ <div class="search_result"><!-- Result List -->
+  <div class="search_left"><!-- 최근검색 -->
+   <p>최근검색어</p>
+    <ul class="search_history">
+     <!-- /common/ajax/exec_RecentWord.asp -->
+    </ul>
+    <a href='javascript:;' onclick='sword_del();' class='search_all_del'>검색어 전체삭제</a>
+   </div>
+   <div class="search_right"><!-- 인기검색 -->
+    <p>인기검색어</p>
+    <ul class="searchKeyword">
+     <!-- /common/ajax/exec_getSearchKeyWord.asp -->
+    </ul>
+    <a href="javascript:;" onclick="close_pop();" class="search_close">닫기</a>
+   </div>
+  </div>
+</div>
+<!--########## 검색 ##########-->
+
+<script type="text/javascript">
+//장바구니 수량
+$.ajax({
+	type:"post",
+	url:"/common/ajax/exec_getCartCnt.asp",
+	success:function(data, state, xhr){
+		$(".cartCnt").each(function(){
+			$(this).html(data);
+		});
+	}
+})
+</script>
+
+
+<script type="text/javascript">
+    
+// float btn
+    $(window).scroll(function () {
+        var top = $(window).scrollTop();
+        var floatBtnWrap = $('.float_btn_wrap');
+
+        if (top > 0) {
+            floatBtnWrap.addClass('show')
+        } else {
+            floatBtnWrap.removeClass('show')
+        }
+    })
+    
+    $('.search_pop').hide();
+    function open_pop(){
+//        $('.search_pop').addClass('fix');
+        $('.search_pop').fadeIn();
+        get_sword();
+    }
+    
+    function close_pop(){
+//        $('.search_pop').removeClass('fix');
+        $('.search_pop').fadeOut();
+    }
+    
+    function go_top(){
+	$('html,body').stop().animate({
+		scrollTop: 0
+	}, 500);
+}
+	function sword_del(){
+		localStorage.removeItem('sword');
+                get_sword();
+	}
+
+	function sword_part_del(chkword){
+                var repstr = "|:|" + chkword
+
+		var data= localStorage.getItem('sword');
+                var newdata = data.replace(repstr,'');
+
+                localStorage.setItem('sword', newdata);
+                get_sword();
+	}
+
+
+	function get_sword(){
+		var data= localStorage.getItem('sword');
+		$.ajax({
+			type:'post',
+			url:'/common/ajax/exec_RecentWord.asp?sword='+data,
+			success:function(data, text, xhr){
+				$(".search_history").html(data);
+			}
+		})
+	}
+
+	function go_btm(){
+	$('html, body').stop().animate({
+	scrollTop:(document.body.scrollHeight)
+        });
+    };
+	
+	$('.searchKeyword').load("/common/ajax/exec_getSearchKeyword.asp");
+	
+//	$('.search_pop .search_tab>div').click(function(){
+//		$('.search_pop .search_tab>div').removeClass('on');
+//		$(this).addClass('on');
+//		$('.search_pop .search_cont>div').removeClass('on');
+//		$('.search_pop .search_cont>div').eq($(this).index()).addClass('on');
+//	});
+
+	$('#searchword01').click(function(){
+		$('#searchword01').removeClass('off');
+		$('#searchword02').removeClass('on');
+		$('#searchword01').addClass('on');
+		$('#searchword02').addClass('off');
+		$('.search_pop .search_cont>div').removeClass('on');
+		$('.search_pop .search_cont>div').eq($(this).index()).addClass('on');
+	});
+
+	$('#searchword02').click(function(){
+		$('#searchword01').removeClass('on');
+		$('#searchword02').removeClass('off');
+		$('#searchword01').addClass('off');
+		$('#searchword02').addClass('on');
+		$('.search_pop .search_cont>div').removeClass('on');
+		$('.search_pop .search_cont>div').eq($(this).index()).addClass('on');
+	});
+
+</script>	
+<script src="/jscript/ImgBoxAlign.js"></script>
