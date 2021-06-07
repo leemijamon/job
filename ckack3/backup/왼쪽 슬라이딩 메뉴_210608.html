@@ -1,0 +1,454 @@
+<!-- Link Swiper's CSS -->
+<style type="text/css">
+    .all_menu_cont .swiper-container {
+        width: auto;
+        height:60%;/*calc(100% - 160px)*/
+        overflow-y:auto;
+    }
+    .all_menu_cont .swiper-slide {
+        height: auto;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+    .all_menu_mask {display:none;position:absolute;left:0;right:0;top:0;bottom:0;opacity:.8;z-index:1;}
+    .open .all_menu_mask {display:block;}
+    .all_menu_box{width:588px;position:fixed;left:50%;top:0;margin-left:-284px;height:100vh;overflow:hidden; z-index:9999;}
+    .all_menu{background-color:#fff;z-index:2;
+        position:absolute;top:0;left:0;right:0;bottom:0;
+        transform:translateX(-100%);
+        -ms-transform:translateX(-100%);
+        -moz-transform:translateX(-100%);
+        -webkit-transform:translateX(-100%);
+        -o-transform:translateX(-100%);
+        transition:all 0.2s;
+        -moz-transition:all 0.2s;/* Firefox 4 */
+        -webkit-transition:all 0.2s;/* Safari 和 Chrome */
+        -o-transition:all 0.2s;/* Opera */
+    }
+    .open .all_menu{
+        transform:translateX(0);
+        -ms-transform:translateX(0);
+        -moz-transform:translateX(0);
+        -webkit-transform:translateX(0);
+        -o-transform:translateX(0);
+    }
+    .all_menu .all_menu_head {position:relative; height:50px; overflow:hidden;}
+    .all_menu .all_menu_head .close-all-menu {display:inline-block; height:50px; padding-left:20px; font-size:16px; line-height:50px; color:#fff; font-weight:normal; vertical-align:top;}
+    .all_menu .all_menu_head .tmb_txt{line-height:50px;color:#fff;letter-spacing:-1px;font-size:14px;}
+    .all_menu .all_menu_head .ftic-back {display:inline-block; color:#fff; font-size:24px; line-height:50px; vertical-align:top;}
+    .all_menu .all_menu_head .login {position:absolute; top:9px; right:140px; width:36px; height:36px; border-radius:100%; background:#fff; text-align:center;}
+    .all_menu .all_menu_head .login i {font-size:20px; line-height:36px;}
+    .all_menu .all_menu_head .logout {position:absolute; top:9px; right:96px; width:36px; height:36px; border-radius:100%; background:#fff; text-align:center;}
+    .all_menu .all_menu_head .logout i {font-size:20px; line-height:36px;}
+    .all_menu .all_menu_head .join {position:absolute; top:9px; right:96px; width:36px; height:36px; border-radius:100%; background:#fff; text-align:center;}
+    .all_menu .all_menu_head .join .iconfont {font-size:20px; line-height:36px;}
+    .all_menu .all_menu_head .m_search {display:block; position:absolute; top:9px; right:52px; width:36px; height:36px; border-radius:100%; background:#fff; text-align:center; overflow:hidden;}
+    .all_menu .all_menu_head .m_search .iconfont {font-size:20px; line-height:36px;}
+    .all_menu .all_menu_head .m_cart {display:block; position:absolute; top:9px; right:8px; width:36px; height:36px; border-radius:100%; background:#fff; text-align:center;}
+    .all_menu .all_menu_head .m_cart .iconfont {font-size:20px; line-height:36px;}
+    .all_menu .all_menu_head .cartCnt {display:block; position:absolute; top:-6px; right:-6px; width:18px; height:18px; border-radius:50%; color:#EC0078; font-size:11px; line-height:18px; text-align:center; background:#fff; border:1px solid #ec0078;}
+    .all_menu .search_section {display:block; position:absolute; top:0; right:0; height:54px; width:50%; padding:0 20px; box-sizing:border-box; overflow:hidden; z-index:15; margin:0; background:none;
+        transition: all 0.2s;
+        -moz-transition: all 0.2s; /* Firefox 4 */
+        -webkit-transition: all 0.2s; /* Safari 和 Chrome */
+        -o-transition: all 0.2s; /* Opera */
+    }
+
+    .all_menu .all_menu_cont {position:relative; height:100%; z-index:10; background:#fff;padding-bottom:50px;box-sizing:border-box;}
+    .all_menu .all_menu_cont .menu-list > li .depth1 {position:relative;padding:0 15px; border-bottom:1px solid #eee; background:url('{{BANNER_SRC:10}}') no-repeat right center; background-size:25px 4px; cursor:pointer;}
+    .all_menu .all_menu_cont .menu-list > li .depth1 .arrow_off {display:inline-block;}
+    .all_menu .all_menu_cont .menu-list > li .depth1 .arrow_on {display:none;}
+    .all_menu .all_menu_cont .menu-list > li.depth1_in_F .depth1 {background:none;}
+    .all_menu .all_menu_cont .menu-list > li.depth1_in_F .depth1 a.btn-goods-view {display:none; position:absolute; right:18px; top:0;z-index:1; color: #000; font-size: 10px; box-sizing:border-box; padding:0; line-height: 50px; font-weight: bold; text-align:right;}
+    .all_menu .all_menu_cont .menu-list > li.depth1_in_F .depth1 .tit {display:block;}
+    .all_menu .all_menu_cont .menu-list > li .depth1.on {background:url('{{BANNER_SRC:9}}') no-repeat right center; background-size:25px 4px;}
+    .all_menu .all_menu_cont .menu-list > li .depth1.on .arrow_off {display:none;}
+    .all_menu .all_menu_cont .menu-list > li .depth1.on .arrow_on {display:inline-block;}
+    .all_menu .all_menu_cont .menu-list > li.depth1_in_F .depth1.on {background:none;}
+    .all_menu .all_menu_cont .menu-list > li .depth1 .cateicon {display:inline-block; margin:-3px 12px 0 0; vertical-align:middle;}
+    .all_menu .all_menu_cont .menu-list > li .depth1 .cateicon img {width:28px;}
+    .all_menu .all_menu_cont .menu-list > li .depth1 .btn-goods-view {display:none;}
+    .all_menu .all_menu_cont .menu-list > li .depth1 .tit, .all_menu .mid_menu li a, .all_menu .mid_menu p {display:inline-block; color:#000; font-size:13px; line-height:44px; font-weight:normal;}
+    .all_menu .all_menu_cont .menu-list > li .depth2 {display:none;}
+    .all_menu .all_menu_cont .menu-list > li .depth2 li a ,
+    .all_menu .all_menu_cont .menu-list > li .depth2 li span{display:block; padding-left:20px; color:#000; font-size:15px; line-height:45px; font-weight:normal;}
+    .all_menu .all_menu_cont .menu-list > li .depth2 li .depth2txt{display:block; padding-left:20px; color:#fff; font-size:15px; line-height:45px; font-weight:normal;}
+    .all_menu .all_menu_cont .menu-list > li .depth2 .right_view {display:none;}
+    .all_menu .img_links {overflow:hidden; }
+    .all_menu .img_links_2 {overflow:hidden; background-color:#f5f5f3; box-sizing:border-box; padding-bottom:10px; }
+    .all_menu .img_links li {float:left; width:20%; box-sizing:border-box;}
+    .all_menu .img_links li:first-child {border-left-color:#fff;}
+    .all_menu .img_links_2 li {float:left; width:25%; text-align:center;}
+    .all_menu .img_links li img {width:100%;}
+    .all_menu .txt_links {overflow:hidden;}
+    .all_menu .txt_links li {float:left; width:33.3%; background:url("{{BANNER_SRC:11}}") no-repeat 0 center; background-size:1px 9px; position:relative;}
+    .all_menu .txt_links li a {display:block; height:50px; color:#fff; font-size:15px; line-height:50px; text-align:center;}
+
+    /*2017.06.20*/
+    .m_search_form {position:absolute; top:12px; right:12px;}
+    .m_search_form .m_search_wrap {position:relative; width:160px; height:30px;}
+    .m_search_wrap > .iconfont {position:absolute; left:10px; top:5px; z-index:10; font-size:15px;}
+    .m_search_wrap .m_search_box {position:absolute; top:0; bottom:0; width:100%; border:none; text-align:center; border-radius:12px; font-size:14px; letter-spacing:0.1em; box-sizing:border-box; padding:0 10px 0 28px;}
+    .all_menu .img_links_2 li img {width:85%; margin-top:14px;}
+    .img_links_2 li span.ico_menu {font-size:1em; font-weight:normal; word-break:keep-all; display:block; margin-top:5px; letter-spacing:-0.1em;}
+    .my_point {background-color:#f5f5f3; height:100px; overflow:hidden; width:100%; box-sizing:border-box; padding:12px 10px;}
+    .my_point .point {float:left;}
+    .my_point .counpon {float:right;}
+    .my_point .point, .my_point .counpon {width:46%; height:72px; border:1px solid #ddd; border-radius:12px; box-sizing:border-box; padding:10px; position:relative;}
+    .my_point .point>span, .my_point .counpon>span {font-size:14px; font-weight:normal;}
+    .my_point .point>p, .my_point .counpon>p {position:absolute; right:14px; bottom:12px; font-size:15px; font-weight:normal; color:#000;}
+    .my_point .point>p>span, .my_point .counpon>p>span {color:#d7a074; margin-right:5px;}
+    .all_menu .recent {background-color:#2d2e33;}
+    .all_menu .recent .recent_tit {font-size:14px; font-weight:normal; padding:12px; color:#fff;}
+    .all_menu .recent .recent_bg {width:100%; background-color:#f5f5f3; box-sizing:border-box; padding:5px; font-size:0;}
+    .all_menu .recent .recent_bg li {display:inline-block; width:33.33%; box-sizing:border-box; padding:0 5px; font-size:18px;}
+    .all_menu .recent .recent_bg img {width:100%;}
+    .all_menu .txt_links li>span.bar {position:absolute; height:12px; right:0; top:14px; border-right:1px solid #fff;}
+
+    /*2017.06.30*/ 
+    .all_menu .search_section {position:absolute; top:50px; left:0; height:0; width:100%; padding:0 15px; box-sizing:border-box; overflow:hidden; z-index:15;
+        transition: all 0.2s;
+        -moz-transition: all 0.2s; /* Firefox 4 */
+        -webkit-transition: all 0.2s; /* Safari 和 Chrome */
+        -o-transition: all 0.2s; /* Opera */
+    }
+    .all_menu .search_section.on {height:55px;
+        transition: all 0.2s;
+        -moz-transition: all 0.2s; /* Firefox 4 */
+        -webkit-transition: all 0.2s; /* Safari 和 Chrome */
+        -o-transition: all 0.2s; /* Opera */
+    }
+    .all_menu .search_section input[type="text"] {width:100%; height:36px; margin:6px 0; padding:10px 50px 10px 32px; border:none; border-radius:21px; background:#fff; font-size:15px; line-height:22px; box-sizing:border-box;}
+    .all_menu .search_section button {position:absolute; top:3px; left:15px; width:42px; height:42px; padding:0; border:0; background:none; font-size:20px; line-height:43px; font-weight:NORMAL; text-align:center;}
+    .all_menu .all_menu_cont .menu-list > li .depth2 {color:#fff;}
+    .all_menu .mid_menu {color:#fff;}
+    .all_menu .mid_menu li a, .all_menu .mid_menu p {font-weight:NORMAL; display:block;}
+    .all_menu .mid_menu ul.member_info {padding-left:20px;}
+    .all_menu .mid_menu {box-sizing:border-box; padding:10px 20px;}
+    .all_menu .mid_menu p {font-weight:NORMAL; display:block; color:#000; font-size:14px;}
+    .all_menu .mid_menu ul {width:100%;}
+    .all_menu .mid_menu li {display:inline-block; vertical-align:top; float:left; width:33%; box-sizing:border-box; padding:2px;}
+    .all_menu .mid_menu li:first-child {margin-left:0;}
+    .all_menu .mid_menu li img {width:100%;}
+    .all_menu .search_section.on {background-color:#FF4242;}
+    .all_menu .all_menu_cont .menu-list > li .depth2 li span{background:url("{{BANNER_SRC:10}}") no-repeat 93% center; background-size:10px 5px;}
+    .all_menu .all_menu_cont .menu-list > li .depth2 li.on span{background:url("{{BANNER_SRC:9}}") no-repeat 93% center; background-size:10px 5px;}
+    .all_menu .all_menu_cont .menu-list > li .depth3 {background:#2D2E33;padding-left:20px;display:none;}
+    .all_menu .all_menu_cont .menu-list > li .depth3 li a {display:block; padding-left:20px; color:#fff; font-size:14px; line-height:40px; font-weight:normal;}
+    /*.all_menu .all_menu_cont .menu-list > li .depth3 li {background:url("{{BANNER_SRC:10}}") no-repeat 95% center; background-size:8px 4px;}*/
+    .area_cmoney_class {float:right; padding-right:20px;}
+    .all_menu .mid_menu2 {box-sizing:border-box; padding:10px;}
+    .all_menu .mid_menu2 .img_links {overflow:hidden; }
+    .all_menu .mid_menu2 .img_links li {float:left; width:16.666%;}
+    .all_menu .mid_menu2 .img_links li img {width:100%;}
+    .all_menu .txt_links li {float:left; width:50%; background:url('{{BANNER_SRC:10}}') no-repeat 0 center; background-size:1px 9px;}
+    .all_menu .txt_links li a {display:block; height:40px; color:#fff; font-size:13px; line-height:40px; text-align:center;}
+    .all_menu .btm_menu {box-sizing:border-box; padding:10px 20px; color:#000;}
+    .all_menu .btm_menu>ul {margin-bottom:15px;}
+    .all_menu .btm_menu ul li {border-bottom:1px solid #ccc; padding-bottom:10px; padding-top:5px;}
+    .all_menu .btm_menu ul li h4 {font-size:16px; margin-bottom:5px;}
+    .all_menu .btm_menu ul li strong a {font-size:20px; color:#000;}
+    .all_menu .btm_menu ul li p {line-height:2em;}
+    .all_menu .btm_menu .katalk, .all_menu .btm_menu .toktok {display:inline-block; width:49%;}
+    .all_menu .btm_menu .katalk img, .all_menu .btm_menu .toktok img {width:100%;}
+    .all_menu .btm_menu .sns_ico_wrap {overflow:hidden; width:100%; margin-bottom:0; margin-top:10px;}
+    .all_menu .btm_menu .sns_ico_wrap li {border-bottom:0; float:left; width:24%; display:block; padding-bottom:0; padding-top:0;}
+    .all_menu .btm_menu .sns_ico_wrap li a {display:block; width:35px; margin:0 auto;}
+    .all_menu .btm_menu .sns_ico_wrap li a img {width:100%;}
+    .mid_menu3{border-top:4px solid #e4e3e3;border-bottom:4px solid #e4e3e3;margin-bottom:15px;font-size:0;}
+    .mid_menu3 a{width:50%;border:0;position:relative;display:inline-block;line-height:50px;text-align:center;font-size:14px;color:#000;}
+    .mid_menu3 a.border:after{content:'';display:inline-block;position:absolute;top:50%;left:0;width:1px;height:25px;margin-top:-12px;background:#eee;}
+    .all_menu_cont .swiper-slide>a{display:block;color:#333;}
+    .all_menu_cont .manu_bigTitle{padding:0 15px;font-size:15px;font-weight:bold;line-height:58px;border-bottom:1px solid #e4e3e3;}
+    .all_menu_cont .manu_bigTitle i{float:right;line-height:58px;}
+    .all_menu_cont .tmp_cont1{display:block;}
+    .all_menu_cont .tmp_cont1.on{display:block;}
+
+    @media (max-width:568px){
+        .all_menu{position:fixed;}
+    }
+
+    .menuBanner {padding-bottom:10px;}
+    .menuBanner img {width:100%;}
+
+    .mid_menu .swiper-container {height:auto;}
+</style>
+
+<div class="all_menu_box sidebar-wrap" style="display:none">
+
+    <div class="all_menu sidebar-allmenu">
+
+        <div class="all_menu_head sitebg1">
+            <div class="close-all-menu"><span class="iconfont ftic-back"></span></div>
+            <span class="tmb_logout tmb_txt">로그인이 필요합니다.</span>
+            <span class="tmb_login tmb_txt">{{MY_MEMBER_NAME}} 님</span>
+        </div>
+
+        <div class="search_pop">
+            <a href="javascript:;" onclick="close_pop();" class="close_btn"></a>
+            <div class="search_pop_inner">
+                <h2>SEARCH</h2>
+                <form name="searchFrm" method="post" action="/m/goods/search.asp">
+                    <div class="search_area">
+                        <fieldset>
+                            <legend>검색</legend>
+                            <input type="text" id="searchStr" name="sword" placeholder="" />
+                            <button class="iconfont ftic-search"></button>
+                        </fieldset>
+                    </div>
+                </form>
+                <h2>SEARCH HISTORY</h2>
+                <ul class="search_history">
+
+                </ul>
+            </div>
+            <span class="del_btn_wrap"><a href='javascript:;' onclick='sword_del();' class='sch_del_btn'>검색기록 전체삭제</a></span>
+        </div>
+        <div class="all_menu_cont sidebar-menu">
+            <!-- Swiper -->
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <!--						<a href="/m/goods/eventmall_category.asp?uid=1462"><div class="manu_bigTitle">브랜드<i class="material-icons">chevron_right</i></div></a>-->
+                        <div class="manu_bigTitle click">카테고리<i class="material-icons">chevron_right</i></div>
+                        {{ALL_MENU}}
+
+                        <div class="mid_menu">
+                            <p>최근 본 상품</p>
+                            <div class="swiper-container">
+                                <ul class="swiper-wrapper recent_bg">								
+                                </ul>
+                            </div>
+                        </div>
+                        <ul class="txt_links sitebg1">
+<!--
+                            <li class="tmb_logout"><a href="/m/mobile_login.asp">로그인</a><span class="bar"></span></li>
+                            <li class="tmb_login"><a href="/m/mobile_logout.asp">로그아웃</a><span class="bar"></span></li>
+-->
+                            <li class="tmb_logout"><a href="javascript:;" class="join_pop_cls">회원가입</a><span class="bar"></span></li>
+                            <li class="tmb_login"><a href="/m/my/info_edit3.asp?mode=A">정보수정</a><span class="bar"></span></li>
+                            <li><a href="/m/customercenter/cscenter_main.asp">고객센터</a></li>
+                        </ul>
+
+
+                    </div>
+                </div>
+                <!-- Add Scroll Bar -->
+                <div class="swiper-scrollbar"></div>
+            </div>
+            <!-- Swiper End -->
+
+        </div>
+
+    </div>
+
+    <div class="all_menu_mask sitebg1"></div>
+
+</div>
+
+<div id="layer_pop_cls"></div>
+
+<script type="text/javascript">
+    /*var swiper = new Swiper(".all_menu_cont .swiper-container", {
+		scrollbar:".all_menu_cont .swiper-scrollbar",
+		direction:"vertical",
+		slidesPerView:"auto",
+		mousewheelControl: true,
+		freeMode: true
+	});*/
+</script>
+
+
+<script type="text/javascript">
+    //첨로딩시 높이지정
+    resetSwipe();
+    //가로세로 resize
+    $(window).resize(function(){
+        resetSwipe();
+    });
+    
+    
+
+    $(window).load(function(){
+        //최근본상품
+        $(".join_pop_cls").click(function(){
+            $.ajax({
+                type:"post",
+                url:"/common/ajax/exec_NewMainTopMenu.asp",
+                data:"sel_type=m",
+                success:function(data){
+                    $("#layer_pop_cls").html(data);
+                }
+            })
+        })
+        
+        //최근본상품슬라이드
+        var pdWrapSl = new Swiper(".mid_menu .swiper-container",{
+            paginationClickable:true,
+            //spaceBetween:30,
+            slidesPerView:4,
+            slidesPerGroup:4,
+            //slidesPerGroup:4,
+            //centeredSlides:true,
+            autoplay:false,
+            //loop:true,
+            autoplayDisableOnInteraction:false
+        });
+
+        
+
+        //로그인 판단
+        $.ajax({
+            type:"post",
+            url:"/common/ajax/exec_getLoginChk.asp",
+            success:function(data, text, xhr){
+                if(data=="login"){
+                    $(".favorite").click(function (){
+                        addFavorites($("title").html(), "http://"+$(location).attr("host"));
+                    });
+                    $(".tmb_logout").remove();
+                    $(".tmb_login").show();
+                    get_userinfo();
+                }else{
+                    $(".favorite").click(function (){
+                        addFavorites($("title").html(), "http://"+$(location).attr("host"));
+                    });
+                    $(".tmb_login").remove();
+                    $(".tmb_logout").show();
+                }
+            }
+        })
+
+        function get_userinfo(){
+
+            $.ajax({
+                type:"post",
+                url:"/m/common/exec_getUserInfo.asp",
+                success:function(data, text, xhr){
+
+                    var strarrdata=data.split("||");
+                    cmoney=strarrdata[0];
+                    coupon=strarrdata[1];
+
+                    $("#area_cmoney").html(cmoney);
+                    $("#area_coupon").html(coupon);
+                }
+            })
+        }
+
+        //장바구니 수량
+        $.ajax({
+            type:"post",
+            url:"/common/ajax/exec_getCartCnt.asp",
+            success:function(data, state, xhr){
+                $(".cartCnt").each(function(){
+                    $(this).html(data);
+                });
+            }
+        })
+
+        $.ajax({
+            type:"post",
+            url:"/m/common/exec_getTodayHistory.asp",
+            success:function(data, text, xhr){
+                $(".recent_bg").html(data);
+            }
+        })
+    })
+
+    //좌측메뉴
+    $(".btn-all-menu").click(function(){
+        resetSwipe();
+        function open(){
+            $(".all_menu_box").addClass("open")
+        }
+        $(".all_menu_box").show()
+        //$("body").css({overflow:'hidden'}).bind('touchmove', function(e){e.preventDefault()});
+        setTimeout(open,0)
+    });
+    $(".close-all-menu").click(function(){
+        function close(){
+            $(".all_menu_box").hide()
+        }
+        $(".all_menu_box").removeClass("open")
+        //$("body").css({overflow:'auto'}).unbind('touchmove');
+        setTimeout(close,200)
+    });
+
+    //검색 슬라이드
+    $(".m_search").click(function(){
+        $(".search_section").toggleClass("on");
+    });
+
+    //대메뉴 클릭 펼침
+    $(".manu_bigTitle.click").click(function(){
+        $(".tmp_cont1").toggleClass("on");
+    });
+
+    //메뉴 1뎁스클릭 펼침
+    $(".menu-list .depth1").click(function(){
+        if($(this).hasClass("on"))
+        {
+            $(this).removeClass("on");
+            $(this).next(".depth2").stop(true,true).slideUp(200,function(){
+                resetSwipe();
+            });
+        }
+        else
+        {
+            $(".menu-list .depth1").not($(this)).removeClass("on")
+            $(this).addClass("on")
+            $(".menu-list .depth2").not($(this).next(".depth2")).stop(true,true).slideUp(200);
+            $(this).next(".depth2").stop(true,true).slideDown(200,function(){
+                resetSwipe();
+            });
+        }
+    });
+
+    //메뉴 2뎁스클릭 펼침
+    $(".menu-list .depth2 > li").click(function(){
+        if($(this).hasClass("on"))
+        {
+            $(this).removeClass("on");
+            //$(this).children(".depth3").stop(true,true).slideUp(200,function(){
+            //	resetSwipe();
+            //});
+        }
+        else
+        {
+            $(".menu-list .depth2 > li").not($(this)).removeClass("on")
+            $(this).addClass("on")
+            //$(".menu-list .depth3").not($(this).next(".depth3")).stop(true,true).slideUp(200);
+            $(this).children(".depth3").stop(true,true).slideDown(200,function(){
+                resetSwipe();
+            });
+        }
+    });
+
+    $('.search_pop').hide();
+    function open_pop(){
+        $('.search_pop').addClass('fix');
+        $('.search_pop').fadeIn();
+        get_sword();
+    }
+
+    function close_pop(){
+        $('.search_pop').removeClass('fix');
+        $('.search_pop').fadeOut();
+    }
+
+    //메뉴 1뎁스링크 클릭
+    $(".menu-list .depth1 a.tit").click(function(){
+        window.location.href = this.href;
+        return false; //기타이벤트 방지
+    });
+
+
+    //swipe 리셋
+    function resetSwipe()
+    {
+        //$(".all_menu_cont").height($(window).height()-$(".all_menu_head").height());
+        //swiper.update();
+    }
+
+</script>
