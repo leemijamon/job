@@ -7,25 +7,21 @@
 	<meta name="description" content="웹 페이지에 대한 설명">
 	<meta name="author" content="문서의 저자를 정의">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>개인 소스저장 페이지</title>
+	<title>Publishing Data</title>
 	<link href="css/bootstrap.css" rel="stylesheet">
 	<link href="css/reset.css" rel="stylesheet">
 	<link href="css/main.css" rel="stylesheet">
 </head>
 <body>
-	<div class="container">
-		<header class="d-flex justify-content-center py-3">
-			<ul class="nav nav-pills">
-				<li class="nav-item"><a href="#" class="nav-link active" aria-current="page">Home</a></li>
-				<li class="nav-item"><a href="#" class="nav-link">Features</a></li>
-				<li class="nav-item"><a href="#" class="nav-link">Pricing</a></li>
-				<li class="nav-item"><a href="#" class="nav-link">FAQs</a></li>
-				<li class="nav-item"><a href="#" class="nav-link">About</a></li>
-			</ul>
-		</header>
+	<div id="main">
+		<div class="container">
+			<header data-include="./include/header.html"></header>
+		</div>
 	</div>
 	
+	<script src="js/jquery-3.6.0.js"></script>
 	<script src="js/bootstrap.js"></script>
+	<script src="js/include.js"></script>
 	<script src="js/main.js"></script>
 </body>
 </html>
