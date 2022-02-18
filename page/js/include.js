@@ -16,17 +16,16 @@ function includeHTML(){
             /* Remove the attribute, and call this function once more: */
             elmnt.removeAttribute("data-include");
             includeHTML();
-          }//if
-        }//onreadystatechange
+          }
+        }
  
         xhttp.open("GET", file, true);
         xhttp.send();
         return;
-      }//if - file
-    }//for
-}//includeHTML
- 
- 
+      }
+    }
+}
+
 /* 실행 */
 window.addEventListener('DOMContentLoaded',()=>{
     includeHTML();
