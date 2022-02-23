@@ -30,10 +30,22 @@ html, body{height:100%;}
 /* Menu Only CSS */
 .menu_css{width:60%;margin:0 auto;}
 .menu_css ul{width:100%;height:50px;}
-.menu_css ul li{float:left;width:25%;height:100%;text-align:center;background:#42b6e1;border-right:1px solid #8dd5ef;}
+.menu_css ul li{float:left;width:25%;height:100%;text-align:center;background:#42b6e1;border-right:1px solid #8dd5ef;
+	-webkit-transition: all .5s ease;
+	-moz-transition: all .5s ease;
+	-ms-transition: all .5s ease;
+	-o-transition: all .5s ease;
+	transition: all .5s ease;
+}
 .menu_css ul li:last-child{border-right:0;}
 .menu_css ul li:hover{background:#2e9fc9;}
 .menu_css ul li a{display:block;width:100%;line-height:50px;color:#fff;}
-.menu_css ul li.sub ul.sub_menu{display:none;}
+.menu_css ul li.sub ul.sub_menu{display:none;
+	-webkit-transition: all .5s ease;
+	-moz-transition: all .5s ease;
+	-ms-transition: all .5s ease;
+	-o-transition: all .5s ease;
+	transition: all .5s ease;
+}
 .menu_css ul li.sub:hover ul.sub_menu{display:block;}
 .menu_css .sub_menu li{width:100%;float:none;background:#2e9fc9;}
