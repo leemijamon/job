@@ -49,3 +49,12 @@ html, body{height:100%;}
 }
 .menu_css ul li.sub:hover ul.sub_menu{display:block;}
 .menu_css .sub_menu li{width:100%;float:none;background:#2e9fc9;}
+
+/* One Page(+scroll spy) */
+.onepage_wrap{width:60%;margin:0 auto;height:450px;overflow:auto;position:relative;}
+.onepage_wrap ul{width:100%;height:50px;position:sticky;position:-webkit-sticky;top:0;}
+.onepage_wrap ul li{width:25%;height:100%;float:left;text-align:center;border-right:1px solid #fff;background:#222;}
+.onepage_wrap ul li.on{background:#dd8876;}
+.onepage_wrap ul li a{color:#fff;display:block;width:100%;height:100%;line-height:50px;}
+.onepage_wrap div{width:100%;}
+.onepage_wrap div img{width:100%;}
