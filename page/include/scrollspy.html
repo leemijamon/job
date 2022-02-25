@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="keyword" content="검색 엔진을위한 키워드 정의">
+	<meta name="description" content="웹 페이지에 대한 설명">
+	<meta name="author" content="문서의 저자를 정의">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Publishing Data</title>
+	<link href="../css/reset.css" rel="stylesheet">
+	<link href="../css/main.css" rel="stylesheet">
+</head>
+<body>
+	<div class="onepage_wrap">
+		<ul id="onepage" class="clearfix">
+			<li class="on"><a href="#iphone">iPhone13</a></li>
+			<li><a href="#s22">Galaxy S22</a></li>
+			<li><a href="#flip">Z Flip3</a></li>
+			<li><a href="#folder">Z Fold3</a></li>
+		</ul>
+		<div id="iphone">
+			<img src="../image/onepage_iphone13.jpg" alt="아이폰13 이미지">
+		</div>
+		<div id="s22">
+			<img src="../image/onepage_s22.jpg" alt="갤럭시 S22 이미지">
+		</div>
+		<div id="flip">
+			<img src="../image/onepage_flip.jpg" alt="갤럭시 Z플립3 이미지">
+		</div>
+		<div id="folder">
+			<img src="../image/onepage_folder.jpg" alt="갤럭시 폴드3 이미지">
+		</div>
+	</div>
+	<script src="../js/jquery-3.6.0.js"></script>
+	<script>
+		$(function() {
+			var $item = $('#onepage li');
+			
+			$item.on('click', 'a', function(event){
+				var $section = $($(this).attr('href'));
+				var sectionTop = $section.offset().top-50;
+				
+				$('html,body').stop().animate({scrollTop: sectionTop}, 500);
+				
+				event.preventDefault();
+			});
+			
+			$(window).scroll(function() {
+				var scrollTop = $(this).scrollTop();
+				
+				$item.each(function() {
+					var $section = $($(this).find('a').attr('href'));
+					var sectionTop = $section.offset().top-60;
+					var sectionHeight = $section.height();
+				  
+					if (sectionTop <= scrollTop && (sectionTop + sectionHeight) > scrollTop) {
+						$(this).addClass('on');
+						$(this).siblings().removeClass('on');
+					}
+				});
+			});
+		});
+	</script>
+</body>
+</html>
