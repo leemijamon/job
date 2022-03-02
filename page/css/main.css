@@ -18,7 +18,7 @@ html,body{height:100%;}
 .nav ul li.on{border-left:5px solid #d0782a;text-indent:10px;background-color:#3b3d44;}
 .nav ul li:hover{background-color:#3b3d44;}
 .nav ul li a{width:100%;display:block;line-height:45px;color:#fff;}
-.left{width:14%;height:100%;float:left;padding:0;}
+.left{width:15%;height:100%;float:left;padding:0;}
 .right{width:85%;height:100%;float:right;background:#fff;}
 
 /* ##### Example, Source View ##### */
