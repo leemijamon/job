@@ -3,6 +3,7 @@
 /* ##### Common ##### */
 html,body{height:100%;}
 .colorscripter-code-table{width:100%;}
+.row{display:flex;}
 
 /* ##### Main ##### */
 .wrap{background-color:#1d1e22;height:100%;}
