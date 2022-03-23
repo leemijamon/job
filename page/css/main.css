@@ -53,7 +53,7 @@ html,body{height:100%;}
 .menu_css ul li.sub:hover ul.sub_menu{display:block;}
 .menu_css .sub_menu li{width:100%;float:none;background:#2e9fc9;}
 
-/* One Page(+scroll spy) */
+/* Scroll Spy */
 .onepage_wrap{width:80%;margin:0 auto;}
 .onepage_wrap ul{width:80%;height:50px;position:fixed;top:0;left:50%;margin-left:-40%;}
 .onepage_wrap ul li{width:25%;height:100%;float:left;text-align:center;border-right:1px solid #fff;background:#222;box-sizing:border-box;}
@@ -62,3 +62,15 @@ html,body{height:100%;}
 .onepage_wrap div{width:100%;}
 .onepage_wrap div#iphone{padding-top:50px;}
 .onepage_wrap div img{width:100%;}
+
+/* Tab Menu */
+.tab_container{width:60%;margin:30px auto;}
+.tab_menu li{float:left;width:25%;height:50px;line-height:50px;text-align:center;box-sizing:border-box;background:#2cc185;}
+.tab_menu li.on{background:#fff;color:#2cc185;}
+.tab_menu li a{color:#209367;display:block;width:100%;height:100%;}
+.tab_menu li i{margin-right:5px;}
+.tab_cont{padding:30px 40px;box-sizing:border-box;background:#fff;}
+.cont_box{font-size:30px;text-align:center;}
+.cont_box.on{display:block !important;}
+.cont_box h3{margin-top:20px;}
+.cont_box i{font-size:200px;color:#209367;}
