@@ -14,3 +14,23 @@ $(function(){
 });
 
 // Accordion Menu
+$(function(){
+	$('.acc_cont > li:eq(0) h3').addClass('on').next().slideDown();
+	
+	$('.acc_cont li h3').click(function(i){
+		var drop_down = $(this).closest('li').find('p');
+		
+		$(this).closest('.acc_cont').find('p').not(drop_down).slideUp();
+		
+		if ($(this).hasClass('on')) {
+			$(this).removeClass('on');
+		} else {
+			$(this).closest('.acc_cont').find('h3.on').removeClass('on');
+			$(this).addClass('on');
+		}
+		
+		drop_down.stop(false, true).slideToggle();
+		
+		i.preventDefault();
+	});
+});
