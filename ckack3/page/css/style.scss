@@ -1,0 +1,10 @@
+.list {
+  width: 100px;float: left;
+  li {
+    color: red;
+    background: url("./image.jpg");
+    &:last-child {
+      margin-right: -10px;
+    }
+  }
+}
