@@ -1,11 +1,26 @@
-.list {
-  width: 100px;
-  float: left;
-}
-.list li {
-  color: red;
-  background: url("./image.jpg");
-}
-.list li:last-child {
-  margin-right: -10px;
-}
+/*
+	Main Color: #0751a0
+	Font Info: NotoSansBlack, NotoSansBold, NotoSansDemiLight, NotoSansMedium, NotoSansRegular
+*/
+
+/*****## Common ##*****/
+html, body{font-family:NotoSansDemiLight, sans-serif;font-size:16px;}
+.wrap{}
+
+/*****## Header ##*****/
+header .top{width:100%;background-color:#0751a0;}
+header .top .top_cont{width:1080px;height:35px;margin:0 auto;color:#fff;}
+header .top .top_cont div{width:330px;float:left;line-height:35px;font-size:0.8em;}
+header .top .top_cont ul{width:180px;float:right;}
+header .top .top_cont ul li{float:left;}
+header .top .top_cont ul li::after{content:"|";text-align:center;padding:0 10px;}
+header .top .top_cont ul li:last-child::after{display:none;}
+header .top .top_cont ul li a{color:#fff;line-height:35px;font-size:0.8em;}
+.header{width:1080px;height:110px;margin:0 auto;}
+.header .logo{width:360px;float:left;}
+.header .search{width:360px;float:left;}
+.header .search .search_cont{height:35px;text-align:center;border-radius:30px;background:#fafafa url('../img/icon_header_search.png') 97% center no-repeat;border:1px solid #d9d9d9;box-sizing:border-box;}
+.header .search .search_cont input{height:30px;width:90%;border:0;background:transparent;}
+.header .search .search_cont input:focus{outline:none;}
+.header .search .search_cont input::placeholder{}
+.header .menu{width:360px;float:left;}
