@@ -1,19 +1,5 @@
-ul.nav li.list1 {
-  color: red;
-  font-size: 16px;
-}
-
-ul.nav li.list2 {
-  color: red;
-  font-size: 16px;
-}
-
-ul.nav li.list3 {
-  color: red;
-  font-size: 16px;
-}
-
-ul.nav li.list4 {
-  color: red;
-  font-size: 16px;
+.clearfix:after {
+  display: block;
+  content: " ";
+  clear: both;
 }
